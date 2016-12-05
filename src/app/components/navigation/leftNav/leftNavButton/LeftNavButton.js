@@ -14,13 +14,11 @@ class LeftNavButton extends Component {
   render() {
     const { link, label } = this.props;
     return (
-      <li>
         <Link
           to={link}
           onClick={this.handleLeftNavItemClick}>
           {label}
         </Link>
-      </li>
     );
   }
 

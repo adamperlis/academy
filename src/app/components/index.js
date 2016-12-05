@@ -1,11 +1,28 @@
-import Jumbotron          from './jumbotron/Jumbotron';
-import NavigationBar      from './navigation/NavigationBar';
-import BackToTop          from './backToTop/BackToTop';
-import WizardMotion       from './wizardMotion/WizardMotion';
+import MainContainer        from './mainContainer/MainContainer';
+import NavigationBar      	from './navigation/NavigationBar';
+import BackToTop          	from './backToTop/BackToTop';
+import ArrowDown          	from './arrowDown/ArrowDown';
+import WizardMotion       	from './wizardMotion/WizardMotion';
+import Hero  				from './hero/Hero';
+import DesignThinking       from './designThinking/DesignThinking';
+import DesignSprint         from './designSprint/DesignSprint';
+import InnovationServices   from './innovationServices/InnovationServices';
+import DesignDevelopment   from './designDevelopment/DesignDevelopment';
+import ButtonSmall          from './buttonSmall/ButtonSmall';
+
+
+
 
 export {
-  Jumbotron,
+  MainContainer,
   NavigationBar,
   BackToTop,
-  WizardMotion
+  WizardMotion,
+  Hero,
+  DesignThinking,
+  ButtonSmall,
+  ArrowDown,
+  DesignSprint,
+  InnovationServices,
+  DesignDevelopment
 };

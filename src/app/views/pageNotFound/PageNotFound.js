@@ -2,7 +2,7 @@ import React, {
   Component
 }                     from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
-import {Jumbotron}    from '../../components';
+import {MainContainer}    from '../../components';
 
 class PageNotFound extends Component {
 

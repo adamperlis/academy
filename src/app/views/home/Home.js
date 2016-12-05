@@ -2,10 +2,18 @@ import React, {
   Component,
   PropTypes
 }                     from 'react';
-import {Jumbotron}    from '../../components';
 import cx             from 'classnames';
 import shallowCompare from 'react-addons-shallow-compare';
 import { Link }       from 'react-router';
+import ReactDOM from 'react-dom';
+import {Hero}    from '../../components';
+import {DesignThinking}    from '../../components';
+import {DesignSprint}    from '../../components';
+import {InnovationServices}    from '../../components';
+import {DesignDevelopment}    from '../../components';
+
+
+
 
 class Home extends Component {
 
@@ -37,30 +45,11 @@ class Home extends Component {
           'animatedViews': animated,
           'view-enter': viewEntersAnim
         })}>
-        <Jumbotron>
-          <h1>
-            Full ES2015 ReactJS + Bootstrap
-          </h1>
-          <h2>
-            with Hot Reload!!!
-          </h2>
-          <h2>
-            with React Router (SPA)
-          </h2>
-          <h1>
-            Starter
-          </h1>
-          <h1></h1>
-          <p>
-            <Link
-              className="btn btn-success btn-lg"
-              to={'/about'}>
-              <i className="fa fa-info"></i>
-              &nbsp;
-              go to about
-            </Link>
-          </p>
-        </Jumbotron>
+          <Hero />
+          <DesignThinking />
+          <DesignSprint />
+          <InnovationServices />
+          <DesignDevelopment />
       </div>
     );
   }

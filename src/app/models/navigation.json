@@ -1,13 +1,13 @@
-{
-  "brand":      "React Redux Bootstrap Starter",
-  "leftLinks":  [],
-  "rightLinks": [
+{ 
+  "leftLinks":  [
     {
-      "label":      "Home",
+      "label":      "Academy",
       "link":       "/",
       "view":       "home",
       "isRouteBtn": true
-    },
+    }
+  ],
+  "rightLinks": [
     {
       "label":      "Components",
       "link":       "/components",

@@ -28,8 +28,7 @@ class App extends Component {
           handleLeftNavItemClick={this.handleLeftNavItemClick}
           handleRightNavItemClick={this.handleRightNavItemClick}
         />
-      <h1>
-      </h1>
+
         <div className="container-fluid">
           {children}
         </div>

@@ -5,27 +5,21 @@ import RightNav           from './rightNav/RightNav';
 
 const NavigationBar = ({brand, navModel, handleLeftNavItemClick, handleRightNavItemClick}) => {
   return (
-    <nav className="navbar navbar-default">
+    <nav className="navbar navbar-default navbar-fixed-top">
       <div className="containersCustom">
         <div className="navbar-header">
           {
             <Humburger />
           }
-          <a className="navbar-brand">
-            {brand}
-          </a>
+            <LeftNav
+              leftLinks={navModel.leftLinks}
+              onLeftNavButtonClick={handleLeftNavItemClick}
+            />
         </div>
         <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1">
-          <ul className="nav navbar-nav">
-            {
-              <LeftNav
-                leftLinks={navModel.leftLinks}
-                onLeftNavButtonClick={handleLeftNavItemClick}
-              />
-            }
-          </ul>
+          
           <ul className="nav navbar-nav navbar-right">
             {
               <RightNav

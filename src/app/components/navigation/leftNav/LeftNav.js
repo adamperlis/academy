@@ -3,7 +3,7 @@ import LeftNavButton        from './leftNavButton/LeftNavButton';
 
 const LeftNav = ({ leftLinks, onLeftNavButtonClick }) => {
   return (
-    <ul className="nav navbar-nav">
+    <div className="navbar-brand">
       {
         leftLinks.map(
           (aLinkBtn, index) => {
@@ -19,7 +19,7 @@ const LeftNav = ({ leftLinks, onLeftNavButtonClick }) => {
           }
         )
       }
-    </ul>
+    </div>
   );
 };
 
