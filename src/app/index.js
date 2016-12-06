@@ -2,7 +2,6 @@ import React                from 'react';
 import ReactDOM             from 'react-dom';
 import injectTpEventPlugin  from 'react-tap-event-plugin';
 import { Routes }           from './routes/Route';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import 'babel-polyfill';
 import 'animate.css';
@@ -12,8 +11,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './style/index.style.scss';
-import 'react-toolbox';
-import update from 'immutability-helper';
 
 
 

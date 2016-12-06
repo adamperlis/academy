@@ -13,7 +13,7 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import {
   App,
   ConnectedHome,
-  ConnectedAbout,
+  ConnectedWhatIsDesignThinking,
   ConnectedComponents
 }                               from '../containers';
 import {
@@ -33,7 +33,7 @@ export const Routes = () => {
           <Route path="/" component={App} >
             <IndexRoute component={ConnectedHome} />
             <Route path="/components" component={ConnectedComponents} />
-            <Route path="/about" component={ConnectedAbout} />
+            <Route path="/WhatIsDesignThinking" component={ConnectedWhatIsDesignThinking} />
             <Route path="*" component={PageNotFound} />
           </Route>
         </Router>

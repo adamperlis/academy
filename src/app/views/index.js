@@ -1,10 +1,10 @@
-import About        from './about/About';
+import WhatIsDesignThinking        from './whatIsDesignThinking/WhatIsDesignThinking';
 import Home         from './home/Home';
 import Components   from './components/Components';
 import PageNotFound from './pageNotFound/PageNotFound';
 
 export {
-  About,
+  WhatIsDesignThinking,
   Home,
   Components,
   PageNotFound

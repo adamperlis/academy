@@ -1,11 +1,11 @@
 import App                  from './app/App';
 import ConnectedHome        from './home/Home';
-import ConnectedAbout       from './about/About';
+import ConnectedWhatIsDesignThinking       from './whatIsDesignThinking/WhatIsDesignThinking';
 import ConnectedComponents  from './components/Components';
 
 export {
   App,
   ConnectedHome,
   ConnectedComponents,
-  ConnectedAbout
+  ConnectedWhatIsDesignThinking
 };

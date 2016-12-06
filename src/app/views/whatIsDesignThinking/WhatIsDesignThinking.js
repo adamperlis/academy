@@ -5,7 +5,7 @@ import React, {
 import cx             from 'classnames';
 import shallowCompare from 'react-addons-shallow-compare';
 
-class About extends Component {
+class WhatIsDesignThinking extends Component {
 
   state = {
     animated: true,
@@ -42,10 +42,10 @@ class About extends Component {
   }
 }
 
-About.propTypes= {
+WhatIsDesignThinking.propTypes= {
   currentView:  PropTypes.string.isRequired,
   enterAbout:   PropTypes.func.isRequired,
   leaveAbout:   PropTypes.func.isRequired
 };
 
-export default About;
+export default WhatIsDesignThinking;

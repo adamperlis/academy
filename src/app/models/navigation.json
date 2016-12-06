@@ -15,9 +15,9 @@
       "isRouteBtn": true
     },
     {
-      "label":      "About",
-      "link":       "/about",
-      "view":       "about",
+      "label":      "What is Design Thinking?",
+      "link":       "/WhatIsDesignThinking",
+      "view":       "WhatIsDesignThinking",
       "isRouteBtn": true
     }
   ]

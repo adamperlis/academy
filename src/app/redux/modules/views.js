@@ -100,7 +100,7 @@ export function leaveComponents(time = moment().format(dateFormat)) {
 export function enterAbout(time = moment().format(dateFormat)) {
   return {
     type:         ENTER_ABOUT_VIEW,
-    currentView:  'about',
+    currentView:  'whatIsDesignThinking',
     enterTime:    time,
     leaveTime:    null
   };
@@ -109,7 +109,7 @@ export function enterAbout(time = moment().format(dateFormat)) {
 export function leaveAbout(time = moment().format(dateFormat)) {
   return {
     type:         LEAVE_ABOUT_VIEW,
-    currentView:  'about',
+    currentView:  'WhatIsDesignThinking',
     enterTime:    null,
     leaveTime:    time
   };
