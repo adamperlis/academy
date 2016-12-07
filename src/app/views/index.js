@@ -1,11 +1,14 @@
-import WhatIsDesignThinking        from './whatIsDesignThinking/WhatIsDesignThinking';
-import Home         from './home/Home';
-import Components   from './components/Components';
-import PageNotFound from './pageNotFound/PageNotFound';
+
+import Home         			from './home/Home';
+import Components   			from './components/Components';
+import PageNotFound 			from './pageNotFound/PageNotFound';
+import WhatIsDesignThinking     from './whatIsDesignThinking/WhatIsDesignThinking';
+import ProductDesign        	from './productDesign/ProductDesign';
 
 export {
-  WhatIsDesignThinking,
   Home,
   Components,
-  PageNotFound
+  PageNotFound,
+  WhatIsDesignThinking,
+  ProductDesign
 };

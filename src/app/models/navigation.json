@@ -19,6 +19,12 @@
       "link":       "/WhatIsDesignThinking",
       "view":       "WhatIsDesignThinking",
       "isRouteBtn": true
+    },
+    {
+      "label":      "Product Design & Development",
+      "link":       "/ProductDesign",
+      "view":       "ProductDesign",
+      "isRouteBtn": true
     }
   ]
 }

@@ -8,8 +8,10 @@ const ENTER_HOME_VIEW  = 'ENTER_HOME_VIEW';
 const LEAVE_HOME_VIEW  = 'LEAVE_HOME_VIEW';
 const ENTER_COMPONENTS_VIEW = 'ENTER_COMPONENTS_VIEW';
 const LEAVE_COMPONENTS_VIEW = 'LEAVE_COMPONENTS_VIEW';
-const ENTER_ABOUT_VIEW = 'ENTER_ABOUT_VIEW';
-const LEAVE_ABOUT_VIEW = 'LEAVE_ABOUT_VIEW';
+const ENTER_WHATISDESIGNTHINKING_VIEW = 'ENTER_WHATISDESIGNTHINKING_VIEW';
+const LEAVE_WHATISDESIGNTHINKING_VIEW = 'LEAVE_WHATISDESIGNTHINKING_VIEW';
+const ENTER_PRODUCTDESIGN_VIEW = 'ENTER_PRODUCTDESIGN_VIEW';
+const LEAVE_PRODUCTDESIGN_VIEW = 'LEAVE_PRODUCTDESIGN_VIEW';
 
 
 // /////////////////////
@@ -26,7 +28,8 @@ export default function (state = initialState, action) {
 
   case ENTER_HOME_VIEW:
   case ENTER_COMPONENTS_VIEW:
-  case ENTER_ABOUT_VIEW:
+  case ENTER_WHATISDESIGNTHINKING_VIEW:
+  case ENTER_PRODUCTDESIGN_VIEW:
     // can't enter if you are already inside
     if (state.currentView !== action.currentView) {
       return {
@@ -40,7 +43,8 @@ export default function (state = initialState, action) {
 
   case LEAVE_HOME_VIEW:
   case LEAVE_COMPONENTS_VIEW:
-  case LEAVE_ABOUT_VIEW:
+  case LEAVE_WHATISDESIGNTHINKING_VIEW:
+  case LEAVE_PRODUCTDESIGN_VIEW:
     // can't leave if you aren't already inside
     if (state.currentView === action.currentView) {
       return {
@@ -97,19 +101,37 @@ export function leaveComponents(time = moment().format(dateFormat)) {
   };
 }
 
-export function enterAbout(time = moment().format(dateFormat)) {
+export function enterWhatIsDesignThinking(time = moment().format(dateFormat)) {
   return {
-    type:         ENTER_ABOUT_VIEW,
+    type:         ENTER_WHATISDESIGNTHINKING_VIEW,
     currentView:  'whatIsDesignThinking',
     enterTime:    time,
     leaveTime:    null
   };
 }
 
-export function leaveAbout(time = moment().format(dateFormat)) {
+export function leaveWhatIsDesignThinking(time = moment().format(dateFormat)) {
   return {
-    type:         LEAVE_ABOUT_VIEW,
+    type:         LEAVE_WHATISDESIGNTHINKING_VIEW,
     currentView:  'WhatIsDesignThinking',
+    enterTime:    null,
+    leaveTime:    time
+  };
+}
+
+export function enterProductDesign(time = moment().format(dateFormat)) {
+  return {
+    type:         ENTER_PRODUCTDESIGN_VIEW,
+    currentView:  'ProductDesign',
+    enterTime:    time,
+    leaveTime:    null
+  };
+}
+
+export function leaveProductDesign(time = moment().format(dateFormat)) {
+  return {
+    type:         LEAVE_PRODUCTDESIGN_VIEW,
+    currentView:  'ProductDesign',
     enterTime:    null,
     leaveTime:    time
   };

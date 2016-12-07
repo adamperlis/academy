@@ -5,7 +5,7 @@ import React, {
 import cx             from 'classnames';
 import shallowCompare from 'react-addons-shallow-compare';
 
-class WhatIsDesignThinking extends Component {
+class ProductDesign extends Component {
 
   state = {
     animated: true,
@@ -35,18 +35,18 @@ class WhatIsDesignThinking extends Component {
           'view-enter': viewEntersAnim
         })}>
         <h1>
-          What is  
+          Product  
         </h1>
-        <h2>Design Thinking?</h2>
+        <h2>Design & Development</h2>
       </div>
     );
   }
 }
 
-WhatIsDesignThinking.propTypes= {
+ProductDesign.propTypes= {
   currentView:  PropTypes.string.isRequired,
-  enterAbout:   PropTypes.func.isRequired,
-  leaveAbout:   PropTypes.func.isRequired
+  enterWhatIsDesignThinking:   PropTypes.func.isRequired,
+  leaveWhatIsDesignThinking:   PropTypes.func.isRequired
 };
 
-export default WhatIsDesignThinking;
+export default ProductDesign;

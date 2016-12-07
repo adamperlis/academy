@@ -39,8 +39,19 @@
 	font-weight: bold;
 	line-height: 24px;
 	color: #000000;
-	text-decoration: none;
+	text-decoration: none !important;
 	letter-spacing: -.8px;
+	transition: .5s all;
+
+	&:hover, :active{
+		color:#6e66cb !important;
+	}
+
+	&:focus{
+		outline:none;
+    	color:black;
+	}
+
 }
 
 .btn{
@@ -55,6 +66,10 @@
 
 .hero{
 	margin-bottom:60px;
+}
+
+.product-design-hero{
+	background:#BC0566;
 }
 
 .design-thinking{

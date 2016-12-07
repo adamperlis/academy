@@ -1,11 +1,13 @@
-import App                  from './app/App';
-import ConnectedHome        from './home/Home';
-import ConnectedWhatIsDesignThinking       from './whatIsDesignThinking/WhatIsDesignThinking';
-import ConnectedComponents  from './components/Components';
+import App                  				from './app/App';
+import ConnectedHome        				from './home/Home';
+import ConnectedWhatIsDesignThinking       	from './whatIsDesignThinking/WhatIsDesignThinking';
+import ConnectedProductDesign       	from './productDesign/ProductDesign';
+import ConnectedComponents  				from './components/Components';
 
 export {
   App,
   ConnectedHome,
   ConnectedComponents,
-  ConnectedWhatIsDesignThinking
+  ConnectedWhatIsDesignThinking,
+  ConnectedProductDesign
 };
