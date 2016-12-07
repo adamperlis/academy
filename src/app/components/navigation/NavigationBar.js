@@ -6,6 +6,7 @@ import RightNav           from './rightNav/RightNav';
 const NavigationBar = ({brand, navModel, handleLeftNavItemClick, handleRightNavItemClick}) => {
   return (
     <nav className="navbar navbar-default navbar-fixed-top">
+      <div className="containersCustom">
         <div className="navbar-header">
           {
             <Humburger />
@@ -28,6 +29,7 @@ const NavigationBar = ({brand, navModel, handleLeftNavItemClick, handleRightNavI
             }
           </ul>
         </div>
+      </div>
     </nav>
   );
 };

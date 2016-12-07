@@ -1,8 +1,10 @@
 @import "./app.var.style";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display::400,400i|Raleway:400,700');
 
-body{
-	overflow: none !important;
+@grid-gutter-width:40px;
+
+.container-fluid{
+	margin-top:90px;
 }
 
 .containersCustom {
@@ -29,10 +31,6 @@ body{
 	border-bottom:1px solid #6D65CB;
 	background-color: #F9F9F9;
 	height:60px;
-}
-
-.navbar-fixed-top, .navbar-fixed-bottom {
-  position: relative; /* this can also be static */
 }
 
 .navbar-header a{

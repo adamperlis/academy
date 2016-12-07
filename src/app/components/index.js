@@ -9,7 +9,8 @@ import DesignSprint         from './designSprint/DesignSprint';
 import InnovationServices   from './innovationServices/InnovationServices';
 import DesignDevelopment    from './designDevelopment/DesignDevelopment';
 import ButtonSmall          from './buttonSmall/ButtonSmall';
-import BootstrapForm       from './bootstrapForm/BootstrapForm';
+import BootstrapForm        from './bootstrapForm/BootstrapForm';
+import Footer               from './footer/Footer';
 
 
 
@@ -27,5 +28,6 @@ export {
   DesignSprint,
   InnovationServices,
   DesignDevelopment,
-  BootstrapForm
+  BootstrapForm,
+  Footer
 };

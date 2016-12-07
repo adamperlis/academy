@@ -4,7 +4,8 @@ import React, {
 }                             from 'react';
 import {
   NavigationBar,
-  BackToTop
+  BackToTop,
+  Footer
 }                             from '../../components';
 import navigationModel        from '../../models/navigation.json';
 import { bindActionCreators } from 'redux';
@@ -31,6 +32,7 @@ class App extends Component {
 
         <div className="container-fluid">
           {children}
+          <Footer />
         </div>
         <BackToTop
           minScrollY={40}
