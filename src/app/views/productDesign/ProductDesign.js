@@ -45,8 +45,8 @@ class ProductDesign extends Component {
 
 ProductDesign.propTypes= {
   currentView:  PropTypes.string.isRequired,
-  enterWhatIsDesignThinking:   PropTypes.func.isRequired,
-  leaveWhatIsDesignThinking:   PropTypes.func.isRequired
+  enterProductDesing:   PropTypes.func.isRequired,
+  leaveProductDesing:   PropTypes.func.isRequired
 };
 
 export default ProductDesign;

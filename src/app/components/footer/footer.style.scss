@@ -11,6 +11,13 @@
 	color: #fff;
 	text-decoration: none;
 	letter-spacing: -.8px;
+
+	:focus, :hover{
+		outline:none !important;
+    	color:red !important;
+    	text-decoration: none !important;
+
+	}
 }
 
 ul{
@@ -36,5 +43,7 @@ ul{
 	font-size: 10px;
 	line-height: 14px;
 	color: #FFFFFF;
+	margin-left: 20px;
+    margin-right: 20px;
 }
 

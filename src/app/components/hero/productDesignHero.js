@@ -5,7 +5,7 @@ import { ArrowDown }    from '../../components';
 const Hero = (props) => {
   return (
  
-    <Row className="show-grid hero">
+    <Row className="show-grid product-design-hero">
     <Col xs={6}> 
   	
   	<h1>

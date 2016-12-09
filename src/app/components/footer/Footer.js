@@ -6,12 +6,13 @@ const Footer = (props) => {
   return (
  
     <Row className="show-grid black-footer">
+  
     <Col xs={6}> 
   	
     
       <Link
         className="logo"
-        to={'/home'}>
+        to={'/'}>
         Academy
       </Link>
 
@@ -42,14 +43,15 @@ const Footer = (props) => {
 
 
     </Col> 
-      <Grid>
+
+      
         <Row className="show-grid">
           <Col xs={12}> 
             <hr/>
             <p className="copyright">@2016 Academy by Design LLC. All Rights Reserved</p>
           </Col>
         </Row>
-      </Grid>
+      
     </Row>
     
     
