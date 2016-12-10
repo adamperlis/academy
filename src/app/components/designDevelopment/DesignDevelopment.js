@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import {ButtonSmall}    from '../../components';
+import { Link }       from 'react-router';
+
 
 const DesignDevelopment = (props) => {
   return (
@@ -19,7 +20,11 @@ const DesignDevelopment = (props) => {
     Our experienced team can help you design & build products from A-Z using Design Thinking Methodologies    </p>
     {props.children}
 
-    <ButtonSmall />
+     <Link
+        className="btn"
+        to={'/DesignDevelopment'}>
+        See How
+    </Link>
 
     </Col>
     <Col xs={6}><img src={require('../../images/productGraphic.svg')} width="100%" className=""/></Col> 

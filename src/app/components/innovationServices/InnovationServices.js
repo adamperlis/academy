@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import {ButtonSmall}    from '../../components';
+import { Link }       from 'react-router';
+
 
 const InnovationServices = (props) => {
   return (
@@ -25,7 +26,11 @@ const InnovationServices = (props) => {
     We will embed a team of people at your company and work with your management team to rapidly prototype and build products.    </p>
     {props.children}
 
-    <ButtonSmall />
+        <Link
+        className="btn"
+        to={'/InnovationServices'}>
+        Work With Us
+        </Link>
 
     </Col>
     </Row>

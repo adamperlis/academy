@@ -8,7 +8,7 @@ const ButtonSmall = (props) => {
 
 			<Link
               className="btn btn-primary btn-sm"
-              to={'/whatisdesignthinking'}>
+              to={'/InnovationServices'}>
               Read More
             </Link>
   );

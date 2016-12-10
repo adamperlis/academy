@@ -1,7 +1,6 @@
 import React, {PropTypes} from 'react';
 import cx from 'classnames';
 import { Grid, Row, Col } from 'react-bootstrap';
-import {ButtonSmall}    from '../../components';
 import { Link }       from 'react-router';
 import DesignThinkingGraphic from './DesignThinkingGraphic';
 

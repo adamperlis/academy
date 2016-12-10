@@ -1,8 +1,7 @@
 import { connect }            from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as viewsActions      from '../../redux/modules/views';
-import { WhatIsDesignThinking }              from '../../views';
-
+import { DesignSprint }         from '../../views';
 
 const mapStateToProps = (state) => {
   return {
@@ -13,8 +12,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(
     {
-      enterAbout: viewsActions.enterAbout,
-      leaveAbout: viewsActions.leaveAbout
+      enterDesignSprint: viewsActions.enterDesignSprint,
+      leaveDesignSprint: viewsActions.leaveDesignSprint
     },
     dispatch
   );
@@ -25,12 +24,12 @@ const mapDispatchToProps = (dispatch) => {
  */
 // const mapDispatchToProps = (dispatch) => {
 //   return {
-//     enterAbout: () => dispatch(viewsActions.enterAbout()),
-//     leaveAbout: () => dispatch(viewsActions.leaveAbout())
+//     enterComponents: () => dispatch(viewsActions.enterComponents()),
+//     leaveComponents: () => dispatch(viewsActions.leaveComponents())
 //   };
 // };
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-  )(WhatIsDesignThinking);
+  )(DesignSprint);

@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
-import {ButtonSmall}    from '../../components';
+import { Link }       from 'react-router';
+
 
 const DesignSprint = (props) => {
   return (
@@ -20,7 +21,11 @@ const DesignSprint = (props) => {
     </p>
     {props.children}
 
-    <ButtonSmall />
+     <Link
+        className="btn"
+        to={'/DesignSprint'}>
+        See Options
+        </Link>
 
     </Col>
     <Col xs={6}></Col> 

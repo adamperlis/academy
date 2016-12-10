@@ -8,7 +8,7 @@ import {
   WizardMotion
 }                     from '../../components';
 
-class Components extends Component {
+class DesignSprint extends Component {
 
   state = {
     animated: true,
@@ -16,8 +16,8 @@ class Components extends Component {
   };
 
   componentDidMount() {
-    const { enterComponents } =  this.props;
-    enterComponents();
+    const { enterDesignSprint } =  this.props;
+    enterDesignSprint();
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -25,8 +25,8 @@ class Components extends Component {
   }
 
   componentWillUnmount() {
-    const { leaveComponents } =  this.props;
-    leaveComponents();
+    const { DesignSprintComponents } =  this.props;
+    leaveDesignSprint();
   }
 
   render() {
@@ -38,40 +38,18 @@ class Components extends Component {
           'view-enter': viewEntersAnim
         })}>
         <h1>
-          Components
+          Design Sprint  
         </h1>
-        <div className="row">
-          <div className="col-md-12">
-            <h1>
-              Motion wizard:
-            </h1>
-            <WizardMotion
-              width={500}
-              height={400}
-              horizontalCentered={true}
-              initialStep={1}
-              steps={[{id: 1, backColor: '#3498DB'}, {id: 2, backColor: '#66CC99'}]}
-            />
-          </div>
-        </div>
-        <div style={{backgroundColor: '#F1F1F1F1', height: 1200}}>
-          <h2>
-            <strong>
-              TODO:
-            </strong>
-            &nbsp;
-            List of Components to add
-          </h2>
-        </div>
+        <h2>Academy</h2>
       </div>
     );
   }
 }
 
-Components.propTypes = {
+DesignSprint.propTypes = {
   currentView: PropTypes.string.isRequired,
   enterComponents: PropTypes.func.isRequired,
   leaveComponents: PropTypes.func.isRequired
 };
 
-export default Components;
+export default DesignSprint;

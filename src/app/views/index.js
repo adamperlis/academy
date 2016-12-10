@@ -1,14 +1,14 @@
 
 import Home         			from './home/Home';
-import Components   			from './components/Components';
+import DesignSprint   			from './designSprint/DesignSprint';
 import PageNotFound 			from './pageNotFound/PageNotFound';
-import WhatIsDesignThinking     from './whatIsDesignThinking/WhatIsDesignThinking';
+import InnovationServices     from './innovationServices/InnovationServices';
 import ProductDesign        	from './productDesign/ProductDesign';
 
 export {
   Home,
-  Components,
+  DesignSprint,
   PageNotFound,
-  WhatIsDesignThinking,
+  InnovationServices,
   ProductDesign
 };

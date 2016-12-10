@@ -6,10 +6,10 @@ const dateFormat = 'DD/MM/YYYY HH:mm';
 // /////////////////////
 const ENTER_HOME_VIEW  = 'ENTER_HOME_VIEW';
 const LEAVE_HOME_VIEW  = 'LEAVE_HOME_VIEW';
-const ENTER_COMPONENTS_VIEW = 'ENTER_COMPONENTS_VIEW';
-const LEAVE_COMPONENTS_VIEW = 'LEAVE_COMPONENTS_VIEW';
-const ENTER_WHATISDESIGNTHINKING_VIEW = 'ENTER_WHATISDESIGNTHINKING_VIEW';
-const LEAVE_WHATISDESIGNTHINKING_VIEW = 'LEAVE_WHATISDESIGNTHINKING_VIEW';
+const ENTER_DESIGNSPRINT_VIEW = 'ENTER_DESIGNSPRINT_VIEW';
+const LEAVE_DESIGNSPRINT_VIEW = 'LEAVE_DESIGNSPRINT_VIEW';
+const ENTER_INNOVATIONSERVICES_VIEW = 'ENTER_WHATISDESIGNTHINKING_VIEW';
+const LEAVE_INNOVATIONSERVICES_VIEW = 'LEAVE_WHATISDESIGNTHINKING_VIEW';
 const ENTER_PRODUCTDESIGN_VIEW = 'ENTER_PRODUCTDESIGN_VIEW';
 const LEAVE_PRODUCTDESIGN_VIEW = 'LEAVE_PRODUCTDESIGN_VIEW';
 
@@ -27,8 +27,8 @@ export default function (state = initialState, action) {
   switch (action.type) {
 
   case ENTER_HOME_VIEW:
-  case ENTER_COMPONENTS_VIEW:
-  case ENTER_WHATISDESIGNTHINKING_VIEW:
+  case ENTER_DESIGNSPRINT_VIEW:
+  case ENTER_INNOVATIONSERVICES_VIEW:
   case ENTER_PRODUCTDESIGN_VIEW:
     // can't enter if you are already inside
     if (state.currentView !== action.currentView) {
@@ -42,8 +42,8 @@ export default function (state = initialState, action) {
     return state;
 
   case LEAVE_HOME_VIEW:
-  case LEAVE_COMPONENTS_VIEW:
-  case LEAVE_WHATISDESIGNTHINKING_VIEW:
+  case LEAVE_DESIGNSPRINT_VIEW:
+  case LEAVE_INNOVATIONSERVICES_VIEW:
   case LEAVE_PRODUCTDESIGN_VIEW:
     // can't leave if you aren't already inside
     if (state.currentView === action.currentView) {
@@ -83,37 +83,37 @@ export function leaveHome(time = moment().format(dateFormat)) {
   };
 }
 
-export function enterComponents(time = moment().format(dateFormat)) {
+export function enterDesignSprint(time = moment().format(dateFormat)) {
   return {
-    type:         ENTER_COMPONENTS_VIEW,
-    currentView:  'components',
+    type:         ENTER_DESIGNSPRINT_VIEW,
+    currentView:  'designSprint',
     enterTime:    time,
     leaveTime:    null
   };
 }
 
-export function leaveComponents(time = moment().format(dateFormat)) {
+export function leaveDesignSprint(time = moment().format(dateFormat)) {
   return {
-    type:         LEAVE_COMPONENTS_VIEW,
-    currentView:  'components',
+    type:         LEAVE_DESIGNSPRINT_VIEW,
+    currentView:  'designSprint',
     enterTime:    null,
     leaveTime:    time
   };
 }
 
-export function enterWhatIsDesignThinking(time = moment().format(dateFormat)) {
+export function enterInnovationServices(time = moment().format(dateFormat)) {
   return {
-    type:         ENTER_WHATISDESIGNTHINKING_VIEW,
-    currentView:  'whatIsDesignThinking',
+    type:         ENTER_INNOVATIONSERVICES_VIEW,
+    currentView:  'innovationServices',
     enterTime:    time,
     leaveTime:    null
   };
 }
 
-export function leaveWhatIsDesignThinking(time = moment().format(dateFormat)) {
+export function leaveInnovationServices(time = moment().format(dateFormat)) {
   return {
-    type:         LEAVE_WHATISDESIGNTHINKING_VIEW,
-    currentView:  'WhatIsDesignThinking',
+    type:         LEAVE_INNOVATIONSERVICES_VIEW,
+    currentView:  'innovationServices',
     enterTime:    null,
     leaveTime:    time
   };

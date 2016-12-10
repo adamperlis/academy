@@ -9,15 +9,15 @@
   ],
   "rightLinks": [
     {
-      "label":      "Components",
-      "link":       "/components",
-      "view":       "components",
+      "label":      "Design Sprint Academy",
+      "link":       "/DesignSprint",
+      "view":       "DesignSprint",
       "isRouteBtn": true
     },
     {
-      "label":      "What is Design Thinking?",
-      "link":       "/WhatIsDesignThinking",
-      "view":       "WhatIsDesignThinking",
+      "label":      "Innovation Services",
+      "link":       "/InnovationServices",
+      "view":       "InnovationServices",
       "isRouteBtn": true
     },
     {

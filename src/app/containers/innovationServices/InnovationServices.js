@@ -1,7 +1,8 @@
 import { connect }            from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as viewsActions      from '../../redux/modules/views';
-import { Components }         from '../../views';
+import { InnovationServices }              from '../../views';
+
 
 const mapStateToProps = (state) => {
   return {
@@ -12,8 +13,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(
     {
-      enterComponents: viewsActions.enterComponents,
-      leaveComponents: viewsActions.leaveComponents
+      enterInnovationServices: viewsActions.enterInnovationServices,
+      leaveInnovationServices: viewsActions.leaveInnovationServices
     },
     dispatch
   );
@@ -24,12 +25,12 @@ const mapDispatchToProps = (dispatch) => {
  */
 // const mapDispatchToProps = (dispatch) => {
 //   return {
-//     enterComponents: () => dispatch(viewsActions.enterComponents()),
-//     leaveComponents: () => dispatch(viewsActions.leaveComponents())
+//     enterAbout: () => dispatch(viewsActions.enterAbout()),
+//     leaveAbout: () => dispatch(viewsActions.leaveAbout())
 //   };
 // };
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-  )(Components);
+  )(InnovationServices);

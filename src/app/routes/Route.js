@@ -13,9 +13,9 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import {
   App,
   ConnectedHome,
-  ConnectedWhatIsDesignThinking,
+  ConnectedInnovationServices,
   ConnectedProductDesign,
-  ConnectedComponents
+  ConnectedDesignSprint
 }                               from '../containers';
 import {
   PageNotFound
@@ -33,8 +33,8 @@ export const Routes = () => {
         <Router history={syncedHistory}>
           <Route path="/" component={App} >
             <IndexRoute component={ConnectedHome} />
-            <Route path="/components" component={ConnectedComponents} />
-            <Route path="/WhatIsDesignThinking" component={ConnectedWhatIsDesignThinking} />
+            <Route path="/designSprint" component={ConnectedDesignSprint} />
+            <Route path="/InnovationServices" component={ConnectedInnovationServices} />
             <Route path="/ProductDesign" component={ConnectedProductDesign} />
             <Route path="*" component={PageNotFound} />
           </Route>
