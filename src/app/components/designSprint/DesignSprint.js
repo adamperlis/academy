@@ -1,7 +1,6 @@
 import React, {PropTypes} from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import {ButtonSmall}    from '../../components';
-var imgSrc = '/images/sprinter.png';
 
 const DesignSprint = (props) => {
   return (
@@ -25,10 +24,15 @@ const DesignSprint = (props) => {
 
     </Col>
     <Col xs={6}></Col> 
-
-    <div>
-        <img src={imgSrc} width="100%" className="img-responsive"/>
-    </div>
+        <Grid>
+        <Row className="show-grid">
+            <Col xs={12}> 
+            <div>
+                <img src={require('../../images/sprinter.png')} width="100%" className="img-responsive"/>
+            </div>
+            </Col> 
+        </Row>
+        </Grid>
     </Row>
 
     );

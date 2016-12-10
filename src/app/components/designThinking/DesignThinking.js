@@ -1,12 +1,15 @@
 import React, {PropTypes} from 'react';
+import cx from 'classnames';
 import { Grid, Row, Col } from 'react-bootstrap';
 import {ButtonSmall}    from '../../components';
+import { Link }       from 'react-router';
+import DesignThinkingGraphic from './DesignThinkingGraphic';
 
 const DesignThinking = (props) => {
   return (
 
     <Row className="show-grid design-thinking">
-    <Col xs={5}></Col> 
+    <Col xs={5}><DesignThinkingGraphic /></Col> 
     <Col xs={7}> 
 
     <h3>
@@ -21,7 +24,11 @@ const DesignThinking = (props) => {
     </p>
     {props.children}
 
-    <ButtonSmall />
+    <Link
+        className="btn"
+        to={'#'}>
+        See Video
+    </Link>
 
     </Col>
     </Row>
