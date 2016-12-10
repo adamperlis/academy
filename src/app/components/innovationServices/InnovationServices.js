@@ -6,7 +6,12 @@ const InnovationServices = (props) => {
   return (
 
     <Row className="show-grid innovation-services">
-    <Col xs={4}></Col> 
+    <Col xs={4}>
+        <div className="triangle"></div>
+        <div className="square-one"></div>
+        <div className="square-two"></div>
+        <img src={require('../../images/InnovationServicesGraphic.svg')} width="100%" className=""/>
+    </Col> 
     <Col xs={8}> 
 
     <h3>

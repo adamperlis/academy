@@ -22,7 +22,7 @@ const DesignDevelopment = (props) => {
     <ButtonSmall />
 
     </Col>
-    <Col xs={6}></Col> 
+    <Col xs={6}><img src={require('../../images/productGraphic.svg')} width="100%" className=""/></Col> 
 
 
     </Row>

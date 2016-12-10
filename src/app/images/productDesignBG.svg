@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="2066px" viewBox="0 0 1440 2066" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>productDesignBG</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="2066"></rect>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="productDesignBG">
+            <g id="Group-12">
+                <g id="Page-1">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#DE2484" xlink:href="#path-1"></use>
+                    <g style="mix-blend-mode: lighten;" mask="url(#mask-2)">
+                        <g transform="translate(-1.956522, 0.000000)">
+                            <polygon id="Fill-1" fill="#000000" points="0 734.565587 486.836677 734.565587 486.836677 0 0 0"></polygon>
+                            <polygon id="Fill-2" fill="#1A1A1A" points="0 1037.66304 486.836677 1037.66304 486.836677 303.097451 0 303.097451"></polygon>
+                            <polygon id="Fill-3" fill="#333333" points="0 1337.19464 486.836677 1337.19464 486.836677 602.629049 0 602.629049"></polygon>
+                            <polygon id="Fill-4" fill="#4D4D4D" points="0 1636.72623 486.836677 1636.72623 486.836677 902.160648 0 902.160648"></polygon>
+                            <polygon id="Fill-5" fill="#666666" points="0 1939.82369 486.836677 1939.82369 486.836677 1205.2581 0 1205.2581"></polygon>
+                            <polygon id="Fill-6" fill="#808080" points="0 2239.35528 486.836677 2239.35528 486.836677 1504.79326 0 1504.79326"></polygon>
+                            <polygon id="Fill-7" fill="#999999" points="0 2542.45273 486.836677 2542.45273 486.836677 1804.3213 0 1804.3213"></polygon>
+                            <polygon id="Fill-11" fill="#1A1A1A" points="484.484809 734.565587 971.321486 734.565587 971.321486 0 484.484809 0"></polygon>
+                            <polygon id="Fill-12" fill="#323232" points="484.484809 1037.66304 971.321486 1037.66304 971.321486 303.097451 484.484809 303.097451"></polygon>
+                            <polygon id="Fill-13" fill="#4A4A4A" points="484.484809 1337.19464 971.321486 1337.19464 971.321486 602.629049 484.484809 602.629049"></polygon>
+                            <polygon id="Fill-14" fill="#626262" points="484.484809 1636.72623 971.321486 1636.72623 971.321486 902.160648 484.484809 902.160648"></polygon>
+                            <polygon id="Fill-15" fill="#7A7A7A" points="484.484809 1939.82369 971.321486 1939.82369 971.321486 1205.2581 484.484809 1205.2581"></polygon>
+                            <polygon id="Fill-16" fill="#929292" points="484.484809 2239.35528 971.321486 2239.35528 971.321486 1504.7897 484.484809 1504.7897"></polygon>
+                            <polygon id="Fill-17" fill="#AAAAAA" points="484.484809 2542.45273 971.321486 2542.45273 971.321486 1804.3213 484.484809 1804.3213"></polygon>
+                            <polygon id="Fill-21" fill="#333333" points="968.969618 734.565587 1455.80629 734.565587 1455.80629 0 968.969618 0"></polygon>
+                            <polygon id="Fill-22" fill="#494949" points="968.969618 1037.66304 1455.80629 1037.66304 1455.80629 303.097451 968.969618 303.097451"></polygon>
+                            <polygon id="Fill-23" fill="#5F5F5F" points="968.969618 1337.19464 1455.80629 1337.19464 1455.80629 602.629049 968.969618 602.629049"></polygon>
+                            <polygon id="Fill-24" fill="#757575" points="968.969618 1636.72623 1455.80629 1636.72623 1455.80629 902.160648 968.969618 902.160648"></polygon>
+                            <polygon id="Fill-25" fill="#8B8B8B" points="968.969618 1939.82369 1455.80629 1939.82369 1455.80629 1205.2581 968.969618 1205.2581"></polygon>
+                            <polygon id="Fill-26" fill="#A1A1A1" points="968.969618 2239.35528 1455.80629 2239.35528 1455.80629 1504.79326 968.969618 1504.79326"></polygon>
+                            <polygon id="Fill-27" fill="#B7B7B7" points="968.969618 2542.45273 1455.80629 2542.45273 1455.80629 1804.3213 968.969618 1804.3213"></polygon>
+                            <rect id="Rectangle-3" fill-opacity="0.300000012" fill="#FFE2BA" x="0" y="0" width="1461.79453" height="2066"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

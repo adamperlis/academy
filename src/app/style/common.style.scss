@@ -83,7 +83,7 @@ a:hover, a:focus, a:visited{
 }
 
 .design-thinking{
-	padding-top:30px;
+	padding-top:40px;
 	padding-bottom: 200px;
 	background:#FAFAFA;
 
@@ -152,10 +152,10 @@ a:hover, a:focus, a:visited{
 }
 
 .design-sprint{
-   	padding-top: 30px;
+   	padding-top: 40px;
     background: #6e66cb;
     height: 477px;
-    margin-bottom: 182px;
+    margin-bottom: 222px;
 
     img{
    	mix-blend-mode: hard-light;
@@ -217,9 +217,8 @@ a:hover, a:focus, a:visited{
 }
 
 .innovation-services{
-	padding-top:30px;
-	padding-bottom: 200px;
-	background:#FAFAFA;
+	padding-top:60px;
+	height: 667px;
 
 	h3 {
 	font-family: "Playfair Display", serif;
@@ -273,12 +272,55 @@ a:hover, a:focus, a:visited{
 	float:right !important;
 	border: 1px solid #FF0084;
 	}
+
+	.triangle{
+	width: 490px;
+    height: 641px;
+    background: #E1E2E4;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    position: absolute;
+    top: -50px;
+    left: 0px;
+	}
+
+	.square-one{
+	width: 445px;
+    height: 641px;
+    background: #FFE2BA;
+    position: absolute;
+    top: -80px;
+    right: -627px;
+    z-index: -1;
+	}
+
+	.square-two{
+	width: 445px;
+    height: 641px;
+    background: #293890;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    z-index: -2;
+	}
+
+	img{
+	transform: scale(7.3);
+    top: 446px;
+    left: 130px;
+    position: relative;
+    width: 83px;
+	}
+
 }
 
 .design-development{
-	padding-top:30px;
-	padding-bottom: 200px;
-	background: #BE0263;
+	padding-top:40px;
+	height: 641px;
+	z-index: 3;
+    position: relative;
+    background:url("../images/productDesignBG.svg");
+    background-size: 641px;
 
 	h3 {
 	font-family: "Playfair Display", serif;
@@ -331,5 +373,13 @@ a:hover, a:focus, a:visited{
 	letter-spacing: 1px;
 	float:left !important;
 	border: 1px solid #FF0084;
+	}
+
+	img{
+	transform: scale(5);
+    right: -240px;
+    position: relative;
+    bottom: -350px;
+    mix-blend-mode: multiply;
 	}
 }
