@@ -13,7 +13,7 @@ class ProductDesign extends Component {
   };
 
   componentDidMount() {
-    const { enterAbout } = this.props;
+    const { enterProductDesign } = this.props;
     enterAbout();
   }
 
@@ -22,8 +22,8 @@ class ProductDesign extends Component {
   }
 
   componentWillUnmount() {
-    const { leaveAbout } = this.props;
-    leaveAbout();
+    const { leaveProductDesign } = this.props;
+    leaveProductDesign();
   }
 
   render() {
@@ -45,8 +45,8 @@ class ProductDesign extends Component {
 
 ProductDesign.propTypes= {
   currentView:  PropTypes.string.isRequired,
-  enterProductDesing:   PropTypes.func.isRequired,
-  leaveProductDesing:   PropTypes.func.isRequired
+  enterProductDesign:   PropTypes.func.isRequired,
+  leaveProductDesign:   PropTypes.func.isRequired
 };
 
 export default ProductDesign;

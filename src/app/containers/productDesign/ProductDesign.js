@@ -13,22 +13,12 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(
     {
-      enterAbout: viewsActions.enterAbout,
-      leaveAbout: viewsActions.leaveAbout
+      enterProductDesign: viewsActions.enterAbout,
+      leaveProductDesign: viewsActions.leaveAbout
     },
     dispatch
   );
 };
-
-/*
-  without bindActionCreators:
- */
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     enterAbout: () => dispatch(viewsActions.enterAbout()),
-//     leaveAbout: () => dispatch(viewsActions.leaveAbout())
-//   };
-// };
 
 export default connect(
     mapStateToProps,

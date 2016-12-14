@@ -11,6 +11,7 @@ import DesignDevelopment    from './designDevelopment/DesignDevelopment';
 import ButtonSmall          from './buttonSmall/ButtonSmall';
 import BootstrapForm        from './bootstrapForm/BootstrapForm';
 import Footer               from './footer/Footer';
+import Form                 from './form/Form';
 
 
 
@@ -29,5 +30,6 @@ export {
   InnovationServices,
   DesignDevelopment,
   BootstrapForm,
-  Footer
+  Footer,
+  Form
 };

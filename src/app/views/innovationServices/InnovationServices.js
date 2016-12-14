@@ -4,6 +4,7 @@ import React, {
 }                     from 'react';
 import cx             from 'classnames';
 import shallowCompare from 'react-addons-shallow-compare';
+import { Form }    from '../../components';
 
 class InnovationServices extends Component {
 
@@ -13,8 +14,8 @@ class InnovationServices extends Component {
   };
 
   componentDidMount() {
-    const { enterAbout } = this.props;
-    enterAbout();
+    const { enterInnovationServices } = this.props;
+    enterInnovationServices();
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -22,7 +23,7 @@ class InnovationServices extends Component {
   }
 
   componentWillUnmount() {
-    const { leaveAbout } = this.props;
+    const { leaveInnovationServices } = this.props;
     leaveAbout();
   }
 
@@ -38,6 +39,7 @@ class InnovationServices extends Component {
           Innovation  
         </h1>
         <h2>Services</h2>
+        <Form />
       </div>
     );
   }
@@ -45,8 +47,8 @@ class InnovationServices extends Component {
 
 InnovationServices.propTypes= {
   currentView:  PropTypes.string.isRequired,
-  enterAbout:   PropTypes.func.isRequired,
-  leaveAbout:   PropTypes.func.isRequired
+  enterInnovationServices:   PropTypes.func.isRequired,
+  leaveInnovationServices:   PropTypes.func.isRequired
 };
 
 export default InnovationServices;
