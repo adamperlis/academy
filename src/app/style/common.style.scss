@@ -1,4 +1,5 @@
 @import "./app.var.style";
+@import "./fonts.style";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display::400,400i|Raleway:400,700');
 
 a:hover, a:focus, a:visited{
@@ -82,6 +83,185 @@ a:hover, a:focus, a:visited{
 
 .product-design-hero{
 	background:#BC0566;
+}
+
+.sprint-academy.hero{
+	background: #6D65CB;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h1, h2 {
+    color:white;
+    }
+
+    .btn {
+	background-color: #FF0084;
+	border-radius:100px;
+	border:none;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 11px;
+	text-align: center;
+	text-align: center;
+	line-height: 16px;
+	color: #FFFFFF;
+	padding: 16px 30px;
+	margin-top: 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	float:left !important;
+	border: 1px solid #FF0084;
+	}
+}
+
+.sprint-academy.what-is{
+	padding-top:40px;
+	background:white;
+
+	h3 {
+	font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+    text-align: right;
+	}
+
+	h4{
+	font-family: 'Montsterrat', sans-serif;
+	font-size: 30px;
+	color: #000000;
+	font-weight: bold;
+	letter-spacing: -.8px;
+	line-height: 30px;
+	margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+	}
+
+	.subhead {
+	font-family: Raleway;
+	font-size: 13px;
+	line-height: 15px;
+	color: #000000;
+	margin-top:20px;
+	margin-bottom:30px;
+	text-align: right;
+	}
+
+	ul{padding:0;}
+
+	li{
+
+		padding-bottom:20px;
+
+		img{
+			float: left;
+		}
+
+		p{
+		font-family: Montserrat;
+		font-size: 13px;
+		line-height: 16px;
+		color: #000000;
+		text-transform: uppercase;
+		padding-left: 60px;
+		padding-top: 6px;
+		}
+	}
+
+	.panel-group .panel {
+    	margin-bottom: 0;
+    	border-radius: 0px;
+    	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	}
+
+	.panel-heading{
+		padding:0;
+	}
+
+	.panel {
+	    margin-bottom: 20px;
+	    background-color: white;
+	    border: none;
+	    border-radius: 0px;
+	    box-shadow: 0 0px 0px rgba(0,0,0,0);
+
+		.panel-title a:before {
+  			content: "\45";
+    		font-family: 'Academy';
+    		speak: none;
+    		padding-right: 10px;
+    		font-size: 20px;
+    		color:#6D65CB;
+    		vertical-align: -15%;
+		}
+
+		.panel-title a:after {
+  			content: "\42";
+    		font-family: 'Academy';
+    		speak: none;
+    		padding-right: 10px;
+    		font-size: 20px;
+    		color:#6D65CB;
+    		float:right;
+		}
+
+	    .panel-title, a, h4{
+	    	margin-left: 10px;
+	    	margin-right: 10px;
+	    	vertical-align: -15%;
+	    	font-family: Montserrat;
+	    	top: -4px;
+    		position: relative;
+			font-size: 13px;
+			line-height: 16px;
+			color: black;
+			text-transform: uppercase;
+			text-align:left;
+			font-weight: normal;
+			letter-spacing: 0px;
+			line-height: 30px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+
+	    	&:hover, :focus, :visited{
+	    		color:black !important;	
+	    	}
+	    }
+
+	    
+	}
+
+	.panel-default>.panel-heading {
+    	color: black;
+    	background-color: white;
+    	border-color: none;
+	}
+
+	.panel-body {
+    padding: 20px;
+    background: linear-gradient(135deg, #6D65CB 0%, #293890 100%);
+	transition:.35s all;
+	color:white;
+
+		li{
+			font-family: Montserrat;
+			font-size: 12px;
+			line-height: 16px;
+			color: rgba(255,255,255,0.7);
+			text-transform: uppercase;
+			padding-bottom: 26px;
+			padding-top: 26px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		}	
+	}
 }
 
 .design-thinking{

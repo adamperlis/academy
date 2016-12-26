@@ -7,6 +7,8 @@ import shallowCompare from 'react-addons-shallow-compare';
 import {
   WizardMotion
 }                     from '../../components';
+import { Grid, Row, Col, Accordion, Panel, PanelGroup } from 'react-bootstrap';
+import { Link }       from 'react-router';
 
 class DesignSprint extends Component {
 
@@ -37,13 +39,63 @@ class DesignSprint extends Component {
           'animatedViews': animated,
           'view-enter': viewEntersAnim
         })}>
-        <h1>
-          Design Sprint  
-        </h1>
-        <h2>Academy</h2>
+        <Row className="show-grid sprint-academy hero">
+          <Col xs={6}> 
+            <h1>Design</h1>
+            <h1>Sprint</h1>
+            <h2>Academy</h2>
+            <Link
+              className="btn"
+              to={'#'}>
+              SEE THE CURRICULUM
+            </Link>
+          </Col>
+          <Col xs={6}></Col> 
+        </Row>
+
+        <Row className="show-grid sprint-academy what-is">
+          <Col xs={4}></Col>
+          <Col xs={8}>
+            <h3>What's a</h3>
+            <h4>Design</h4>
+            <h4>Sprint?</h4>
+            <p className="subhead">
+            It’s a 6 step methodology for solving UX problems by building prototypes and testing them with real users.            </p>
+          </Col> 
+        </Row>
+        <Row className="show-grid sprint-academy what-is">
+          <Col xs={12}>
+            <ul>
+              <li><img src={require('../../images/discovery.svg')} height="30px"/>
+              <p>1. Discovery</p></li>
+              <li><img src={require('../../images/sketch.svg')} height="30px"/>
+              <p>2. Sketch/Wireframe</p></li>
+              <li><img src={require('../../images/brush.svg')} height="30px"/>
+              <p>3. Design</p></li>
+              <li><img src={require('../../images/prototype.svg')} height="30px"/>
+              <p>4. Prototype</p></li>
+              <li><img src={require('../../images/user-testing.svg')} height="30px"/>
+              <p>5. User Testing</p></li>
+              <li><img src={require('../../images/learn.svg')} height="30px"/>
+              <p>6. Learn & Repeat</p></li>
+            </ul>
+          </Col>
+        </Row>
+        <Row className="show-grid sprint-academy what-is">
+            <Accordion defaultExpanded="true" expanded="true">
+              <Panel header="Benefits" eventKey="1">
+                <ul>
+                  <li>Fosters Team Collaboration</li>
+                  <li>Cuts Down Development Time</li>
+                  <li>Gives Everyone a Voice</li>
+                  <li>It's Better, Faster and Cheaper</li>
+                </ul>
+              </Panel>
+            </Accordion>
+        </Row>
       </div>
     );
-  }
+}
 }
 
 DesignSprint.propTypes = {

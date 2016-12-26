@@ -1,10 +1,12 @@
 import React, {PropTypes} from 'react';
 import ReactDOM from 'react-dom';
 import {Input} from 'react-toolbox/lib/input';
+import {Dropdown} from 'react-toolbox/lib/dropdown';
+import { Link }       from 'react-router';
 
 class Form extends React.Component {
   
-  state = { name: '', phone: '', multiline: '', email: '', hint: '', label: '' };
+  state = { name: '', company: '', multiline: '', email: '', hint: '', label: '' };
 
   handleChange = (name, value) => {
     this.setState({...this.state, [name]: value});
@@ -14,12 +16,10 @@ class Form extends React.Component {
     return (
       <section>
         <Input type='text' label='Name' name='name' value={this.state.name} onChange={this.handleChange.bind(this, 'name')} maxLength={16} />
-        <Input type='text' hint='With Hint, no label' name='name' value={this.state.label} onChange={this.handleChange.bind(this, 'label')} maxLength={16} />
-        <Input type='text' label='Disabled field' disabled />
-        <Input type='text' multiline label='Multiline' maxLength={20} value={this.state.multiline} onChange={this.handleChange.bind(this, 'multiline')} />
         <Input type='email' label='Email address' icon='email' value={this.state.email} onChange={this.handleChange.bind(this, 'email')} />
-        <Input type='tel' label='Phone' name='phone' icon='phone' value={this.state.phone} onChange={this.handleChange.bind(this, 'phone')} />
-        <Input type='text' value={this.state.hint} label='Required Field' hint='With Hint' required onChange={this.handleChange.bind(this, 'hint')} icon='share' />
+        <Input type='tel' label='Company' name='company' icon='company' value={this.state.company} onChange={this.handleChange.bind(this, 'company')} />
+        <p>or e-mail us at <Link to={'mailto:hi@academybydesign.com'}><strong>hi@academybydesign.com</strong></Link></p>
+        <Link className="btn" type="submit" to={'/DesignDevelopment'}>Submit</Link>
       </section>
     );
   }

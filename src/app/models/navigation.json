@@ -9,7 +9,7 @@
   ],
   "rightLinks": [
     {
-      "label":      "Design Sprint Academy",
+      "label":      "Sprint Academy",
       "link":       "/DesignSprint",
       "view":       "DesignSprint",
       "isRouteBtn": true
@@ -21,7 +21,7 @@
       "isRouteBtn": true
     },
     {
-      "label":      "Product Design & Development",
+      "label":      "Design & Development",
       "link":       "/ProductDesign",
       "view":       "ProductDesign",
       "isRouteBtn": true

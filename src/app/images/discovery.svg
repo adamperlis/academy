@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="33px" viewBox="0 0 42 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>discovery</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design-Sprint-Academy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design_sprints_small_v2" transform="translate(-20.000000, -519.000000)">
+            <g id="Group-13" transform="translate(21.000000, 520.000000)">
+                <g id="Group-12">
+                    <g id="discovery">
+                        <path d="M16.1538462,15.5 L7.69230769,15.5 C3.46153846,15.5 0,12.0125 0,7.75 C0,3.4875 3.46153846,0 7.69230769,0 L32.3076923,0" id="Path" stroke="#6D65CB" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M7.69230769,31 L32.3076923,31 C36.5384615,31 40,27.5125 40,23.25 C40,18.9875 36.5384615,15.5 32.3076923,15.5" id="Path" stroke="#6D65CB" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.799999952316284"></path>
+                        <path d="M16.1538462,15.5 L9.23076923,8.525" id="Path" stroke="#6D65CB" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M16.1538462,15.5 L9.23076923,22.475" id="Path" stroke="#6D65CB" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M27.6923077,15 L30.5,15" id="Path" stroke="#6D65CB" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M27.6923077,15.5 C27.6923077,17.639775 25.97,19.375 23.8461538,19.375 C21.7223077,19.375 20,17.639775 20,15.5 C20,13.360225 21.7223077,11.625 23.8461538,11.625 C25.97,11.625 27.6923077,13.360225 27.6923077,15.5 L27.6923077,15.5 Z" id="Fill-21" fill="#FFE2BA"></path>
+                        <path d="M27.6923077,15.5 C27.6923077,17.639775 25.97,19.375 23.8461538,19.375 C21.7223077,19.375 20,17.639775 20,15.5 C20,13.360225 21.7223077,11.625 23.8461538,11.625 C25.97,11.625 27.6923077,13.360225 27.6923077,15.5 L27.6923077,15.5 Z" id="Stroke-22" stroke="#6D65CB" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

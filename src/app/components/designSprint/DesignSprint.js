@@ -25,7 +25,7 @@ const DesignSprint = (props) => {
         className="btn"
         to={'/DesignSprint'}>
         See Options
-        </Link>
+    </Link>
 
     </Col>
     <Col xs={6}></Col> 

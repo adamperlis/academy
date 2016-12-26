@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Academy';
+  src:  url('../fonts/Academy.eot?wlab6x');
+  src:  url('../fonts/Academy.eot?wlab6x#iefix') format('embedded-opentype'),
+    url('../fonts/Academy.ttf?wlab6x') format('truetype'),
+    url('../fonts/Academy.woff?wlab6x') format('woff'),
+    url('../fonts/Academy.svg?wlab6x#Academy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Academy' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uni41:before {
+  content: "\41";
+}
+.icon-uni42:before {
+  content: "\42";
+}
+.icon-uni43:before {
+  content: "\43";
+}
+.icon-uni44:before {
+  content: "\44";
+}
+.icon-uni45:before {
+  content: "\45";
+}
+

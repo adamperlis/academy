@@ -4,7 +4,6 @@ import React, {
 }                     from 'react';
 import cx             from 'classnames';
 import shallowCompare from 'react-addons-shallow-compare';
-import { Form }    from '../../components';
 
 class InnovationServices extends Component {
 
@@ -39,7 +38,6 @@ class InnovationServices extends Component {
           Innovation  
         </h1>
         <h2>Services</h2>
-        <Form />
       </div>
     );
   }

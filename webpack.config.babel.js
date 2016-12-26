@@ -61,5 +61,3 @@ function setNodeEnv() {
 }
 
 export default config;
-
-
