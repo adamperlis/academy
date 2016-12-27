@@ -5,7 +5,8 @@ import React, {
 import {
   NavigationBar,
   BackToTop,
-  Footer
+  Footer,
+  TopBarNav
 }                             from '../../components';
 import navigationModel        from '../../models/navigation.json';
 import { bindActionCreators } from 'redux';
@@ -23,13 +24,7 @@ class App extends Component {
     const { children } = this.props;
     return (
       <div id="appContainer">
-        <NavigationBar
-          brand={navModel.brand}
-          navModel={navModel}
-          handleLeftNavItemClick={this.handleLeftNavItemClick}
-          handleRightNavItemClick={this.handleRightNavItemClick}
-        />
-
+        <TopBarNav />
         <div className="container-fluid">
           {children}
           <Footer />

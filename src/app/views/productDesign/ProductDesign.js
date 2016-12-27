@@ -14,7 +14,7 @@ class ProductDesign extends Component {
 
   componentDidMount() {
     const { enterProductDesign } = this.props;
-    enterAbout();
+    enterProductDesign();
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -37,7 +37,8 @@ class ProductDesign extends Component {
         <h1>
           Product  
         </h1>
-        <h2>Design & Development</h2>
+        <h2>Design &</h2>
+        <h2>Development</h2>
       </div>
     );
   }

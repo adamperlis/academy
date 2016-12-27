@@ -20,12 +20,31 @@ a:hover, a:focus, a:visited{
 }
 
 .container-fluid{
-	margin-top:90px;
+	margin-top:30px;
 }
 
 .containersCustom {
     padding-left: $CONTAINER_CUSTOM_PADDING_LEFT;
     padding-right: $CONTAINER_CUSTOM_PADDING_RIGHT;
+}
+
+.appBar button div svg {
+fill: black !important;
+}
+
+.nav-logo img{
+	margin-top:-5px;
+}
+
+.drawer{
+	color: white !important;
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.menuIcon:hover{
+	cursor: pointer;
 }
 
 .invisible {

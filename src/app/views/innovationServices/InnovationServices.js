@@ -23,7 +23,7 @@ class InnovationServices extends Component {
 
   componentWillUnmount() {
     const { leaveInnovationServices } = this.props;
-    leaveAbout();
+    leaveInnovationServices();
   }
 
   render() {

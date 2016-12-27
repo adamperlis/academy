@@ -14,6 +14,7 @@ import Footer               from './footer/Footer';
 import Form                 from './form/Form';
 import ListCollapse         from './listCollapse/listCollapse';
 import ListBenefits         from './listBenefits/listBenefits';
+import TopBarNav         from './topBarNav/topBarNav';
 
 
 
@@ -36,4 +37,5 @@ export {
   Form,
   ListCollapse,
   ListBenefits,
+  TopBarNav
 };

@@ -13,8 +13,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(
     {
-      enterProductDesign: viewsActions.enterAbout,
-      leaveProductDesign: viewsActions.leaveAbout
+      enterProductDesign: viewsActions.enterProductDesign,
+      leaveProductDesign: viewsActions.leaveProductDesign
     },
     dispatch
   );

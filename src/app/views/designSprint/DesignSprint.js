@@ -29,7 +29,7 @@ class DesignSprint extends Component {
   }
 
   componentWillUnmount() {
-    const { DesignSprintComponents } =  this.props;
+    const { leaveDesignSprint } =  this.props;
     leaveDesignSprint();
   }
 
@@ -96,8 +96,8 @@ class DesignSprint extends Component {
 
 DesignSprint.propTypes = {
   currentView: PropTypes.string.isRequired,
-  enterComponents: PropTypes.func.isRequired,
-  leaveComponents: PropTypes.func.isRequired
+  enterDesignSprint: PropTypes.func.isRequired,
+  leaveDesignSprint: PropTypes.func.isRequired
 };
 
 export default DesignSprint;

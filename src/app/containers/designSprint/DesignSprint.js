@@ -19,16 +19,6 @@ const mapDispatchToProps = (dispatch) => {
   );
 };
 
-/*
-  without bindActionCreators:
- */
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     enterComponents: () => dispatch(viewsActions.enterComponents()),
-//     leaveComponents: () => dispatch(viewsActions.leaveComponents())
-//   };
-// };
-
 export default connect(
     mapStateToProps,
     mapDispatchToProps

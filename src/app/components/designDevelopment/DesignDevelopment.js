@@ -22,7 +22,7 @@ const DesignDevelopment = (props) => {
 
      <Link
         className="btn"
-        to={'/DesignDevelopment'}>
+        to={'/ProductDesign'}>
         See How
     </Link>
 

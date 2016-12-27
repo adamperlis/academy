@@ -30,7 +30,7 @@ export const Routes = () => {
   return (
     <Provider store={store}>
       <div>
-        <Router history={syncedHistory}>
+        <Router onUpdate={() => window.scrollTo(0, 0)} history={syncedHistory}>
           <Route path="/" component={App} >
             <IndexRoute component={ConnectedHome} />
             <Route path="/designSprint" component={ConnectedDesignSprint} />
