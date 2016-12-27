@@ -38,8 +38,8 @@ class InnovationServices extends Component {
         })}>
         <Row className="show-grid innovation hero">
           <Col xs={8}> 
-            <h1>Product</h1>
-            <h2>Design & Development</h2>
+            <h1>Innovation</h1>
+            <h2>Services</h2>
             
             <Link
               className="btn"
