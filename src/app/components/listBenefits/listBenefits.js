@@ -49,9 +49,10 @@ export default class listCollapse extends React.Component {
                   style={{
                     fontFamily: 'Montserrat',
                     fontSize: '12px',
-                    color: 'black',
+                    color: 'white',
                     textTransform: 'uppercase',
-                    borderBottom: '1px solid rgb(224, 224, 224)',
+                    borderBottom: '1px solid rgb(136, 127, 247)',
+                    background:'#6D65CB',
                   }}
                   primaryText="Fosters Team Collaboration"
                   disabled={true}
@@ -61,9 +62,10 @@ export default class listCollapse extends React.Component {
                   style={{
                     fontFamily: 'Montserrat',
                     fontSize: '12px',
-                    color: 'black',
+                    color: 'white',
                     textTransform: 'uppercase',
-                    borderBottom: '1px solid rgb(224, 224, 224)',
+                    borderBottom: '1px solid rgb(136, 127, 247)',
+                    background:'#6D65CB',
                   }}
                   primaryText="CUTS DOWN DEVELOPMENT TIME"
                   disabled={true}
@@ -73,9 +75,10 @@ export default class listCollapse extends React.Component {
                   style={{
                     fontFamily: 'Montserrat',
                     fontSize: '12px',
-                    color: 'black',
+                    color: 'white',
                     textTransform: 'uppercase',
-                    borderBottom: '1px solid rgb(224, 224, 224)',
+                    borderBottom: '1px solid rgb(136, 127, 247)',
+                    background:'#6D65CB',
                   }}
                   primaryText="GIVES EVERYONE A VOICE"
                   disabled={true}
@@ -85,8 +88,10 @@ export default class listCollapse extends React.Component {
                   style={{
                     fontFamily: 'Montserrat',
                     fontSize: '12px',
-                    color: 'black',
+                    color: 'white',
                     textTransform: 'uppercase',
+                    borderBottom: '1px solid rgb(136, 127, 247)',
+                    background:'#6D65CB',
                   }}
                   primaryText="IT’S BETTER, FASTER AND CHEAPER"
                   disabled={true}

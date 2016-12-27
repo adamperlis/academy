@@ -65,6 +65,7 @@ class DesignSprint extends Component {
             It’s a 6 step methodology for solving UX problems by building prototypes and testing them with real users.            </p>
           </Col> 
         </Row>
+
         <Row className="show-grid sprint-academy what-is">
           <Col xs={12}>
             <ul>
@@ -83,11 +84,95 @@ class DesignSprint extends Component {
             </ul>
           </Col>
         </Row>
-        <Row className="show-grid sprint-academy what-is">
+
+        <Row className="show-grid sprint-academy what-is" style={{paddingTop:'0px'}}>
             <ListBenefits />
         </Row>
-        <Row className="show-grid sprint-academy what-is">
+
+        <Row className="show-grid ignite-talk">
+          <Col xs={6}> 
+
+          <h3>
+          Ignite
+          </h3>
+          <h4>
+          Talk
+          </h4>
+
+          <p className="subhead">
+          In this talk you will hear from leading UX expert Adam Perlis. He will walk you through the in’s and out’s of Design Sprints and how to build products better, faster and cheaper products in just 5 days.           </p>
+
+           <Link
+              className="btn"
+              to={'#'}>
+              Schedule a Talk
+          </Link>
+
+          </Col>
+          <Col xs={6}></Col>
+        </Row>
+
+        <Row className="show-grid arrow">
+          <Col xs={12}> 
+            <img src={require('../../images/big-arrow-down.svg')} width="100%" className=""/> 
+          </Col>
+        </Row>
+
+        <Row className="show-grid workshop">
+          <Col xs={5}></Col> 
+          <Col xs={7}> 
+
+          <h3>
+          2 Day
+          </h3>
+          <h4>
+          Workshop
+          </h4>
+
+          <p className="subhead">
+          In this workshop you will learn how to solve UX problems by designing, prototyping and testing products using Design Sprints. You will be part of a team that launches a prototype that is ready to test. Discover how sprints can foster team collaboration,  get you “buy in” from your key stakeholders and lead to more successful products.
+          </p>
+
+          <Link
+              className="btn"
+              to={'#'}>
+              PLAN A WORKSHOP          
+              </Link>
+
+          </Col>
+        </Row>
+
+        <Row className="show-grid sprint-academy what-is syllabus">
             <ListCollapse />
+        </Row>
+
+        <Row className="show-grid arrow-reverse">
+          <Col xs={12}> 
+            <img src={require('../../images/big-arrow-down-reverse.svg')} width="100%" className=""/> 
+          </Col>
+        </Row>
+
+        <Row className="show-grid bootcamp">
+          <Col xs={6}> 
+
+          <h3>
+          2 Week
+          </h3>
+          <h4>
+          Bootcamp
+          </h4>
+
+          <p className="subhead">
+          In this training exercise the Academy℠ team will work hand-in-hand with your design, development and management teams to run a Design Sprint from start to finish. The result of the Design Sprint will be a functional prototype that your team can test with real users to get valuable feedback prior to moving into development.
+          </p>
+           <Link
+              className="btn"
+              to={'#'}>
+              Setup Training
+          </Link>
+
+          </Col>
+          <Col xs={6}></Col>
         </Row>
       </div>
     );

@@ -78,6 +78,15 @@ export default class TopBarNav extends React.Component {
                     </Link>
                   </MenuItem>
                   <Divider style={{background:'#6D65CB',}}/>
+                  <MenuItem>
+                    <Link
+                    onTouchTap={this.handleClose.bind(this)}
+                    className="drawer"
+                    to={'/InnovationServices'}>
+                    Contact Us
+                    </Link>
+                  </MenuItem>
+                  <Divider style={{background:'#6D65CB',}}/>
                 </Drawer>
 
                 <Sticky enabled={true} top={0} innerZ={1}>
