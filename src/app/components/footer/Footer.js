@@ -13,7 +13,7 @@ const Footer = (props) => {
       <Link
         className="logo"
         to={'/'}>
-        Academy
+        <img src={require('../../images/academy-logo-white.svg')} height="24px"/>
       </Link>
 
     
