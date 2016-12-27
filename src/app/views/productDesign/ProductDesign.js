@@ -4,6 +4,8 @@ import React, {
 }                     from 'react';
 import cx             from 'classnames';
 import shallowCompare from 'react-addons-shallow-compare';
+import { Grid, Row, Col } from 'react-bootstrap';
+import { Link }       from 'react-router';
 
 class ProductDesign extends Component {
 
@@ -34,11 +36,100 @@ class ProductDesign extends Component {
           'animatedViews': animated,
           'view-enter': viewEntersAnim
         })}>
-        <h1>
-          Product  
-        </h1>
-        <h2>Design &</h2>
-        <h2>Development</h2>
+        <Row className="show-grid product-design hero">
+          <Col xs={8}> 
+            <h1>Product</h1>
+            <h2>Design & Development</h2>
+            
+            <Link
+              className="btn"
+              to={'#'}>
+              SEE OUR SERVICES
+            </Link>
+          </Col>
+          <Col xs={4}></Col> 
+        </Row>
+
+        <Row className="show-grid ignite-talk">
+          <Col xs={7}> 
+
+          <h3>
+          Product
+          </h3>
+          <h4>
+          Design & UX
+          </h4>
+
+          <p className="subhead">
+          Our approach to product design is simple, the user comes first. Our award winning team will take you from concept, to prototype to execution using design thinking, and design sprints to build you the products of your dreams.
+          </p> 
+          <Link
+              className="btn"
+              to={'#'}>
+              Design With Us
+          </Link>
+
+          </Col>
+          <Col xs={5}></Col>
+        </Row>
+
+        <Row className="show-grid arrow">
+          <Col xs={12}> 
+            <img src={require('../../images/big-arrow-down.svg')} width="100%" className=""/> 
+          </Col>
+        </Row>
+
+        <Row className="show-grid workshop">
+          <Col xs={5}></Col> 
+          <Col xs={7}> 
+
+          <h3>
+          Product
+          </h3>
+          <h4>
+          Development
+          </h4>
+
+          <p className="subhead">
+          Agile development means we are constantly building, testing and evolving your product. Our team of experienced devlopers will work with you to build quality, maintainable and future proof products that fit your business needs.
+          </p>
+          <Link
+              className="btn"
+              to={'#'}>
+              Develop with Us          
+              </Link>
+
+          </Col>
+        </Row>
+
+        <Row className="show-grid arrow-reverse">
+          <Col xs={12}> 
+            <img src={require('../../images/big-arrow-down-reverse.svg')} width="100%" className=""/> 
+          </Col>
+        </Row>
+
+        <Row className="show-grid bootcamp">
+          <Col xs={6}> 
+
+          <h3>
+          Product
+          </h3>
+          <h4>
+          Management
+          </h4>
+
+          <p className="subhead">
+          Our team capitans, will help steer your products in the right direction. Managing timelines, communicating between designers and developers, overseeing usability tests and communicating with you all the way through. Rest assured that this group will get your product off the ground safely.          
+          </p>
+           <Link
+              className="btn"
+              to={'#'}>
+              Manage with Us
+          </Link>
+
+          </Col>
+          <Col xs={6}></Col>
+        </Row>
       </div>
     );
   }
