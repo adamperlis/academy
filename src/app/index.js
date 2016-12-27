@@ -1,6 +1,8 @@
 import React                from 'react';
+import MuiThemeProvider 	from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 import ReactDOM             from 'react-dom';
-import injectTpEventPlugin  from 'react-tap-event-plugin';
 import { Routes }           from './routes/Route';
 
 import 'babel-polyfill';
@@ -12,9 +14,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './style/index.style.scss';
 
+
+
 const ELEMENT_TO_BOOTSTRAP  = 'root';
 const BootstrapedElement    = document.getElementById(ELEMENT_TO_BOOTSTRAP);
 
-injectTpEventPlugin();
+const App = () => (
+  <MuiThemeProvider>
+  	<Routes />
+  </MuiThemeProvider>
+);
 
-ReactDOM.render(<Routes />, BootstrapedElement);
+ReactDOM.render(<App />, BootstrapedElement);
+

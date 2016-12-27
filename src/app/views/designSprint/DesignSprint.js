@@ -5,7 +5,9 @@ import React, {
 import cx             from 'classnames';
 import shallowCompare from 'react-addons-shallow-compare';
 import {
-  WizardMotion
+  WizardMotion,
+  ListCollapse,
+  ListBenefits
 }                     from '../../components';
 import { Grid, Row, Col, Accordion, Panel, PanelGroup } from 'react-bootstrap';
 import { Link }       from 'react-router';
@@ -82,16 +84,10 @@ class DesignSprint extends Component {
           </Col>
         </Row>
         <Row className="show-grid sprint-academy what-is">
-            <Accordion defaultExpanded="true" expanded="true">
-              <Panel header="Benefits" eventKey="1">
-                <ul>
-                  <li>Fosters Team Collaboration</li>
-                  <li>Cuts Down Development Time</li>
-                  <li>Gives Everyone a Voice</li>
-                  <li>It's Better, Faster and Cheaper</li>
-                </ul>
-              </Panel>
-            </Accordion>
+            <ListBenefits />
+        </Row>
+        <Row className="show-grid sprint-academy what-is">
+            <ListCollapse />
         </Row>
       </div>
     );
