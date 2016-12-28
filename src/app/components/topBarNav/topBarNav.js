@@ -125,7 +125,7 @@ export default class TopBarNav extends React.Component {
                     <AppBar
                     className="appBar" 
                     style={{
-                      height:'60px',
+                      height:'40px',
                       background:'#FAFAFA',
                       borderBottom:'1px solid #6D65CB',
                     }} 
@@ -142,7 +142,7 @@ export default class TopBarNav extends React.Component {
                     />
                   </Sticky>
 
-                  <Sticky enabled={true} onStateChange={this.addClass} top={60} bottomBoundary={0} innerZ={1}>
+                  <Sticky enabled={true} onStateChange={this.addClass} top={40} bottomBoundary={0} innerZ={1}>
                   <Tabs initialSelectedIndex={-1} onChange={this.changeTab} className="small-nav">
 
                     <Tab value={0} style={styles.headline} label="Sprint Academy" containerElement={<Link to="/designSprint"/>} />

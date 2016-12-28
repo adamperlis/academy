@@ -11,6 +11,9 @@ import {DesignThinking}    from '../../components';
 import {DesignSprint}    from '../../components';
 import {InnovationServices}    from '../../components';
 import {DesignDevelopment}    from '../../components';
+import {
+  WizardMotion
+}                     from '../../components';
 
 
 

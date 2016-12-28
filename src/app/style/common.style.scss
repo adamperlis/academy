@@ -29,11 +29,12 @@ a:hover, a:focus, a:visited{
 }
 
 .appBar button div svg {
-fill: black !important;
+	fill: black !important;
+	margin-top: -28px;
 }
 
 .nav-logo img{
-	margin-top:-5px;
+	margin-top: -28px;
 }
 
 .drawer{
@@ -52,7 +53,7 @@ fill: black !important;
 }
 
 .view-enter {
-   animation: fadeInRight 1s both cubic-bezier(0.19, 1, 0.22, 1);
+   animation: slideInRight 1s both cubic-bezier(0.19, 1, 0.22, 1);
    z-index: 9999;
  }
 
