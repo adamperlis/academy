@@ -43,6 +43,7 @@ export default class listCollapse extends React.Component {
               }}
               initiallyOpen={true}
               primaryTogglesNestedList={true}
+              nestedListStyle={{background:'linear-gradient(135deg, rgb(109, 101, 203) 0%, rgb(41, 56, 144) 100%)',}}
               nestedItems={[
                 <ListItem
                   key={1}
@@ -52,7 +53,6 @@ export default class listCollapse extends React.Component {
                     color: 'white',
                     textTransform: 'uppercase',
                     borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="Fosters Team Collaboration"
                   disabled={true}
@@ -65,7 +65,6 @@ export default class listCollapse extends React.Component {
                     color: 'white',
                     textTransform: 'uppercase',
                     borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="CUTS DOWN DEVELOPMENT TIME"
                   disabled={true}
@@ -78,7 +77,6 @@ export default class listCollapse extends React.Component {
                     color: 'white',
                     textTransform: 'uppercase',
                     borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="GIVES EVERYONE A VOICE"
                   disabled={true}
@@ -90,8 +88,6 @@ export default class listCollapse extends React.Component {
                     fontSize: '12px',
                     color: 'white',
                     textTransform: 'uppercase',
-                    borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="IT’S BETTER, FASTER AND CHEAPER"
                   disabled={true}

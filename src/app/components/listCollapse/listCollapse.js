@@ -40,9 +40,11 @@ export default class listCollapse extends React.Component {
                 fontSize: '13px',
                 color: 'black',
                 textTransform: 'uppercase',
+
               }}
               initiallyOpen={true}
               primaryTogglesNestedList={true}
+              nestedListStyle={{background:'linear-gradient(135deg, rgb(109, 101, 203) 0%, rgb(41, 56, 144) 100%)',}}
               nestedItems={[
                 <ListItem
                   key={1}
@@ -52,12 +54,11 @@ export default class listCollapse extends React.Component {
                     color: 'white',
                     textTransform: 'uppercase',
                     borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="UNIT 1: OVERVIEW"
                   disabled={true}
                   nestedItems={[
-                    <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'black', }} 
+                    <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'white', }} 
                     primaryText="
                     Your instructor will give you an intro to design sprints and design thinking and review of steps in process.
                     Teams will be formed of Designer, Developers and Product Managers"
@@ -72,12 +73,11 @@ export default class listCollapse extends React.Component {
                     color: 'white',
                     textTransform: 'uppercase',
                     borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="UNIT 2: DISCOVERY"
                   disabled={true}
                   nestedItems={[
-                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'black', }} 
+                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'white', }} 
                     primaryText="
                     You will discuss the (predetermined) challenges your company is facing with a particular feature.
                     As a group we will narrow down 3-5 key problems we are trying to solve using the 'How Might We...' format."
@@ -92,12 +92,11 @@ export default class listCollapse extends React.Component {
                     color: 'white',
                     textTransform: 'uppercase',
                     borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="UNIT 3: SKETCH"
                   disabled={true}
                   nestedItems={[
-                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'black', }} 
+                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'white', }} 
                     primaryText="
                     Your team will sketch solutions to the problems identified in the previous step.
                     Once complete you will present your ideas amongst your group. Finally you will silently vote/decide on the features you like the best"
@@ -112,12 +111,11 @@ export default class listCollapse extends React.Component {
                     color: 'white',
                     textTransform: 'uppercase',
                     borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="UNIT 4: WIREFRAME"
                   disabled={true}
                   nestedItems={[
-                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'black', }} 
+                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'white', }} 
                     primaryText="
                     Your designers will take your sketches and turn them into wireframes. Working with development and product teams to ensure feasability"
                     />,
@@ -131,12 +129,11 @@ export default class listCollapse extends React.Component {
                     color: 'white',
                     textTransform: 'uppercase',
                     borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="UNIT 5: DESIGN/PRESENTATION"
                   disabled={true}
                   nestedItems={[
-                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'black', }} 
+                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'white', }} 
                     primaryText="
                     Once your wireframes have been validated, your designers will work on making them look pretty while the product and development team work on the presentation.
                     Your presentation will include, an explanation of the problems identified, 'How might we...' questions, screenshots of your designs and potential questions to ask users."
@@ -151,12 +148,11 @@ export default class listCollapse extends React.Component {
                     color: 'white',
                     textTransform: 'uppercase',
                     borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="UNIT 6: PROTOTYPE"
                   disabled={true}
                   nestedItems={[
-                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'black', }} 
+                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'white', }} 
                     primaryText="
                     Once your designs are built its time to create a prototype. Your designers will use software like InVision, UX Pin, Origami, etc to build your prototype."
                     />,
@@ -169,13 +165,11 @@ export default class listCollapse extends React.Component {
                     fontSize: '12px',
                     color: 'white',
                     textTransform: 'uppercase',
-                    borderBottom: '1px solid rgb(136, 127, 247)',
-                    background:'#6D65CB',
                   }}
                   primaryText="UNIT 7: PRESENT"
                   disabled={true}
                   nestedItems={[
-                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'black', }} 
+                      <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'white', }} 
                     primaryText="
                     Your team will have the opportunity to present your prototype to the larger team and discuss your methodology."
                     />,
