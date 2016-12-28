@@ -7,7 +7,8 @@ import shallowCompare from 'react-addons-shallow-compare';
 import {
   WizardMotion,
   ListCollapse,
-  ListBenefits
+  ListBenefits,
+  ContactUs
 }                     from '../../components';
 import { Grid, Row, Col, Accordion, Panel, PanelGroup } from 'react-bootstrap';
 import { Link }       from 'react-router';
@@ -102,11 +103,7 @@ class DesignSprint extends Component {
           <p className="subhead">
           In this talk you will hear from leading UX expert Adam Perlis. He will walk you through the in’s and out’s of Design Sprints and how to build products better, faster and cheaper products in just 5 days.           </p>
 
-           <Link
-              className="btn"
-              to={'#'}>
-              Schedule a Talk
-          </Link>
+           <ContactUs label="Schedule a Talk" />
 
           </Col>
           <Col xs={6}></Col>
@@ -133,11 +130,7 @@ class DesignSprint extends Component {
           In this workshop you will learn how to solve UX problems by designing, prototyping and testing products using Design Sprints. You will be part of a team that launches a prototype that is ready to test. Discover how sprints can foster team collaboration,  get you “buy in” from your key stakeholders and lead to more successful products.
           </p>
 
-          <Link
-              className="btn"
-              to={'#'}>
-              PLAN A WORKSHOP          
-              </Link>
+          <ContactUs label="Plan a Workshop" />
 
           </Col>
         </Row>
@@ -165,11 +158,8 @@ class DesignSprint extends Component {
           <p className="subhead">
           In this training exercise the Academy℠ team will work hand-in-hand with your design, development and management teams to run a Design Sprint from start to finish. The result of the Design Sprint will be a functional prototype that your team can test with real users to get valuable feedback prior to moving into development.
           </p>
-           <Link
-              className="btn"
-              to={'#'}>
-              Setup Training
-          </Link>
+           
+          <ContactUs label="Setup Training" />
 
           </Col>
           <Col xs={6}></Col>

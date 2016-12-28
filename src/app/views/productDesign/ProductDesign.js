@@ -6,6 +6,10 @@ import cx             from 'classnames';
 import shallowCompare from 'react-addons-shallow-compare';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { Link }       from 'react-router';
+import {
+  WizardMotion,
+  ContactUs
+}                     from '../../components';
 
 class ProductDesign extends Component {
 
@@ -63,11 +67,7 @@ class ProductDesign extends Component {
           <p className="subhead">
           Our approach to product design is simple, the user comes first. Our award winning team will take you from concept, to prototype to execution using design thinking, and design sprints to build you the products of your dreams.
           </p> 
-          <Link
-              className="btn"
-              to={'#'}>
-              Design With Us
-          </Link>
+          <ContactUs label="Design with Us" />
 
           </Col>
           <Col xs={5}></Col>
@@ -93,12 +93,7 @@ class ProductDesign extends Component {
           <p className="subhead">
           Agile development means we are constantly building, testing and evolving your product. Our team of experienced devlopers will work with you to build quality, maintainable and future proof products that fit your business needs.
           </p>
-          <Link
-              className="btn"
-              to={'#'}>
-              Develop with Us          
-              </Link>
-
+          <ContactUs label="Develop with Us" />
           </Col>
         </Row>
 
@@ -121,11 +116,7 @@ class ProductDesign extends Component {
           <p className="subhead">
           Our team capitans, will help steer your products in the right direction. Managing timelines, communicating between designers and developers, overseeing usability tests and communicating with you all the way through. Rest assured that this group will get your product off the ground safely.          
           </p>
-           <Link
-              className="btn"
-              to={'#'}>
-              Manage with Us
-          </Link>
+           <ContactUs label="Manage with Us" />
 
           </Col>
           <Col xs={6}></Col>

@@ -1114,3 +1114,29 @@ fill: black !important;
 }
 
 
+.small-nav > div{
+    background-color: rgb(109, 101, 203) !important;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}
+
+.exposed-nav{
+	transition:1s all;
+	transform:translate3d(0,0,0);
+}
+
+.unexposed-nav{
+	transition:1s all;
+	transform:translate3d(0,-120px,0);
+}
+
+.link{
+	color: rgb(109, 101, 203) !important;
+	font-weight: 800;
+
+	a:active, a:hover, a:focus, a:visited{
+		color: rgb(109, 101, 203) !important;
+		cursor:pointer;
+	}
+}
+
+

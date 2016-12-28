@@ -12,6 +12,8 @@ const ENTER_INNOVATIONSERVICES_VIEW = 'ENTER_WHATISDESIGNTHINKING_VIEW';
 const LEAVE_INNOVATIONSERVICES_VIEW = 'LEAVE_WHATISDESIGNTHINKING_VIEW';
 const ENTER_PRODUCTDESIGN_VIEW = 'ENTER_PRODUCTDESIGN_VIEW';
 const LEAVE_PRODUCTDESIGN_VIEW = 'LEAVE_PRODUCTDESIGN_VIEW';
+const ENTER_CONTACTUS_VIEW = 'ENTER_CONTACTUS_VIEW';
+const LEAVE_CONTACTUS_VIEW = 'LEAVE_CONTACTUS_VIEW';
 
 
 // /////////////////////
@@ -30,6 +32,7 @@ export default function (state = initialState, action) {
   case ENTER_DESIGNSPRINT_VIEW:
   case ENTER_INNOVATIONSERVICES_VIEW:
   case ENTER_PRODUCTDESIGN_VIEW:
+  case ENTER_CONTACTUS_VIEW:
     // can't enter if you are already inside
     if (state.currentView !== action.currentView) {
       return {
@@ -45,6 +48,7 @@ export default function (state = initialState, action) {
   case LEAVE_DESIGNSPRINT_VIEW:
   case LEAVE_INNOVATIONSERVICES_VIEW:
   case LEAVE_PRODUCTDESIGN_VIEW:
+  case LEAVE_CONTACTUS_VIEW:
     // can't leave if you aren't already inside
     if (state.currentView === action.currentView) {
       return {
@@ -132,6 +136,24 @@ export function leaveProductDesign(time = moment().format(dateFormat)) {
   return {
     type:         LEAVE_PRODUCTDESIGN_VIEW,
     currentView:  'ProductDesign',
+    enterTime:    null,
+    leaveTime:    time
+  };
+}
+
+export function enterContactUs(time = moment().format(dateFormat)) {
+  return {
+    type:         ENTER_CONTACTUS_VIEW,
+    currentView:  'ContactUs',
+    enterTime:    time,
+    leaveTime:    null
+  };
+}
+
+export function leaveContactUs(time = moment().format(dateFormat)) {
+  return {
+    type:         LEAVE_CONTACTUS_VIEW,
+    currentView:  'ContactUs',
     enterTime:    null,
     leaveTime:    time
   };

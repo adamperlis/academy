@@ -5,13 +5,45 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import Sticky from 'react-stickynode';
 import { Link }       from 'react-router';
 import Menu from 'material-ui/svg-icons/navigation/menu';
+import {Tabs, Tab} from 'material-ui/Tabs';
+import Slider from 'material-ui/Slider';
+
+
+const styles = {
+  headline: {
+    fontSize: '10px',
+    fontFamily: '"Montserrat", sans-serif',
+    textTransform: 'uppercase',
+    wordWrap: 'break-word',
+    whiteSpace: 'pre-wrap',
+    textAlign: 'center',
+    fontWeight: '400',
+    padding: '0px 7px 0px 7px',
+    margin: '0px 0px 0px',
+            
+  },
+};
+
+// function handleActive(tab) {
+//   // alert(`A tab with this route property ${tab.props['data-route']} was activated.`);
+// }
 
 export default class TopBarNav extends React.Component {
+
 
   constructor(props){
     super(props);
     this.state = {open:false};
+    this.state = {
+      value: '/',
+    };
   }
+
+  handleChange = (value) => {
+    this.setState({
+      value: value,
+    });
+  };
 
   getChildContext() {
     return {muiTheme: getMuiTheme(baseTheme)};
@@ -82,14 +114,14 @@ export default class TopBarNav extends React.Component {
                     <Link
                     onTouchTap={this.handleClose.bind(this)}
                     className="drawer"
-                    to={'/InnovationServices'}>
+                    to={'/ContactUs'}>
                     Contact Us
                     </Link>
                   </MenuItem>
                   <Divider style={{background:'#6D65CB',}}/>
                 </Drawer>
 
-                <Sticky enabled={true} top={0} innerZ={1}>
+                <Sticky enabled={true} top={0} innerZ={2}>
                     <AppBar
                     className="appBar" 
                     style={{
@@ -109,7 +141,19 @@ export default class TopBarNav extends React.Component {
                     onLeftIconButtonTouchTap={this.handleToggle.bind(this)} 
                     />
                   </Sticky>
-              </div>
+
+                  <Sticky enabled={true} onStateChange={this.addClass} top={60} bottomBoundary={0} innerZ={1}>
+                  <Tabs initialSelectedIndex={-1} onChange={this.changeTab} className="small-nav">
+
+                    <Tab value={0} style={styles.headline} label="Sprint Academy" containerElement={<Link to="/designSprint"/>} />
+                    <Tab value={1} style={styles.headline} label="Design & Development" containerElement={<Link to="/ProductDesign"/>} />
+                    <Tab value={2} style={styles.headline} label="Innovation Services" containerElement={<Link to="/InnovationServices"/>} />
+                
+                  </Tabs>
+                  </Sticky>
+                </div>
+
+
             );
         }
     }

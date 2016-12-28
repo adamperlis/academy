@@ -6,6 +6,10 @@ import cx             from 'classnames';
 import shallowCompare from 'react-addons-shallow-compare';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { Link }       from 'react-router';
+import {
+  WizardMotion,
+  ContactUs
+}                     from '../../components';
 
 class InnovationServices extends Component {
 
@@ -63,11 +67,7 @@ class InnovationServices extends Component {
           <p className="subhead">
           We embed with your team to rapidly develop prototypes and work with your teams to innovate and break down silos of knowledge to create a fully-transparent partnership.
           </p> 
-          <Link
-              className="btn"
-              to={'#'}>
-              Build With Us
-          </Link>
+          <ContactUs label="Build with Us" />
 
           </Col>
           <Col xs={5}></Col>
@@ -93,11 +93,7 @@ class InnovationServices extends Component {
           <p className="subhead">
           We spend time with your users, quickly testing hypotheses. Every decision we make to be validated with both qualitative and quantative data by running usability tests and programmed metrics.           
           </p>
-          <Link
-              className="btn"
-              to={'#'}>
-              Test with Us          
-              </Link>
+          <ContactUs label="Test with Us" />
 
           </Col>
         </Row>
@@ -121,11 +117,7 @@ class InnovationServices extends Component {
           <p className="subhead">
           Agile development means that we are constanlty building and testing. Your product isn’t done once it launches, our team will ensure that critical bugs are managed, metrics are being monitored and if something isn’t working for users then we are going to fix it.
           </p>
-           <Link
-              className="btn"
-              to={'#'}>
-              Launch with Us
-          </Link>
+           <ContactUs label="Launch with Us" />
 
           </Col>
           <Col xs={6}></Col>
