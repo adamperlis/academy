@@ -20,6 +20,7 @@ const styles = {
     fontWeight: '400',
     padding: '0px 7px 0px 7px',
     margin: '0px 0px 0px',
+    borderRight: '1px solid rgba(255, 255, 255, 0.19)',
             
   },
 };
@@ -121,7 +122,7 @@ export default class TopBarNav extends React.Component {
                   <Divider style={{background:'#6D65CB',}}/>
                 </Drawer>
 
-                <Sticky enabled={true} top={0} innerZ={2}>
+                <Sticky enabled={true} top={0} innerZ={3}>
                     <AppBar
                     className="appBar" 
                     style={{
@@ -142,7 +143,7 @@ export default class TopBarNav extends React.Component {
                     />
                   </Sticky>
 
-                  <Sticky enabled={true} onStateChange={this.addClass} top={40} bottomBoundary={0} innerZ={1}>
+                  <Sticky enabled={true} onStateChange={this.addClass} top={40} bottomBoundary={0} innerZ={2}>
                   <Tabs initialSelectedIndex={-1} onChange={this.changeTab} className="small-nav">
 
                     <Tab value={0} style={styles.headline} label="Sprint Academy" containerElement={<Link to="/designSprint"/>} />

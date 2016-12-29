@@ -6,7 +6,7 @@ const Hero = (props) => {
   return (
  
     <Row className="show-grid hero">
-    <Col xs={6}> 
+    <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
   	
   	<h1>
   	Win
@@ -17,16 +17,16 @@ const Hero = (props) => {
   	</h2>
 
   	<p className="main-subhead">
-  	We bring UX & Design Thinking into organizations, teaching and empowering people to implement them into their products & services.
+  	We bring UX & Design Thinking into organizations, teaching and empowering leaders to implement them into their products & services.
   	</p>
 
   	{props.children}
 
   	</Col>
-  	<Col xs={6}></Col> 
+  	<Col xs={6} sm={9} md={8} lg={8}></Col> 
 
       <Row className="show-grid hero">
-        <Col xs={12}> 
+        <Col xs={12} md={12}> 
           <ArrowDown />
         </Col>
       </Row> 

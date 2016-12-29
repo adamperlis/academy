@@ -290,6 +290,14 @@ a:hover, a:focus, a:visited{
 	padding-bottom: 200px;
 	background:#FAFAFA;
 
+	@media only screen and (min-width: 1401px){
+	    padding-bottom: 200px;
+		}
+
+		@media only screen and (max-width: 1400px) and (min-width: 769px){
+	    padding-bottom: 60px;
+		}
+
 	h3 {
 	font-family: "Playfair Display", serif;
     font-size: 30px;
@@ -343,14 +351,89 @@ a:hover, a:focus, a:visited{
 	border: 1px solid #FF0084;
 	}
 
-	#Group-17 circle{
+	#Group-16{
+		animation: 200s rotateCounterClockwise infinite;
+		transform-origin: center;
+
+		@keyframes rotateCounterClockwise {
+		0% {transform:rotate(0deg);}
+		50% {transform:rotate(-360deg);}
+		}
+	}
+
+	#Group-17{
+		
+		circle{
 		stroke-dasharray: 4;
+		animation: 100s rotateClockwise infinite;
+		transform-origin: center;
+
+		@keyframes rotateClockwise {
+		0% {transform:rotate(0deg);}
+		50% {transform:rotate(360deg);}
+		}
+		}
+
+		#chevron-left{
+		transform-origin: center;
+		z-index: 1;
+		
+		}
+
+		#chevron-right{
+		transform-origin: center;
+		z-index: 1;
+		}
+
 	}
 
 	svg{
-	position: relative;
-    top: 190px;
-    left: -34px;
+		transform-origin: center;
+
+		@media only screen and (min-width: 1401px){
+	   	position: relative;
+	    top: 80px;
+	    left: 338px;
+	    transform: scale(1.5);
+	    transform-origin: center;
+	    padding: 20px;
+		}
+
+		@media only screen and (max-width: 1400px) and (min-width: 1025px){
+	   	position: relative;
+	    top: 10px;
+	    left: 118px;
+	    transform: scale(1.2);
+	    transform-origin: center;
+	    padding: 20px;
+		}
+
+		@media only screen and (max-width: 1024px) and (min-width: 769px){
+	   	position: relative;
+	    top: 0px;
+	    left: 88px;
+	    transform: scale(1);
+	    transform-origin: center;
+	    padding: 20px;
+		}
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+	   	position: relative;
+	    top: 160px;
+	    left: 0px;
+	    transform: scale(1.2);
+	    transform-origin: center;
+	    padding: 20px;
+		}
+
+	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+	    position: relative;
+	    top: 220px;
+	    left: -60px;
+	    transform: scale(1.2);
+	    transform-origin: center;
+	    padding: 20px;
+		}
 	}
 }
 
@@ -1137,6 +1220,66 @@ a:hover, a:focus, a:visited{
 	a:active, a:hover, a:focus, a:visited{
 		color: rgb(109, 101, 203) !important;
 		cursor:pointer;
+	}
+}
+
+.gutter-l{
+	left: 0px;
+    z-index: 1;
+    background-color: #efefee;
+
+    @media only screen and (min-width: 1400px){
+    position: fixed;
+    top: 0px;
+    display: block;
+    width: calc( (100% - 1200px)/2 );
+    height: 100%;
+	}
+
+	@media only screen and (max-width: 1400px) and (min-width: 769px){
+    position: fixed;
+    top: 0px;
+    display: block;
+    width: 25px;
+    height: 100%;
+	}
+
+	@media only screen and (max-width: 768px) and (min-width: 576px){
+    display: none;
+	}
+
+    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+    display: none;
+	}
+}
+
+.gutter-r{
+	right: 0px;
+    z-index: 1;
+    background-color: #efefee;
+  
+    @media only screen and (min-width: 1400px){
+    position: fixed;
+    top: 0px;
+    display: block;
+    width: calc( (100% - 1200px)/2 );
+    height: 100%;
+	}
+
+	@media only screen and (max-width: 1400px) and (min-width: 769px){
+    position: fixed;
+    top: 0px;
+    display: block;
+    width: 25px;
+    height: 100%;
+	}
+
+	@media only screen and (max-width: 768px) and (min-width: 576px){
+    display: none;
+	}
+
+    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+    display: none;
 	}
 }
 
