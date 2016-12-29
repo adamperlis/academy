@@ -2,6 +2,11 @@
 @import "./fonts.style";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display::400,400i|Raleway:400,700');
 
+html, body, #appContainer, #root{
+	height: 100%;
+}
+
+
 a:hover, a:focus, a:visited{
 		outline:none;
     	color:white;
@@ -292,10 +297,29 @@ a:hover, a:focus, a:visited{
 
 	@media only screen and (min-width: 1401px){
 	    padding-bottom: 200px;
+	    border-left: 80px solid #efefee;
+	    border-right:80px solid #efefee;
 		}
 
 		@media only screen and (max-width: 1400px) and (min-width: 769px){
 	    padding-bottom: 60px;
+	    border-left: 25px solid #efefee;
+	    border-right: 25px solid #efefee;
+		}
+
+		@media only screen and (max-width: 1024px) and (min-width: 769px){
+		border-left: 25px solid #efefee;
+	    border-right: 25px solid #efefee;
+		}
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+		border-left: none;
+		border-right: none;
+		}
+
+	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+		border-left: none;
+		border-right: none;	
 		}
 
 	h3 {
@@ -1225,11 +1249,12 @@ a:hover, a:focus, a:visited{
 
 .gutter-l{
 	left: 0px;
-    z-index: 1;
+    z-index: -1;
     background-color: #efefee;
 
     @media only screen and (min-width: 1400px){
-    position: fixed;
+    
+    position: absolute;
     top: 0px;
     display: block;
     width: calc( (100% - 1200px)/2 );
@@ -1237,7 +1262,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	@media only screen and (max-width: 1400px) and (min-width: 769px){
-    position: fixed;
+    position: absolute;
     top: 0px;
     display: block;
     width: 25px;
@@ -1255,11 +1280,11 @@ a:hover, a:focus, a:visited{
 
 .gutter-r{
 	right: 0px;
-    z-index: 1;
+    z-index: -1;
     background-color: #efefee;
   
     @media only screen and (min-width: 1400px){
-    position: fixed;
+    position: absolute;
     top: 0px;
     display: block;
     width: calc( (100% - 1200px)/2 );
@@ -1267,11 +1292,11 @@ a:hover, a:focus, a:visited{
 	}
 
 	@media only screen and (max-width: 1400px) and (min-width: 769px){
-    position: fixed;
+    position: absolute;
     top: 0px;
     display: block;
     width: 25px;
-    height: 100%;
+   	height: 100%;
 	}
 
 	@media only screen and (max-width: 768px) and (min-width: 576px){

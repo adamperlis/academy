@@ -6,7 +6,6 @@ import DesignThinkingGraphic from './DesignThinkingGraphic';
 
 const DesignThinking = (props) => {
   return (
-
     <Row className="show-grid design-thinking">
     <Col xs={5} sm={7} md={7} lg={8}><DesignThinkingGraphic /></Col> 
     <Col xs={7} sm={3} md={3} lg={2} > 

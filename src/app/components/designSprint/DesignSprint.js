@@ -5,9 +5,8 @@ import { Link }       from 'react-router';
 
 const DesignSprint = (props) => {
   return (
-
     <Row className="show-grid design-sprint">
-    <Col xs={6}> 
+    <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
 
     <h3>
     Design Sprint
@@ -28,7 +27,7 @@ const DesignSprint = (props) => {
     </Link>
 
     </Col>
-    <Col xs={6}></Col> 
+    <Col xs={6} sm={9} md={8} lg={8}></Col> 
         <Grid>
         <Row className="show-grid">
             <Col xs={12}> 
@@ -39,7 +38,6 @@ const DesignSprint = (props) => {
         </Row>
         </Grid>
     </Row>
-
     );
 };
 
