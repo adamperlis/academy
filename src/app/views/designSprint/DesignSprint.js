@@ -62,7 +62,7 @@ class DesignSprint extends Component {
           'view-enter': viewEntersAnim
         })}>
         <Row className="show-grid sprint-academy hero">
-          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
+          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={1}> 
             <h1>Design</h1>
             <h1>Sprint</h1>
             <h2>Academy</h2>

@@ -59,7 +59,7 @@ class InnovationServices extends Component {
           'view-enter': viewEntersAnim
         })}>
         <Row className="show-grid innovation hero">
-          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
+          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={1}> 
             <h1>Innovation</h1>
             <h2>Services</h2>
             
