@@ -12,7 +12,10 @@
     "dev-win": "setx NODE_ENV=dev webpack",
     "test-win": "setx NODE_ENV=test nyc mocha test/.setup.js test/**/*.spec.js --compilers js:babel-core/register --recursive",
     "prod-win": "setx NODE_ENV=production webpack -p --config webpack.production.config.babel.js ",
-    "start-win": "setx NODE_ENV=dev babel-node --presets es2015 ./server.hot.reload.js"
+    "start-win": "setx NODE_ENV=dev babel-node --presets es2015 ./server.hot.reload.js",
+    "build": "webpack --config .webpack.production.config.babel.js --progress --colors",
+    "start": "NODE_ENV=dev babel-node --presets es2015 ./src/app.js"
+}
   },
   "keywords": [
     "react",
@@ -96,6 +99,7 @@
     "react-modal": "^0.6.1",
     "react-motion": "^0.4.4",
     "react-notification": "^5.0.1",
+    "react-parallax": "^1.2.2",
     "react-redux": "^4.4.1",
     "react-router": "^2.8.1",
     "react-router-redux": "^4.0.1",

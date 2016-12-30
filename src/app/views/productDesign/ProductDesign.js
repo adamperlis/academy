@@ -97,7 +97,7 @@ class ProductDesign extends Component {
           </Col>
         </Row>
 
-        <Row className="show-grid workshop">
+        <Row className="show-grid product-dev">
           <Col xs={5} sm={5} md={6} lg={6}></Col> 
           <Col xs={7} sm={5} md={4} lg={4}> 
 

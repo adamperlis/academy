@@ -97,7 +97,7 @@ class InnovationServices extends Component {
           </Col>
         </Row>
 
-        <Row className="show-grid workshop">
+        <Row className="show-grid user-testing">
           <Col xs={6} sm={7} md={7} lg={8}></Col> 
           <Col xs={6} sm={3} md={3} lg={2}> 
 
