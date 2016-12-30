@@ -126,7 +126,7 @@ export default class TopBarNav extends React.Component {
                     <AppBar
                     className="appBar" 
                     style={{
-                      height:'40px',
+                      height:'60px',
                       background:'#FAFAFA',
                       borderBottom:'1px solid #6D65CB',
                     }} 

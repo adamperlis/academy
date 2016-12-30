@@ -5,6 +5,8 @@
 html, body, #appContainer, #root{
 	height: 100%;
 	background:#efefee;
+	max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -32,11 +34,11 @@ a:hover, a:focus, a:visited{
 
 .appBar button div svg {
 	fill: black !important;
-	margin-top: -28px;
+	margin-top: -8px;
 }
 
 .nav-logo img{
-	margin-top: -28px;
+	margin-top: -8px;
 }
 
 .drawer{
