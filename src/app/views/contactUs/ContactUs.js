@@ -40,7 +40,7 @@ class ContactUs extends Component {
           'view-enter': viewEntersAnim
         })}>
         <Row className="show-grid hero">
-          <Col xs={6}> 
+          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={1}> 
             <h1>Contact</h1>
             <h2>Us</h2>
 

@@ -73,7 +73,7 @@ class InnovationServices extends Component {
         </Row>
 
         <Row id="services" className="show-grid ignite-talk">
-          <Col xs={7}> 
+          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={2}> 
 
           <h3>
           Build
@@ -91,15 +91,15 @@ class InnovationServices extends Component {
           <Col xs={5}></Col>
         </Row>
 
-        <Row className="show-grid arrow">
+        <Row className="show-grid big-arrow">
           <Col xs={12}> 
             <img src={require('../../images/big-arrow-down.svg')} width="100%" className=""/> 
           </Col>
         </Row>
 
         <Row className="show-grid workshop">
-          <Col xs={5}></Col> 
-          <Col xs={7}> 
+          <Col xs={6} sm={7} md={7} lg={8}></Col> 
+          <Col xs={6} sm={3} md={3} lg={2}> 
 
           <h3>
           User
@@ -116,14 +116,14 @@ class InnovationServices extends Component {
           </Col>
         </Row>
 
-        <Row className="show-grid arrow-reverse">
+        <Row className="show-grid big-arrow-reverse">
           <Col xs={12}> 
             <img src={require('../../images/big-arrow-down-reverse.svg')} width="100%" className=""/> 
           </Col>
         </Row>
 
         <Row className="show-grid bootcamp">
-          <Col xs={6}> 
+          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={2}> 
 
           <h3>
           Launch

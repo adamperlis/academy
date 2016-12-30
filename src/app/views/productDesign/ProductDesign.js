@@ -73,7 +73,7 @@ class ProductDesign extends Component {
         </Row>
 
         <Row id="services" className="show-grid ignite-talk">
-          <Col xs={3} sm={4} smOffset={1} md={5} mdOffset={1} lg={5} lgOffset={1}> 
+          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={2}> 
 
           <h3>
           Product
@@ -91,15 +91,15 @@ class ProductDesign extends Component {
           <Col xs={5}></Col>
         </Row>
 
-        <Row className="show-grid arrow">
+        <Row className="show-grid big-arrow">
           <Col xs={12}> 
             <img src={require('../../images/big-arrow-down.svg')} width="100%" className=""/> 
           </Col>
         </Row>
 
         <Row className="show-grid workshop">
-          <Col xs={5}></Col> 
-          <Col xs={7}> 
+          <Col xs={5} sm={5} md={6} lg={6}></Col> 
+          <Col xs={7} sm={5} md={4} lg={4}> 
 
           <h3>
           Product
@@ -115,14 +115,14 @@ class ProductDesign extends Component {
           </Col>
         </Row>
 
-        <Row className="show-grid arrow-reverse">
+        <Row className="show-grid big-arrow-reverse">
           <Col xs={12}> 
             <img src={require('../../images/big-arrow-down-reverse.svg')} width="100%" className=""/> 
           </Col>
         </Row>
 
         <Row className="show-grid bootcamp">
-          <Col xs={6}> 
+          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={2}> 
 
           <h3>
           Product
