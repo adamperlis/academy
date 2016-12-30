@@ -13,8 +13,8 @@
     "prod-win": "setx NODE_ENV=production webpack -p --config webpack.production.config.babel.js ",
     "start-win": "setx NODE_ENV=dev babel-node --presets es2015 ./server.hot.reload.js",
     "build": "webpack --config webpack.production.config.babel.js --progress --colors",
-    "start": "NODE_ENV=dev babel-node --presets es2015 ./src/app.js"
-  },
+    "start": "babel-node --presets es2015 ./server.hot.reload.js"
+      },
   "keywords": [
     "react",
     "redux",
