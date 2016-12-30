@@ -37,7 +37,12 @@ const config = {
   ]},
   plugins: [
     getImplicitGlobals(),
-    setNodeEnv()
+    setNodeEnv(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    })
   ],
   postcss: function () {
     return [precss, autoprefixer];
