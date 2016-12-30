@@ -7,6 +7,7 @@ const assetsDir       = path.resolve(__dirname, 'public/assets');
 const nodeModulesDir  = path.resolve(__dirname, 'node_modules');
 
 const config = {
+  devtool: "cheap-module-source-map",
   entry: [
     path.resolve(__dirname, 'src/app/index.js')
   ],
