@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-bootstrap-webpack-starter",
+  "name": "Academy Website",
   "version": "0.4.0",
-  "description": "react js + redux + react router + hot reload + devTools + bootstrap + webpack starter",
+  "description": "Academy Website",
   "main": "src/index.js",
   "scripts": {
     "test": "NODE_ENV=test nyc mocha test/.setup.js test/**/*.spec.js --compilers js:babel-core/register --recursive",
