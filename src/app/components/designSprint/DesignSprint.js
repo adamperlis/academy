@@ -27,16 +27,9 @@ const DesignSprint = (props) => {
     </Link>
 
     </Col>
-    <Col xs={6} sm={9} md={8} lg={8}></Col> 
-        <Grid>
-        <Row className="show-grid">
-            <Col xs={12}> 
-            <div>
-                <img src={require('../../images/sprinter.png')} width="100%" className="img-responsive"/>
-            </div>
-            </Col> 
-        </Row>
-        </Grid>
+    <Col xs={12} sm={8} mdOffset={1} md={7} lgOffset={2} lg={6}>
+        <img src={require('../../images/sprinter.png')} width="100%" className="img-responsive"/>
+    </Col> 
     </Row>
     );
 };

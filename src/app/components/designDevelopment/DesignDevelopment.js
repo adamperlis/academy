@@ -7,7 +7,7 @@ const DesignDevelopment = (props) => {
   return (
 
     <Row className="show-grid design-development">
-    <Col xs={6}> 
+    <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
 
     <h3>
     Product
@@ -27,7 +27,7 @@ const DesignDevelopment = (props) => {
     </Link>
 
     </Col>
-    <Col xs={6}><img src={require('../../images/productGraphic.svg')} width="100%" className=""/></Col> 
+    <Col xs={6} sm={3} mdOffset={1} md={3} lgOffset={2} lg={3}><img src={require('../../images/productGraphic.svg')} width="100%" className=""/></Col> 
 
 
     </Row>

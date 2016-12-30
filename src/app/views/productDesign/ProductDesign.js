@@ -10,6 +10,13 @@ import {
   WizardMotion,
   ContactUs
 }                     from '../../components';
+import  Scroll   from 'react-scroll';
+
+var ScrollLink       = Scroll.Link;
+var Element    = Scroll.Element;
+var Events     = Scroll.Events;
+var scroll     = Scroll.animateScroll;
+var scrollSpy  = Scroll.scrollSpy;
 
 class ProductDesign extends Component {
 
@@ -21,6 +28,15 @@ class ProductDesign extends Component {
   componentDidMount() {
     const { enterProductDesign } = this.props;
     enterProductDesign();
+    Events.scrollEvent.register('begin', function(to, element) {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function(to, element) {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -30,6 +46,8 @@ class ProductDesign extends Component {
   componentWillUnmount() {
     const { leaveProductDesign } = this.props;
     leaveProductDesign();
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
   }
 
   render() {
@@ -45,16 +63,16 @@ class ProductDesign extends Component {
             <h1>Product</h1>
             <h2>Design & Development</h2>
             
-            <Link
+            <ScrollLink
               className="btn"
-              to={'#'}>
+              activeClass="active" to="services" spy={true} smooth={true} offset={-90} duration={850}>
               SEE OUR SERVICES
-            </Link>
+            </ScrollLink>
           </Col>
           <Col xs={4}></Col> 
         </Row>
 
-        <Row className="show-grid ignite-talk">
+        <Row id="services" className="show-grid ignite-talk">
           <Col xs={7}> 
 
           <h3>

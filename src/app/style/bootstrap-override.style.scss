@@ -15,33 +15,36 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 760px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 980px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1180px;
-  }
-}
 .container-fluid {
+  margin-top:0 !important;
   margin-right: auto;
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px;
+
+
+    @media only screen and (min-width: 1401px){
+    max-width: 1240px;
+    }
+
+    @media only screen and (max-width: 1400px) and (min-width: 1025px){
+    max-width: 1042px;
+    }
+
+    @media only screen and (max-width: 1024px) and (min-width: 769px){
+    max-width: 944px;
+    }
+
+    @media only screen and (max-width: 768px) and (min-width: 576px){
+    
+    }
+
+    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+      
+    }
 }
+
+
 .row {
   margin-left: -20px;
   margin-right: -20px;

@@ -27,7 +27,6 @@ class App extends Component {
         <TopBarNav />
         <div className="container-fluid">
           {children}
-          <Footer />
         </div>
         <BackToTop
           minScrollY={40}
@@ -35,7 +34,9 @@ class App extends Component {
         />
         <span className="gutter-l"></span>
         <span className="gutter-r"></span>
+        <Footer />
       </div>
+
     );
   }
 

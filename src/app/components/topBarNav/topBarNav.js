@@ -60,7 +60,7 @@ export default class TopBarNav extends React.Component {
             return (
                 <div>
                 <Drawer
-                  containerStyle={{background: 'linear-gradient(135deg, #6D65CB 0%, #293890 100%)',}}
+                  containerStyle={{background: '#6d65cb',}}
                   docked={false}
                   openSecondary={false}
                   open={this.state.open}
@@ -74,7 +74,7 @@ export default class TopBarNav extends React.Component {
                     Home
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'#6D65CB',}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
                     onTouchTap={this.handleClose.bind(this)}
@@ -83,7 +83,7 @@ export default class TopBarNav extends React.Component {
                     What's Design Thinking?
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'#6D65CB',}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
                     onTouchTap={this.handleClose.bind(this)}
@@ -92,7 +92,7 @@ export default class TopBarNav extends React.Component {
                     Sprint Academy
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'#6D65CB',}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
                     onTouchTap={this.handleClose.bind(this)}
@@ -101,7 +101,7 @@ export default class TopBarNav extends React.Component {
                     Design & Development
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'#6D65CB',}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
                     onTouchTap={this.handleClose.bind(this)}
@@ -110,7 +110,7 @@ export default class TopBarNav extends React.Component {
                     Innovation Services
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'#6D65CB',}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
                     onTouchTap={this.handleClose.bind(this)}
@@ -119,7 +119,7 @@ export default class TopBarNav extends React.Component {
                     Contact Us
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'#6D65CB',}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)',}}/>
                 </Drawer>
 
                 <Sticky enabled={true} top={0} innerZ={3}>

@@ -12,9 +12,17 @@ import {
 }                     from '../../components';
 import { Grid, Row, Col, Accordion, Panel, PanelGroup } from 'react-bootstrap';
 import { Link }       from 'react-router';
+import  Scroll   from 'react-scroll';
+
+var ScrollLink       = Scroll.Link;
+var Element    = Scroll.Element;
+var Events     = Scroll.Events;
+var scroll     = Scroll.animateScroll;
+var scrollSpy  = Scroll.scrollSpy;
+
 
 class DesignSprint extends Component {
-
+  
   state = {
     animated: true,
     viewEntersAnim: true
@@ -23,6 +31,15 @@ class DesignSprint extends Component {
   componentDidMount() {
     const { enterDesignSprint } =  this.props;
     enterDesignSprint();
+    Events.scrollEvent.register('begin', function(to, element) {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function(to, element) {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -32,6 +49,8 @@ class DesignSprint extends Component {
   componentWillUnmount() {
     const { leaveDesignSprint } =  this.props;
     leaveDesignSprint();
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
   }
 
   render() {
@@ -43,22 +62,22 @@ class DesignSprint extends Component {
           'view-enter': viewEntersAnim
         })}>
         <Row className="show-grid sprint-academy hero">
-          <Col xs={6}> 
+          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
             <h1>Design</h1>
             <h1>Sprint</h1>
             <h2>Academy</h2>
-            <Link
+            <ScrollLink
               className="btn"
-              to={'#'}>
+              activeClass="active" to="curriculum" spy={true} smooth={true} offset={-90} duration={850}>
               SEE THE CURRICULUM
-            </Link>
+            </ScrollLink>
           </Col>
-          <Col xs={6}></Col> 
+          <Col xs={6} sm={9} mdOffset={1} md={8} lgOffset={2} lg={6} ></Col> 
         </Row>
 
-        <Row className="show-grid sprint-academy what-is">
-          <Col xs={4}></Col>
-          <Col xs={8}>
+        <Row id="curriculum" className="show-grid sprint-academy what-is">
+          <Col xs={6} sm={7} md={7} lg={8}></Col>
+          <Col xs={6} sm={3} md={3} lg={2}>
             <h3>What's a</h3>
             <h4>Design</h4>
             <h4>Sprint?</h4>
@@ -68,7 +87,7 @@ class DesignSprint extends Component {
         </Row>
 
         <Row className="show-grid sprint-academy what-is">
-          <Col xs={12}>
+          <Col xs={12} smOffset={1} sm={4} mdOffset={1} md={4} lgOffset={1} lg={4}>
             <ul>
               <li><img src={require('../../images/discovery.svg')} height="30px"/>
               <p>1. Discovery</p></li>
@@ -84,10 +103,10 @@ class DesignSprint extends Component {
               <p>6. Learn & Repeat</p></li>
             </ul>
           </Col>
-        </Row>
 
-        <Row className="show-grid sprint-academy what-is" style={{paddingTop:'0px'}}>
-            <ListBenefits />
+          <Col xs={12} smOffset={1} sm={4} mdOffset={1} md={4} lgOffset={1} lg={4} style={{padding:'0',}}> 
+            <ListBenefits /> 
+          </Col> 
         </Row>
 
         <Row className="show-grid ignite-talk">
@@ -115,7 +134,7 @@ class DesignSprint extends Component {
           </Col>
         </Row>
 
-        <Row className="show-grid workshop">
+        <Row id="workshop" className="show-grid workshop">
           <Col xs={5}></Col> 
           <Col xs={7}> 
 
@@ -135,7 +154,7 @@ class DesignSprint extends Component {
           </Col>
         </Row>
 
-        <Row className="show-grid sprint-academy what-is syllabus">
+        <Row id="syllabus" className="show-grid sprint-academy what-is syllabus">
             <ListCollapse />
         </Row>
 

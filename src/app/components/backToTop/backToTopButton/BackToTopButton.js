@@ -3,20 +3,22 @@ import cx from 'classnames';
 import UpIcon from './UpIcon';
 
 const defaultBackGroundColor = '#4A4A4A';
-const sideOffset    = '-10px';
+const sideOffset    = '40px';
 const bottomOffset  = '40px';
-const defaultWidth  = '100px';
+const defaultWidth  = '40px';
 const defaultZindex = 10;
-const defaultOpacity= 0.5;
+const defaultOpacity= 1;
 const defaultStyle = {
   position: 'fixed',
   right:    sideOffset,
   left:     '',
   bottom:   bottomOffset,
+  borderRadius: '100px',
   width:    defaultWidth,
   zIndex:   defaultZindex,
   opacity:  defaultOpacity,
-  backgroundColor: defaultBackGroundColor
+  backgroundColor: defaultBackGroundColor,
+  height: '40px',
 };
 
 const BackToTopButton = ({onClick, position, children, motionStyle}) => {
@@ -31,7 +33,7 @@ const BackToTopButton = ({onClick, position, children, motionStyle}) => {
         onClick={onClick}>
         {
           !children &&
-          <div style={{marginRight: '10px'}}>
+          <div style={{marginRight: '0px'}}>
             <UpIcon color={'#F1F1F1'}/>
           </div>
         }

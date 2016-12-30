@@ -4,10 +4,9 @@ import { Link }       from 'react-router';
 
 const Footer = (props) => {
   return (
- 
     <Row className="show-grid black-footer">
   
-    <Col xs={6}> 
+    <Col xs={6} sm={6} md={6} lg={6} > 
   	
     
       <Link
@@ -21,7 +20,7 @@ const Footer = (props) => {
   	{props.children}
 
   	</Col>
-  	<Col xs={6}>
+  	<Col xs={6} sm={6} md={6} lg={6}>
       <ul>
         <li><Link
         className="links"
@@ -30,13 +29,8 @@ const Footer = (props) => {
         </Link></li>
         <li><Link
         className="links"
-        to={'/contact'}>
+        to={'/ContactUs'}>
         CONTACT US
-        </Link></li>
-        <li><Link
-        className="links"
-        to={'/about'}>
-        ABOUT
         </Link></li>
         
       </ul>
@@ -53,7 +47,6 @@ const Footer = (props) => {
         </Row>
       
     </Row>
-    
     
   );
 };

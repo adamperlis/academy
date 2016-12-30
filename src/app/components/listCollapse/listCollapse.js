@@ -33,7 +33,7 @@ export default class listCollapse extends React.Component {
         <div>
           <List>
             <ListItem
-              primaryText="SEE SYLLABUS"
+              primaryText="SYLLABUS"
               leftIcon={<ListIcon color='#6D65CB' />}
               style={{
                 fontFamily: 'Montserrat',

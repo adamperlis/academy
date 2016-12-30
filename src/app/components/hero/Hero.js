@@ -25,7 +25,7 @@ const Hero = (props) => {
   	</Col>
   	<Col xs={6} sm={9} md={8} lg={8}></Col> 
 
-      <Row className="show-grid hero">
+      <Row className="show-grid arrow">
         <Col xs={12} md={12}> 
           <ArrowDown />
         </Col>
