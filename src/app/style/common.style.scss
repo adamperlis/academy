@@ -123,25 +123,28 @@ a:hover, a:focus, a:visited{
     padding-bottom: 30px;
 
     @media only screen and (min-width: 1401px){
-	    padding-top: 60px;
-    	padding-bottom: 60px;
+	    padding-top: 80px;
+    	padding-bottom: 80px;
 		}
 
 		@media only screen and (max-width: 1400px) and (min-width: 769px){
-	    padding-top: 60px;
-    	padding-bottom: 60px;
+	    padding-top: 80px;
+    	padding-bottom: 80px;
 		}
 
 		@media only screen and (max-width: 1024px) and (min-width: 769px){
-		
+		padding-top: 80px;
+    	padding-bottom: 80px;
 		}
 
 		@media only screen and (max-width: 768px) and (min-width: 576px){
-		
+		padding-top: 80px;
+    	padding-bottom: 80px;
 		}
 
 	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
-		
+		padding-top: 80px;
+    	padding-bottom: 80px;
 		}
 
     h1, h2 {
@@ -983,22 +986,89 @@ a:hover, a:focus, a:visited{
 	}
 }
 
-.arrow{
+.big-arrow{
 	height:0;
 
 	img{
 	position: absolute;
-    top: -30px;
-    width: 81%;
-    padding-left: 80px;
+    z-index: 3;
+
+		@media only screen and (min-width: 1401px){
+		width: 28%;
+    	top: -102px;
+    	left: 430px;
+		}
+
+		@media only screen and (max-width: 1400px) and (min-width: 1025px){
+	    width: 26%;
+    	top: -10px;
+    	left: 400px;
+		}
+
+		@media only screen and (max-width: 1024px) and (min-width: 769px){
+	   	width: 35%;
+    	top: -40px;
+    	left: 154px;
+		}
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+		width: 50%;
+    	top: -80px;
+    	left: 90px;	
+		}
+
+		@media only screen and (max-width: 575px) and (min-device-width: 350px){
+		width: 50%;
+    	top: -30px;
+    	left: 90px;
+		}
+
+	}
+}
+
+.big-arrow-reverse{
+	height:0;
+
+	img{
+	position: absolute;
+    z-index: 4;
+
+		@media only screen and (min-width: 1401px){
+		width: 28%;
+    	top: -102px;
+    	left: 430px;
+		}
+
+		@media only screen and (max-width: 1400px) and (min-width: 1025px){
+	    width: 26%;
+    	top: 0px;
+    	left: 400px;
+		}
+
+		@media only screen and (max-width: 1024px) and (min-width: 769px){
+	   	width: 30%;
+    	top: 0px;
+    	left: 354px;
+		}
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+		width: 30%;
+    	top: 0px;
+    	left:200px;	
+		}
+
+		@media only screen and (max-width: 575px) and (min-device-width: 350px){
+		width: 40%;
+    	top: 0px;
+    	left: 90px;
+		}
+
 	}
 }
 
 .workshop{
 	padding-top: 160px;
-    padding-bottom: 40px;
-    margin-top: 28px;
-    background: rgb(250, 250, 250);
+    background: white;
 
 	h3 {
 	font-family: "Playfair Display", serif;
@@ -1053,33 +1123,19 @@ a:hover, a:focus, a:visited{
 	border: 1px solid #FF0084;
 	}
 
-	#Group-17 circle{
-		stroke-dasharray: 4;
-	}
-
-	svg{
-	position: relative;
-    top: 190px;
-    left: -34px;
-	}
 }
 
 .syllabus{
 	padding-top:0 !important;
 }
 
-.arrow-reverse{
-    width: 90%;
-    padding-left: 50px;
-    padding-top: 20px;
-}
-
 .bootcamp{
-	padding-top:40px;
-	z-index: 3;
+	padding-top: 180px;
+    padding-bottom: 180px;
+    z-index: 3;
     position: relative;
-    height: 461px;
-    overflow: hidden;
+    height: 100%;
+    background: #fafafa;
 
 	h3 {
 	font-family: "Playfair Display", serif;
@@ -1141,6 +1197,31 @@ a:hover, a:focus, a:visited{
     margin-bottom: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    @media only screen and (min-width: 1401px){
+	    padding-top: 80px;
+    	padding-bottom: 80px;
+		}
+
+		@media only screen and (max-width: 1400px) and (min-width: 769px){
+	    padding-top: 80px;
+    	padding-bottom: 80px;
+		}
+
+		@media only screen and (max-width: 1024px) and (min-width: 769px){
+		padding-top: 80px;
+    	padding-bottom: 80px;
+		}
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+		padding-top: 80px;
+    	padding-bottom: 80px;
+		}
+
+	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+		padding-top: 80px;
+    	padding-bottom: 80px;
+		}
 
     h1, h2 {
     color:white;
@@ -1296,6 +1377,31 @@ a:hover, a:focus, a:visited{
     margin-bottom: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    @media only screen and (min-width: 1401px){
+	    padding-top: 80px;
+    	padding-bottom: 80px;
+		}
+
+		@media only screen and (max-width: 1400px) and (min-width: 769px){
+	    padding-top: 80px;
+    	padding-bottom: 80px;
+		}
+
+		@media only screen and (max-width: 1024px) and (min-width: 769px){
+		padding-top: 80px;
+    	padding-bottom: 80px;
+		}
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+		padding-top: 80px;
+    	padding-bottom: 80px;
+		}
+
+	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+		padding-top: 80px;
+    	padding-bottom: 80px;
+		}
 
     h1, h2 {
     color:black;

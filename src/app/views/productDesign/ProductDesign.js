@@ -59,7 +59,7 @@ class ProductDesign extends Component {
           'view-enter': viewEntersAnim
         })}>
         <Row className="show-grid product-design hero">
-          <Col xs={8}> 
+          <Col xs={8} sm={4} smOffset={1} md={5} mdOffset={1} lg={5} lgOffset={1}> 
             <h1>Product</h1>
             <h2>Design & Development</h2>
             
@@ -69,11 +69,11 @@ class ProductDesign extends Component {
               SEE OUR SERVICES
             </ScrollLink>
           </Col>
-          <Col xs={4}></Col> 
+          <Col xs={6} sm={9} mdOffset={1} md={8} lgOffset={2} lg={6}></Col> 
         </Row>
 
         <Row id="services" className="show-grid ignite-talk">
-          <Col xs={7}> 
+          <Col xs={3} sm={4} smOffset={1} md={5} mdOffset={1} lg={5} lgOffset={1}> 
 
           <h3>
           Product

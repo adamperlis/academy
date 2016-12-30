@@ -59,7 +59,7 @@ class InnovationServices extends Component {
           'view-enter': viewEntersAnim
         })}>
         <Row className="show-grid innovation hero">
-          <Col xs={8}> 
+          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
             <h1>Innovation</h1>
             <h2>Services</h2>
             
@@ -69,7 +69,7 @@ class InnovationServices extends Component {
               SEE OUR SERVICES
             </ScrollLink>
           </Col>
-          <Col xs={4}></Col> 
+          <Col xs={6} sm={9} mdOffset={1} md={8} lgOffset={2} lg={6}></Col> 
         </Row>
 
         <Row id="services" className="show-grid ignite-talk">
