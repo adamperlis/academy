@@ -28,7 +28,7 @@ const DesignSprint = (props) => {
 
     </Col>
     <Col xs={12} sm={8} mdOffset={1} md={7} lgOffset={2} lg={6}>
-        <img src={require('../../images/sprinter.png')} width="100%" className="img-responsive"/>
+        <img src="./public/images/sprinter.png" with="100%" className="img-responsive"/>
     </Col> 
     </Row>
     );

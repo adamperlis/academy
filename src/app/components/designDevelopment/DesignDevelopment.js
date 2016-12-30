@@ -27,7 +27,8 @@ const DesignDevelopment = (props) => {
     </Link>
 
     </Col>
-    <Col xs={6} sm={3} mdOffset={1} md={3} lgOffset={2} lg={3}><img src={require('../../images/productGraphic.svg')} width="100%" className=""/></Col> 
+    <Col xs={6} sm={3} mdOffset={1} md={3} lgOffset={2} lg={3}>
+    <img src="./public/images/productGraphic.svg" width="100%" className=""/></Col> 
 
 
     </Row>

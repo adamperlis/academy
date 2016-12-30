@@ -12,8 +12,9 @@ const config = {
     path.resolve(__dirname, 'src/app/index.js')
   ],
   output: {
-    path: assetsDir,
-    filename: 'bundle.js'
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js',
+    publichPath: '/'
   },
   module: {
     loaders: [{

@@ -11,7 +11,7 @@ const config = {
     path.resolve(__dirname, 'src/app/index.js')
   ],
   output: {
-    path: assetsDir,
+    path:  path.join(__dirname, 'public'),
     filename: 'bundle.js'
   },
   module: {

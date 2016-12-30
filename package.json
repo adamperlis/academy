@@ -12,10 +12,11 @@
     "test-win": "setx NODE_ENV=test nyc mocha test/.setup.js test/**/*.spec.js --compilers js:babel-core/register --recursive",
     "prod-win": "setx NODE_ENV=production webpack -p --config webpack.production.config.babel.js ",
     "start-win": "setx NODE_ENV=dev babel-node --presets es2015 ./server.hot.reload.js",
-    "build": "webpack --config webpack.production.config.babel.js --progress --colors",
-    "start": "babel-node --presets es2015 ./server.hot.reload.js",
-    "prod:start": "babel-node --presets es2015 ./app.js"
-    },
+    "build": "webpack --config webpack.production.config.babel.js --progress --colors && npm run images",
+    "start": "NODE_ENV=dev babel-node --presets es2015 ./server.hot.reload.js",
+    "prod:start": "babel-node --presets es2015 ./app.js",
+    "images": "cp -R src/app/images public"
+},
   "keywords": [
     "react",
     "redux",
