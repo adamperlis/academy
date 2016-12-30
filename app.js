@@ -8,11 +8,6 @@ if (process.env.NODE_ENV !== 'production') {
   const webpackHotMiddleware = require('webpack-hot-middleware')
   const config = require('./webpack.config.babel.js')
   const compiler = webpack(config)
-  console.log(config.default.output.publicPath, "=======")
-  app.use(webpackHotMiddleware(compiler))
-  app.use(webpackDevMiddleware(compiler, {
-    noInfo: true,
-    publicPath: "/"  }))
 }
 
 app.listen(port)
