@@ -16,6 +16,7 @@ import ListCollapse         from './listCollapse/listCollapse';
 import ListBenefits         from './listBenefits/listBenefits';
 import TopBarNav            from './topBarNav/topBarNav';
 import ContactUs            from './contactUs/ContactUs';
+import LoadingIcon             from './loading/loading';
 
 
 
@@ -39,5 +40,6 @@ export {
   ListCollapse,
   ListBenefits,
   TopBarNav,
-  ContactUs
+  ContactUs,
+  LoadingIcon
 };

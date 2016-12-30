@@ -6,7 +6,8 @@ import {
   NavigationBar,
   BackToTop,
   Footer,
-  TopBarNav
+  TopBarNav,
+  LoadingIcon
 }                             from '../../components';
 import navigationModel        from '../../models/navigation.json';
 import { bindActionCreators } from 'redux';
@@ -15,13 +16,32 @@ import * as viewsActions      from '../../redux/modules/views';
 
 class App extends Component {
 
+  constructor() {
+    super();
+    
+    this.state = {
+      loading: true
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ loading: false }), 0); 
+  }
+  
   state = {
     navModel : navigationModel
   };
 
   render() {
+    const { loading } = this.state;
     const { navModel } = this.state;
     const { children } = this.props;
+
+    if(loading) {
+      console.log("loading");
+      return (<LoadingIcon />);
+    }
+    
     return (
       <div id="appContainer">
         <TopBarNav />
