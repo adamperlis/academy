@@ -29,5 +29,5 @@ npm run build
 npm run prod:start
 git add .
 git commit -m "deploy to production"
-git push origin heroku master
+git push heroku master
 ```
