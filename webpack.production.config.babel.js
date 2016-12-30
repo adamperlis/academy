@@ -12,7 +12,7 @@ const config = {
     path.resolve(__dirname, 'src/app/index.js')
   ],
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, 'public/assets'),
     filename: 'bundle.js',
     publichPath: '/'
   },
