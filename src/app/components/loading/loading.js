@@ -6,7 +6,7 @@ const style = {
     position: 'absolute',
     display: 'inline-block',
     content:'',
-    margin: '-50px 0 0 -50px',
+    margin: '-50px 0 0 -22px',
     left: '50%',
     top: '50%',
     zIndex:'5',
