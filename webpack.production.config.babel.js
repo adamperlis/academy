@@ -3,6 +3,7 @@ import path         from 'path';
 import autoprefixer from 'autoprefixer';
 import precss       from 'precss';
 
+
 const assetsDir       = path.resolve(__dirname, 'public/assets');
 const nodeModulesDir  = path.resolve(__dirname, 'node_modules');
 
@@ -38,11 +39,14 @@ const config = {
   plugins: [
     getImplicitGlobals(),
     setNodeEnv(),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
+    new webpack.DefinePlugin({ // <-- key to reducing React's size
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
       }
-    })
+    }),
+    new webpack.optimize.DedupePlugin(), //dedupe similar code 
+    new webpack.optimize.UglifyJsPlugin(), //minify everything
+    new webpack.optimize.AggressiveMergingPlugin()//Merge chunks 
   ],
   postcss: function () {
     return [precss, autoprefixer];

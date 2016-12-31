@@ -15,7 +15,7 @@
     "dev": "NODE_ENV=dev babel-node --presets es2015 ./server.hot.reload.js",
     "prod:start": "babel-node --presets es2015 ./app.js",
     "images": "cp -R src/app/images public/assets"
-},
+  },
   "keywords": [
     "react",
     "redux",
@@ -49,6 +49,7 @@
     "babel-preset-stage-2": "^6.5.0",
     "babel-register": "^6.7.2",
     "chai": "^3.5.0",
+    "compression-webpack-plugin": "^0.3.2",
     "coveralls": "^2.11.11",
     "css-loader": "^0.23.1",
     "dirty-chai": "^1.2.2",
@@ -83,7 +84,6 @@
     "babel-polyfill": "^6.7.4",
     "bootstrap": "^3.3.6",
     "classnames": "^2.2.3",
-    "font-awesome": "^4.5.0",
     "jquery": "^2.2.1",
     "js-base64": "^2.1.9",
     "jss": "^6.1.0",
