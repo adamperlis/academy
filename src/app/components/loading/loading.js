@@ -10,6 +10,7 @@ const style = {
     left: '50%',
     top: '50%',
     zIndex:'5',
+    transition:'.5s all',
   },
   refresh: {
     display: 'inline-block',
@@ -29,7 +30,7 @@ const LoadingIcon = (props) => {
       color="#6d65cb"
       status="loading"
       style={style.refresh}
-    />a
+    />
   </div>
     );
 };
