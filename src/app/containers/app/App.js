@@ -44,7 +44,6 @@ class App extends Component {
     
     return (
       <div id="appContainer">
-      <LoadingIcon />
         <TopBarNav />
         <div className="container-fluid">
           {children}
