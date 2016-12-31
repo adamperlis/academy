@@ -52,8 +52,6 @@ class App extends Component {
           minScrollY={40}
           scrollTo={'appContainer'}
         />
-        <span className="gutter-l"></span>
-        <span className="gutter-r"></span>
         <Footer />
       </div>
 

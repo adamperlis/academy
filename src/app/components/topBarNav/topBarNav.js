@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Drawer, AppBar, MenuItem, Divider} from 'material-ui'
-import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme'
-import getMuiTheme from 'material-ui/styles/getMuiTheme' 
+import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme' 
 import Sticky from 'react-stickynode';
 import { Link }       from 'react-router';
 import Menu from 'material-ui/svg-icons/navigation/menu';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import Slider from 'material-ui/Slider';
+import { connect }  from 'react-redux';
 
 
+const mapStateToProps = (state) => {
+  return {
+    currentView:  state  };
+};
 const styles = {
   headline: {
     fontSize: '10px',
@@ -29,7 +33,7 @@ const styles = {
 //   // alert(`A tab with this route property ${tab.props['data-route']} was activated.`);
 // }
 
-export default class TopBarNav extends React.Component {
+class TopBarNav extends Component {
 
 
   constructor(props){
@@ -38,6 +42,7 @@ export default class TopBarNav extends React.Component {
     this.state = {
       value: '/',
     };
+   
   }
 
   handleChange = (value) => {
@@ -45,10 +50,20 @@ export default class TopBarNav extends React.Component {
       value: value,
     });
   };
+ 
+ // This removes the inkBar from the tab and closes the drawer. 
+  handleTopNavActiveClass = () => {
+    this.setState({currentView: -1});
+    this.state.open !== false ? this.handleClose() : false;
+   };
 
-  getChildContext() {
-    return {muiTheme: getMuiTheme(baseTheme)};
-  }
+  // This changes the inkBar location on the tab and closes the drawer. 
+  handleRouteNav = (value) => {
+   this.setState({currentView: value});
+
+   ///close nav
+   this.handleClose();    
+  };
 
   handleToggle() {
     this.setState({open: !this.state.open});
@@ -57,7 +72,7 @@ export default class TopBarNav extends React.Component {
 
   handleClose() { this.setState({open: false}); }
         render() {
-
+             console.log(this.props);
             return (
                 <div>
                 <Drawer
@@ -69,7 +84,7 @@ export default class TopBarNav extends React.Component {
                   >
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleClose.bind(this)}
+                    onTouchTap={this.handleTopNavActiveClass.bind(this)}
                     className="drawer"
                     to={'/'}>
                     Home
@@ -78,7 +93,7 @@ export default class TopBarNav extends React.Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleClose.bind(this)}
+                    onTouchTap={this.handleTopNavActiveClass.bind(this)}
                     className="drawer"
                     to={'#'}>
                     What's Design Thinking?
@@ -87,7 +102,7 @@ export default class TopBarNav extends React.Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleClose.bind(this)}
+                    onTouchTap={this.handleRouteNav.bind(this, 1)} 
                     className="drawer"
                     to={'/designSprint'}>
                     Sprint Academy
@@ -96,7 +111,7 @@ export default class TopBarNav extends React.Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleClose.bind(this)}
+                    onTouchTap={this.handleRouteNav.bind(this, 2)}
                     className="drawer"
                     to={'/ProductDesign'}>
                     Design & Development
@@ -105,7 +120,7 @@ export default class TopBarNav extends React.Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleClose.bind(this)}
+                    onTouchTap={this.handleRouteNav.bind(this, 3)}
                     className="drawer"
                     to={'/InnovationServices'}>
                     Innovation Services
@@ -114,7 +129,7 @@ export default class TopBarNav extends React.Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleClose.bind(this)}
+                    onTouchTap={this.handleTopNavActiveClass.bind(this)}
                     className="drawer"
                     to={'/ContactUs'}>
                     Contact Us
@@ -136,7 +151,8 @@ export default class TopBarNav extends React.Component {
                     title={
                       <Link
                       className="nav-logo"
-                      to={'/'}>
+                      onTouchTap={this.handleTopNavActiveClass.bind(this)}
+                       to={'/'}>
                       <img src={require('../../images/academy-logo-black.svg')} height="24px"/>
                       </Link>
                     }
@@ -145,11 +161,11 @@ export default class TopBarNav extends React.Component {
                   </Sticky>
 
                   <Sticky enabled={true} top={40} bottomBoundary={0} innerZ={2}>
-                  <Tabs initialSelectedIndex={-1} onChange={this.changeTab} className="small-nav">
+                  <Tabs value={this.state.currentView || -1}  onChange={this.handleRouteNav} className="small-nav">
 
-                    <Tab value={0} style={styles.headline} label="Sprint Academy" containerElement={<Link to="/designSprint"/>} />
-                    <Tab value={1} style={styles.headline} label="Design & Development" containerElement={<Link to="/ProductDesign"/>} />
-                    <Tab value={2} style={styles.headline} label="Innovation Services" containerElement={<Link to="/InnovationServices"/>} />
+                    <Tab value={1} style={styles.headline} label="Sprint Academy" containerElement={<Link  to="/designSprint"/>} />
+                    <Tab value={2} style={styles.headline} label="Design & Development" containerElement={<Link to="/ProductDesign"/>} />
+                    <Tab value={3} style={styles.headline} label="Innovation Services" containerElement={<Link to="/InnovationServices"/>} />
                 
                   </Tabs>
                   </Sticky>
@@ -160,6 +176,5 @@ export default class TopBarNav extends React.Component {
         }
     }
 
-    TopBarNav.childContextTypes = {
-  muiTheme: React.PropTypes.object.isRequired,
-};
+export default connect(mapStateToProps)(TopBarNav);
+

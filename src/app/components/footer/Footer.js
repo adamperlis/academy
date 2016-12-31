@@ -4,9 +4,9 @@ import { Link }       from 'react-router';
 
 const Footer = (props) => {
   return (
-    <div className="black-footer">
+    <div style={{background: 'black', paddingTop: '20px'}}>
+    <Grid>
     <Row className="show-grid">
-    <Col xs={12}>
     <Col xs={6} sm={6} md={6} lg={6} > 
   	
     
@@ -39,8 +39,6 @@ const Footer = (props) => {
 
         </Col> 
 
-      </Col> 
-
     </Row>
 
     <Row className="show-grid">
@@ -51,8 +49,8 @@ const Footer = (props) => {
       </Col>
       </Col>
     </Row>
+    </ Grid>
     </div>
-    
   );
 };
 
