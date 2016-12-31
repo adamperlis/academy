@@ -158,9 +158,8 @@ class TopBarNav extends Component {
                     }
                     onLeftIconButtonTouchTap={this.handleToggle.bind(this)} 
                     />
-                  </Sticky>
 
-                  <Sticky enabled={true} top={40} bottomBoundary={0} innerZ={2}>
+                  
                   <Tabs value={this.state.currentView || -1}  onChange={this.handleRouteNav} className="small-nav">
 
                     <Tab value={1} style={styles.headline} label="Sprint Academy" containerElement={<Link  to="/designSprint"/>} />
