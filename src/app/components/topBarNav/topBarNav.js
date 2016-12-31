@@ -53,7 +53,8 @@ export default class TopBarNav extends React.Component {
   handleToggle() {
     this.setState({open: !this.state.open});
     console.log("open")
-   }
+  }
+
   handleClose() { this.setState({open: false}); }
         render() {
 
@@ -143,7 +144,7 @@ export default class TopBarNav extends React.Component {
                     />
                   </Sticky>
 
-                  <Sticky enabled={true} onStateChange={this.addClass} top={40} bottomBoundary={0} innerZ={2}>
+                  <Sticky enabled={true} top={40} bottomBoundary={0} innerZ={2}>
                   <Tabs initialSelectedIndex={-1} onChange={this.changeTab} className="small-nav">
 
                     <Tab value={0} style={styles.headline} label="Sprint Academy" containerElement={<Link to="/designSprint"/>} />

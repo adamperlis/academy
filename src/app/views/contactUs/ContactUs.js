@@ -39,12 +39,13 @@ class ContactUs extends Component {
           'animatedViews': animated,
           'view-enter': viewEntersAnim
         })}>
-        <Row className="show-grid hero">
+        <Row className="show-grid hero" style={{paddingBottom:'88px'}}>
           <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={1}> 
             <h1>Contact</h1>
             <h2>Us</h2>
 
-            You can reach us at <a className="link" href="mailto:hello@academybydesign.com?Subject=Hello" target="_blank">hello@academybydesign.com</a>
+            <br></br>
+            <p>You can reach us at <a className="link" href="mailto:hello@academybydesign.com?Subject=Hello" target="_blank">hello@academybydesign.com</a></p>
           </Col>
           <Col xs={6}></Col> 
         </Row>
