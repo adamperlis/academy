@@ -1,61 +1,47 @@
-import React, {PropTypes} from 'react';
+import React, {PropTypes, Component} from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { Link }       from 'react-router';
+import { AppBar } from 'material-ui'
+import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme' 
 
 const Footer = (props) => {
   return (
-    <div style={{background: 'black', paddingTop: '20px'}}>
-    <Grid>
-    <Row className="show-grid">
-    <Col xs={6} sm={6} md={6} lg={6} > 
-  	
-    
+
+    <AppBar
+    className="black-footer" 
+    style={{
+      height:'163px',
+      background:'black',
+    }} 
+    iconStyleRight={{
+      marginTop:'20px',
+      marginRight:'0px',
+      flexGrow:'1',
+    }}
+    titleStyle={{fill:'rbg(255,255,255)',}}
+    showMenuIconButton={false} 
+    title={
       <Link
-        className="logo"
-        to={'/'}>
-        <img src={require('../../images/academy-logo-white.svg')} height="24px"/>
-      </Link>
-
-    
-
-  	{props.children}
-
-  	</Col>
-    	<Col xs={6} sm={6} md={6} lg={6}>
-        <ul>
-          <li><Link
-          className="links"
-          to={'/careers'}>
-          CAREERS
-          </Link></li>
-          <li><Link
-          className="links"
-          to={'/ContactUs'}>
-          CONTACT US
-          </Link></li>
-          
-        </ul>
-
-
-        </Col> 
-
-    </Row>
-
-    <Row className="show-grid">
-      <Col xs={12}>
-      <Col xs={12}> 
-        <hr/>
-        <p className="copyright">@2016 Academy by Design LLC. All Rights Reserved</p>
-      </Col>
-      </Col>
-    </Row>
-    </ Grid>
-    </div>
+      className="nav-logo"
+       to={'/'}>
+      <img src={'../public/assets/images/academy-logo-white.svg'} height="24px"/>
+      </Link>}
+    iconElementRight={
+          <ul>
+            <li><Link
+            className="links"
+            to={'/careers'}>
+            CAREERS
+            </Link></li>
+            <li><Link
+            className="links"
+            to={'/ContactUs'}>
+            CONTACT US
+            </Link></li>
+        </ul>}
+      >
+      </AppBar>
   );
-};
-
-Footer.propTypes = {
-  children: PropTypes.node
 };
 
 export default Footer;

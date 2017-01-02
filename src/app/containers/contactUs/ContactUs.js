@@ -13,7 +13,6 @@ const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(
     {
       enterContactUs: viewsActions.enterContactUs,
-      leaveContactUs: viewsActions.leaveContactUs
     },
     dispatch
   );

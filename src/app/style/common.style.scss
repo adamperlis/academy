@@ -532,18 +532,19 @@ a:hover, a:focus, a:visited{
     position: relative;
 
     	@media only screen and (min-width: 1401px){
-		top: -29px;
-    	left: 40px;
+		transform: translate3d(50px, -58px, 0);
 		}
 
-		@media only screen and (max-width: 1400px) and (min-width: 1025px){
-	    top: -29px;
-	    left: 40px;
+		@media only screen and (max-width: 1400px) and (min-width: 1201px){
+	   	transform: translate3d(50px, -48px, 0);
+		}
+
+		@media only screen and (max-width: 1200px) and (min-width: 1025px){
+	   	transform: translate3d(0px, -48px, 0);
 		}
 
 		@media only screen and (max-width: 1024px) and (min-width: 769px){
-	    top: -29px;
-	    left: 40px;
+	    transform: translate3d(0px, 32px, 0);
 		}
 
 		@media only screen and (max-width: 768px) and (min-width: 576px){
@@ -674,174 +675,175 @@ a:hover, a:focus, a:visited{
     background: #E1E2E4;
     -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0%);
     clip-path: polygon(0 0, 0% 100%, 100%);
-    position: absolute;
-    z-index: 0;
 	}
 
 	.square-one{
 	width: 445px;
     height: 641px;
     background: #FFE2BA;
-    position: absolute;
-    z-index: 0;
 	}
 
 	.square-two{
 	width: 445px;
     height: 641px;
     background: #293890;
-    position: absolute;
-    z-index: 0;
 	}
 
 	img{
-    transform: translate3d(-30px, 192px, 0);
-    position: relative;
     width: 373px;
-    -webkit-transform-origin: bottom;
     transform-origin: bottom;
 	}
 
 		@media only screen and (min-width: 1401px){
-			img{
-			transform: scale(7.3);
-		    top: 725px;
-    		left: 660px;
-		    position: absolute;
-		    width: 83px;
-		    transform-origin: bottom;
-			}
 
 			.triangle{
-		    top: -50px;
-		    left: -50px;
-		    z-index: 0;
+		    transform: translate3d(-40px, -48px, 0);
+			position: absolute;
+			width: 373px;
 			}
 
 			.square-one{
-		    top: -80px;
-		    right: 0px;
-		    z-index: 0;
+		    transform: translate3d(6px, -58px, 0);
+		    position: absolute;
+		   	width: 513px;
+		    z-index: -1;
+		    height: 400px;
 			}
 
 			.square-two{
-		    top: 110px;
-		    left: 0;
-		    z-index: 0;
+			transform: translate3d(-20px, -48px, 0px);
+		    position: absolute;
+		    width: 630px;
+		    z-index: -1;
+			}
+
+			img{
+			transform: translate3d(410px, 232px, 0);
+			position: absolute;
+			width: 583px;
+			transform-origin: bottom;
 			}
 		}
 
 		@media only screen and (max-width: 1400px) and (min-width: 1025px){
-			img{
-			transform: scale(7.3);
-		    top: 695px;
-		    left: 410px;
-		    position: absolute;
-		    width: 83px;
-		    transform-origin: bottom;
-			}
 
 			.triangle{
-		    top: -50px;
-		    left: -25px;
-		    z-index: 0;
+		    transform: translate3d(-40px, -48px, 0);
+			position: absolute;
+			width: 373px;
 			}
 
 			.square-one{
-		    top: -80px;
-		    right: 0px;
-		    z-index: 0;
+		    transform: translate3d(6px, -58px, 0);
+		    position: absolute;
+		    width: 373px;
+		    z-index: -1;
+		    height: 400px;
 			}
 
 			.square-two{
-		    top: 110px;
-		    left: 0;
-		    z-index: 0;
+			transform: translate3d(-20px, -48px, 0px);
+		    position: absolute;
+		    width: 373px;
+		    z-index: -1;
+			}
+
+			img{
+			transform: translate3d(300px, 197px, 0);
+			position: absolute;
+			width: 373px;
+			transform-origin: bottom;
 			}
 		}
 
 		@media only screen and (max-width: 1024px) and (min-width: 769px){
-			img{
-			transform: scale(7.3);
-		    top: 710px;
-		    left: 410px;
-		    position: absolute;
-		    width: 83px;
-		    transform-origin: bottom;
-			}
 
 			.triangle{
-		    top: -50px;
-		    left: 0px;
-		    z-index: 0;
+		    transform: translate3d(-40px, -48px, 0);
+			position: absolute;
+			width: 373px;
 			}
 
 			.square-one{
-		    top: -80px;
-		    right: 0px;
-		    z-index: 0;
+		    transform: translate3d(6px, -58px, 0);
+		    position: absolute;
+		    width: 373px;
+		    z-index: -1;
+		    height: 400px;
 			}
 
 			.square-two{
-		    top: 110px;
-		    left: 0;
-		    z-index: 0;
+			transform: translate3d(-40px, -48px, 0px);
+		    position: absolute;
+		    width: 373px;
+		    z-index: -1;
+			}
+
+			img{
+			transform: translate3d(200px, 212px, 0);
+			position:absolute;
+			width: 373px;
+			transform-origin: bottom;
 			}
 		}
 
 		@media only screen and (max-width: 768px) and (min-width: 576px){
-			img{
-			transform: scale(7.3);
-		    top: 665px;
-  			left: 370px;
-		    position: absolute;
-		    width: 83px;
-		    transform-origin: bottom;
-			}
 
 			.triangle{
-		    top: -50px;
-		    left: 0px;
-		    z-index: 0;
+		    transform: translate3d(-40px, -48px, 0);
+			position: absolute;
+			width: 373px;
 			}
 
 			.square-one{
-		    top: -80px;
-		    right: -527px;
-		    z-index: 0;
+		    transform: translate3d(6px, -58px, 0);
+		    position: absolute;
+		    width: 373px;
+		    z-index: -1;
+		    height: 400px;
 			}
 
 			.square-two{
-		    top: 110px;
-		    left: 0;
-		    z-index: 0;
+			transform: translate3d(-20px, -48px, 0px);
+		    position: absolute;
+		    width: 373px;
+		    z-index: -1;
+			}
+
+			img{
+			transform: translate3d(250px, 164px, 0);
+			position: absolute;
+			width: 373px;
+			transform-origin: bottom;
 			}
 		}
 
 		@media only screen and (max-width: 575px) and (min-device-width: 350px){
 			.triangle{
-		    top: -50px;
-		    left: 0px;
-		    z-index: 0;
+		    transform: translate3d(-20px, -48px, 0);
+			position: absolute;
+			width: 373px;
 			}
 
 			.square-one{
-		    top: -80px;
-		    right: -627px;
-		    z-index: 0;
+		    transform: translate3d(6px, -58px, 0);
+		    position: absolute;
+		    width: 373px;
+		    z-index: -1;
+		    height: 400px;
 			}
 
 			.square-two{
-		    top: 110px;
-		    left: 0;
-		    z-index: 0;
+			transform: translate3d(6px, -48px, 0px);
+		    position: absolute;
+		    width: 373px;
+		    z-index: -1;
 			}
 
 			img{
 			transform: translate3d(-30px, 192px, 0);
-			position: relative;
+			position: absolute;
 			width: 373px;
-			-webkit-transform-origin: bottom;
 			transform-origin: bottom;
 			}
 		}

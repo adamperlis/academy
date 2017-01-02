@@ -14,7 +14,6 @@ const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(
     {
       enterInnovationServices: viewsActions.enterInnovationServices,
-      leaveInnovationServices: viewsActions.leaveInnovationServices
     },
     dispatch
   );

@@ -14,7 +14,6 @@ const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(
     {
       enterHome: viewsActions.enterHome,
-      leaveHome: viewsActions.leaveHome
     },
     dispatch
   );
