@@ -42,38 +42,31 @@ class TopBarNav extends Component {
     this.state = {
       value: '/',
     };
-    this.handleRouteNav = this.handleRouteNav.bind(this);
-   
   }
 
-  handleChange = (value) => {
-    this.setState({
-      value: value,
-    });
-  };
- 
+  componentWillReceiveProps(nextProps) {
+      this.handleRouteActions(nextProps.currentView.views.viewIndex);
+   }
+
  // This removes the inkBar from the tab and closes the drawer. 
   handleTopNavActiveClass = () => {
     this.setState({currentView: -1});
     this.state.open !== false ? this.handleClose() : false;
    };
 
-  // This changes the inkBar location on the tab and closes the drawer. 
-  handleRouteNav = (value) => {
-   this.setState({currentView: value});
-
-   ///close nav
-   this.handleClose();    
-  };
-
   handleToggle() {
     this.setState({open: !this.state.open});
-    console.log("open")
+
+  }
+
+  handleRouteActions = (value) => {
+
+    this.setState({currentView: value});
+    this.state.open !== false ? this.handleClose() : false;
   }
 
   handleClose() { this.setState({open: false}); }
-        render() {
-             console.log(this.props);
+        render() {           
             return (
                 <div>
                 <Drawer
@@ -103,7 +96,7 @@ class TopBarNav extends Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleRouteNav.bind(this, 1)} 
+                    onTouchTap={this.handleRouteActions.bind(this, 1)} 
                     className="drawer"
                     to={'/designSprint'}>
                     Sprint Academy
@@ -112,7 +105,7 @@ class TopBarNav extends Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleRouteNav.bind(this, 2)}
+                    onTouchTap={this.handleRouteActions.bind(this, 2)}
                     className="drawer"
                     to={'/ProductDesign'}>
                     Design & Development
@@ -121,8 +114,7 @@ class TopBarNav extends Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    ref={(TopBarNav) => { this.TopBarNav = TopBarNav; }}
-                    onTouchTap={this.handleRouteNav.bind(this, 3)}
+                    onTouchTap={this.handleRouteActions.bind(this, 3)}
                     className="drawer"
                     to={'/InnovationServices'}>
                     Innovation Services
@@ -162,7 +154,7 @@ class TopBarNav extends Component {
                     />
 
                   
-                  <Tabs value={this.state.currentView || -1}  onChange={this.handleRouteNav} className="small-nav">
+                  <Tabs value={this.state.currentView || -1}  onChange={this.handleRouteActions} className="small-nav">
 
                     <Tab value={1} style={styles.headline} label="Sprint Academy" containerElement={<Link  to="/designSprint"/>} />
                     <Tab value={2} style={styles.headline} label="Design & Development" containerElement={<Link to="/ProductDesign"/>} />

@@ -44,9 +44,7 @@ class ProductDesign extends Component {
   }
 
   componentWillUnmount() {
-    const { leaveProductDesign } = this.props;
-    leaveProductDesign();
-    Events.scrollEvent.remove('begin');
+          Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
   }
 
@@ -146,8 +144,7 @@ class ProductDesign extends Component {
 
 ProductDesign.propTypes= {
   currentView:  PropTypes.string.isRequired,
-  enterProductDesign:   PropTypes.func.isRequired,
-  leaveProductDesign:   PropTypes.func.isRequired
+  enterProductDesign:   PropTypes.func.isRequired
 };
 
 export default ProductDesign;

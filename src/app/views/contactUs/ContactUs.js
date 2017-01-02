@@ -26,11 +26,6 @@ class ContactUs extends Component {
     return shallowCompare(this, nextProps, nextState);
   }
 
-  componentWillUnmount() {
-    const { leaveContactUs } =  this.props;
-    leaveContactUs();
-  }
-
   render() {
     const { animated, viewEntersAnim } = this.state;
     return(
@@ -57,7 +52,6 @@ class ContactUs extends Component {
 ContactUs.propTypes = {
   currentView: PropTypes.string.isRequired,
   enterContactUs: PropTypes.func.isRequired,
-  leaveContactUs: PropTypes.func.isRequired
 };
 
 export default ContactUs;

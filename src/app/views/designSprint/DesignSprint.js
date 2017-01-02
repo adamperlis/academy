@@ -47,9 +47,7 @@ class DesignSprint extends Component {
   }
 
   componentWillUnmount() {
-    const { leaveDesignSprint } =  this.props;
-    leaveDesignSprint();
-    Events.scrollEvent.remove('begin');
+     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
   }
 
@@ -186,8 +184,6 @@ class DesignSprint extends Component {
 
 DesignSprint.propTypes = {
   currentView: PropTypes.string.isRequired,
-  enterDesignSprint: PropTypes.func.isRequired,
-  leaveDesignSprint: PropTypes.func.isRequired
-};
+  enterDesignSprint: PropTypes.func.isRequired,};
 
 export default DesignSprint;

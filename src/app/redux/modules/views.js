@@ -5,15 +5,11 @@ const dateFormat = 'DD/MM/YYYY HH:mm';
 // constants
 // /////////////////////
 const ENTER_HOME_VIEW  = 'ENTER_HOME_VIEW';
-const LEAVE_HOME_VIEW  = 'LEAVE_HOME_VIEW';
 const ENTER_DESIGNSPRINT_VIEW = 'ENTER_DESIGNSPRINT_VIEW';
-const LEAVE_DESIGNSPRINT_VIEW = 'LEAVE_DESIGNSPRINT_VIEW';
 const ENTER_INNOVATIONSERVICES_VIEW = 'ENTER_WHATISDESIGNTHINKING_VIEW';
-const LEAVE_INNOVATIONSERVICES_VIEW = 'LEAVE_WHATISDESIGNTHINKING_VIEW';
 const ENTER_PRODUCTDESIGN_VIEW = 'ENTER_PRODUCTDESIGN_VIEW';
-const LEAVE_PRODUCTDESIGN_VIEW = 'LEAVE_PRODUCTDESIGN_VIEW';
 const ENTER_CONTACTUS_VIEW = 'ENTER_CONTACTUS_VIEW';
-const LEAVE_CONTACTUS_VIEW = 'LEAVE_CONTACTUS_VIEW';
+
 
 
 // /////////////////////
@@ -22,7 +18,8 @@ const LEAVE_CONTACTUS_VIEW = 'LEAVE_CONTACTUS_VIEW';
 const initialState = {
   currentView:  'not set',
   enterTime:    null,
-  leaveTime:    null
+  leaveTime:    null,
+  viewIndex:    -1
 };
 
 export default function (state = initialState, action) {
@@ -39,27 +36,11 @@ export default function (state = initialState, action) {
         ...state,
         currentView:  action.currentView,
         enterTime:    action.enterTime,
-        leaveTime:    action.leaveTime
+        leaveTime:    action.leaveTime,
+        viewIndex:    action.viewIndex
       };
     }
     return state;
-
-  case LEAVE_HOME_VIEW:
-  case LEAVE_DESIGNSPRINT_VIEW:
-  case LEAVE_INNOVATIONSERVICES_VIEW:
-  case LEAVE_PRODUCTDESIGN_VIEW:
-  case LEAVE_CONTACTUS_VIEW:
-    // can't leave if you aren't already inside
-    if (state.currentView === action.currentView) {
-      return {
-        ...state,
-        currentView:  action.currentView,
-        enterTime:    action.enterTime,
-        leaveTime:    action.leaveTime
-      };
-    }
-    return state;
-
   default:
     return state;
   }
@@ -74,53 +55,30 @@ export function enterHome(time = moment().format(dateFormat)) {
     type:         ENTER_HOME_VIEW,
     currentView:  'home',
     enterTime:    time,
-    leaveTime:    null
+    leaveTime:    null,
+    viewIndex:    -1
   };
 }
 
-export function leaveHome(time = moment().format(dateFormat)) {
-  return {
-    type:         LEAVE_HOME_VIEW,
-    currentView:  'home',
-    enterTime:    null,
-    leaveTime:    time
-  };
-}
 
 export function enterDesignSprint(time = moment().format(dateFormat)) {
   return {
     type:         ENTER_DESIGNSPRINT_VIEW,
     currentView:  'designSprint',
     enterTime:    time,
-    leaveTime:    null
-  };
+    leaveTime:    null,
+    viewIndex:    1
+      };
 }
 
-export function leaveDesignSprint(time = moment().format(dateFormat)) {
-  return {
-    type:         LEAVE_DESIGNSPRINT_VIEW,
-    currentView:  'designSprint',
-    enterTime:    null,
-    leaveTime:    time
-  };
-}
 
 export function enterInnovationServices(time = moment().format(dateFormat)) {
   return {
     type:         ENTER_INNOVATIONSERVICES_VIEW,
     currentView:  'innovationServices',
     enterTime:    time,
-    leaveTime:    null
-  };
-}
-
-export function leaveInnovationServices(time = moment().format(dateFormat)) {
-  return {
-    type:         LEAVE_INNOVATIONSERVICES_VIEW,
-    currentView:  'innovationServices',
-    enterTime:    null,
-    leaveTime:    time
-  };
+    leaveTime:    null,
+    viewIndex:    3  };
 }
 
 export function enterProductDesign(time = moment().format(dateFormat)) {
@@ -128,18 +86,11 @@ export function enterProductDesign(time = moment().format(dateFormat)) {
     type:         ENTER_PRODUCTDESIGN_VIEW,
     currentView:  'ProductDesign',
     enterTime:    time,
-    leaveTime:    null
+    leaveTime:    null,
+    viewIndex:    2
   };
 }
 
-export function leaveProductDesign(time = moment().format(dateFormat)) {
-  return {
-    type:         LEAVE_PRODUCTDESIGN_VIEW,
-    currentView:  'ProductDesign',
-    enterTime:    null,
-    leaveTime:    time
-  };
-}
 
 export function enterContactUs(time = moment().format(dateFormat)) {
   return {
@@ -147,14 +98,5 @@ export function enterContactUs(time = moment().format(dateFormat)) {
     currentView:  'ContactUs',
     enterTime:    time,
     leaveTime:    null
-  };
-}
-
-export function leaveContactUs(time = moment().format(dateFormat)) {
-  return {
-    type:         LEAVE_CONTACTUS_VIEW,
-    currentView:  'ContactUs',
-    enterTime:    null,
-    leaveTime:    time
   };
 }

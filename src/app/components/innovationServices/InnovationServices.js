@@ -2,19 +2,9 @@ import React, {PropTypes, Component} from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';   
 import { Link }       from 'react-router';
 import { connect }  from 'react-redux';
-import { TopBarNav }    from '../../components';
 
 const InnovationServices = (props) => {   
-
-    let TopBarNav = null;
-
-    function handleClick() {
-        // TopBarNav.handleRouteNav.bind(this, 3);
-    }
-
     return (
-
-    
     <div>
     <Row className="show-grid innovation-services">
     <Col xs={4} sm={7} md={7} lg={8}>
@@ -38,11 +28,9 @@ const InnovationServices = (props) => {
    
 
         <Link
-        ref={(TopBarNav) => { this.TopBarNav = TopBarNav; }}
-        onTouchTap={handleClick()}
-        className="btn"
-        to={'/InnovationServices'}>
-        Work With Us
+            className="btn"
+            to={'/InnovationServices'}>
+            Work With Us
         </Link>
 
     </Col>

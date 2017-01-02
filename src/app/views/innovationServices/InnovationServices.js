@@ -44,9 +44,7 @@ class InnovationServices extends Component {
   }
 
   componentWillUnmount() {
-    const { leaveInnovationServices } = this.props;
-    leaveInnovationServices();
-    Events.scrollEvent.remove('begin');
+       Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
   }
 
@@ -148,7 +146,6 @@ class InnovationServices extends Component {
 InnovationServices.propTypes= {
   currentView:  PropTypes.string.isRequired,
   enterInnovationServices:   PropTypes.func.isRequired,
-  leaveInnovationServices:   PropTypes.func.isRequired
 };
 
 export default InnovationServices;

@@ -34,10 +34,6 @@ class Home extends Component {
     return shallowCompare(this, nextProps, nextState);
   }
 
-  componentWillUnmount() {
-    const { leaveHome } = this.props;
-    leaveHome();
-  }
 
   render() {
     const { animated, viewEntersAnim } = this.state;
@@ -60,8 +56,6 @@ class Home extends Component {
 
 Home.propTypes= {
   currentView:  PropTypes.string.isRequired,
-  enterHome:    PropTypes.func.isRequired,
-  leaveHome:    PropTypes.func.isRequired
-};
+  enterHome:    PropTypes.func.isRequired};
 
 export default Home;
