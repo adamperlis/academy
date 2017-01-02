@@ -4,7 +4,7 @@ import { ArrowDown }    from '../../components';
 
 const Hero = (props) => {
   return (
- 
+    <div>
     <Row className="show-grid hero">
     <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
   	
@@ -24,15 +24,14 @@ const Hero = (props) => {
 
   	</Col>
   	<Col xs={6} sm={9} md={8} lg={8}></Col> 
-
-      <Row className="show-grid arrow">
-        <Col xs={12} md={12}> 
-          <ArrowDown />
-        </Col>
-      </Row> 
-
     </Row>
-    
+
+    <Row className="show-grid arrow">
+      <Col xs={12} md={12}> 
+        <ArrowDown />
+      </Col>
+    </Row> 
+    </div>
     
   );
 };

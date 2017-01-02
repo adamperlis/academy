@@ -42,6 +42,7 @@ class TopBarNav extends Component {
     this.state = {
       value: '/',
     };
+    this.handleRouteNav = this.handleRouteNav.bind(this);
    
   }
 
@@ -120,6 +121,7 @@ class TopBarNav extends Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
+                    ref={(TopBarNav) => { this.TopBarNav = TopBarNav; }}
                     onTouchTap={this.handleRouteNav.bind(this, 3)}
                     className="drawer"
                     to={'/InnovationServices'}>

@@ -52,7 +52,7 @@ class App extends Component {
           minScrollY={40}
           scrollTo={'appContainer'}
         />
-        <Footer />
+        {/*<Footer />*/}
       </div>
 
     );

@@ -107,11 +107,6 @@ a:hover, a:focus, a:visited{
 	padding-bottom: 86px;
     background: white;
     padding-top: 30px;
-
-    .arrow{
-   	position: relative;
-    top: -60px;
-    }
 }
 
 .product-design-hero{
@@ -700,9 +695,10 @@ a:hover, a:focus, a:visited{
 	}
 
 	img{
-	transform: scale(7.3);
-    position: absolute;
-    width: 83px;
+    transform: translate3d(-30px, 192px, 0);
+    position: relative;
+    width: 373px;
+    -webkit-transform-origin: bottom;
     transform-origin: bottom;
 	}
 
@@ -842,11 +838,11 @@ a:hover, a:focus, a:visited{
 			}
 
 			img{
-		    top: 695px;
-		    left: 100px;
-		    position: absolute;
-		    width: 83px;
-		    transform-origin: bottom;
+			transform: translate3d(-30px, 192px, 0);
+			position: relative;
+			width: 373px;
+			-webkit-transform-origin: bottom;
+			transform-origin: bottom;
 			}
 		}
 
