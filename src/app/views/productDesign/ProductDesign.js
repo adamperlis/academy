@@ -89,12 +89,6 @@ class ProductDesign extends Component {
           <Col xs={5}></Col>
         </Row>
 
-        <Row className="show-grid big-arrow">
-          <Col xs={12}> 
-            <img src={require('../../images/big-arrow-down.svg')} width="100%" className=""/> 
-          </Col>
-        </Row>
-
         <Row className="show-grid product-dev">
           <Col xs={5} sm={5} md={6} lg={6}></Col> 
           <Col xs={7} sm={5} md={4} lg={4}> 
@@ -110,12 +104,6 @@ class ProductDesign extends Component {
           Agile development means we are constantly building, testing and evolving your product. Our team of experienced devlopers will work with you to build quality, maintainable and future proof products that fit your business needs.
           </p>
           <ContactUs label="Develop with Us" />
-          </Col>
-        </Row>
-
-        <Row className="show-grid big-arrow-reverse">
-          <Col xs={12}> 
-            <img src={require('../../images/big-arrow-down-reverse.svg')} width="100%" className=""/> 
           </Col>
         </Row>
 

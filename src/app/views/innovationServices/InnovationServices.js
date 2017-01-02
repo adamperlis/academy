@@ -89,12 +89,6 @@ class InnovationServices extends Component {
           <Col xs={5}></Col>
         </Row>
 
-        <Row className="show-grid big-arrow">
-          <Col xs={12}> 
-            <img src={require('../../images/big-arrow-down.svg')} width="100%" className=""/> 
-          </Col>
-        </Row>
-
         <Row className="show-grid user-testing">
           <Col xs={6} sm={7} md={7} lg={8}></Col> 
           <Col xs={6} sm={3} md={3} lg={2}> 
@@ -111,12 +105,6 @@ class InnovationServices extends Component {
           </p>
           <ContactUs label="Test with Us" />
 
-          </Col>
-        </Row>
-
-        <Row className="show-grid big-arrow-reverse">
-          <Col xs={12}> 
-            <img src={require('../../images/big-arrow-down-reverse.svg')} width="100%" className=""/> 
           </Col>
         </Row>
 
