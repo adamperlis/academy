@@ -47,8 +47,8 @@ class Home extends Component {
           <Hero />
           <DesignThinking />
           <DesignSprint />
-          <InnovationServices />
           <DesignDevelopment />
+          <InnovationServices />
       </div>
     );
   }

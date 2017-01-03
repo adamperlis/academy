@@ -1,19 +1,13 @@
-import React, {PropTypes, Component} from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';   
+import React, {PropTypes} from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import { Link }       from 'react-router';
-import { connect }  from 'react-redux';
 
-const InnovationServices = (props) => {   
-    return (
-    <div>
+
+const InnovationServices = (props) => {
+  return (
+
     <Row className="show-grid innovation-services">
-    <Col xs={4} sm={7} md={7} lg={8}>
-        <div className="square-two"></div>
-        <div className="square-one"></div>
-        <div className="triangle"></div>
-        <img src={require('../../images/InnovationServicesGraphic.svg')} width="100%" className=""/> 
-    </Col> 
-    <Col xs={8} sm={3} md={3} lg={2}> 
+    <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
 
     <h3>
     Innovation
@@ -23,25 +17,31 @@ const InnovationServices = (props) => {
     </h4>
 
     <p className="subhead">
-    We will embed a team of people at your company and work with your management team to rapidly prototype and build products.    </p>
-   
+ We will embed a team of people at your company and work with your management team to rapidly prototype and build products.
+    </p>    
+ {props.children}
 
-        <Link
-            className="btn"
-            to={'/InnovationServices'}>
-            Work With Us
-        </Link>
+     <Link
+        className="btn"
+        to={'/InnovationServices'}>
+        See How
+    </Link>
 
     </Col>
+    <Col xs={6} sm={3} mdOffset={1} md={3} lgOffset={2} lg={3}>
+    <img src="./public/assets/images/productGraphic.svg" width="100%" className=""/>
+    </Col> 
+
+
     </Row>
-    </div>
+
     );
 };
-
 
 InnovationServices.propTypes = {
   children: PropTypes.node
 };
 
 export default InnovationServices;
-	
+
+    

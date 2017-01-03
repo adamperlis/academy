@@ -1,13 +1,19 @@
-import React, {PropTypes} from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import React, {PropTypes, Component} from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';   
 import { Link }       from 'react-router';
+import { connect }  from 'react-redux';
 
-
-const DesignDevelopment = (props) => {
-  return (
+const DesignDevelopment = (props) => {   
+    return (
 
     <Row className="show-grid design-development">
-    <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
+    <Col xs={4} sm={7} md={7} lg={8}>
+        <div className="square-two"></div>
+        <div className="square-one"></div>
+        <div className="triangle"></div>
+        <img src={require('../../images/InnovationServicesGraphic.svg')} width="100%" className=""/> 
+    </Col> 
+    <Col xs={8} sm={3} md={3} lg={2}> 
 
     <h3>
     Product
@@ -18,29 +24,23 @@ const DesignDevelopment = (props) => {
 
     <p className="subhead">
     Our experienced team can help you design & build products from A-Z using Design Thinking Methodologies    </p>
-    {props.children}
+   
 
-     <Link
-        className="btn"
-        to={'/ProductDesign'}>
-        See How
-    </Link>
+        <Link
+            className="btn"
+            to={'/ProductDesign'}>
+            Work With Us
+        </Link>
 
     </Col>
-    <Col xs={6} sm={3} mdOffset={1} md={3} lgOffset={2} lg={3}>
-    <img src="./public/assets/images/productGraphic.svg" width="100%" className=""/>
-    </Col> 
-
-
     </Row>
-
     );
 };
+
 
 DesignDevelopment.propTypes = {
   children: PropTypes.node
 };
 
 export default DesignDevelopment;
-
 	
