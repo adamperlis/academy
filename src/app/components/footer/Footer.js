@@ -15,8 +15,7 @@ const Footer = (props) => {
     }} 
     iconStyleRight={{
       marginTop:'20px',
-      marginRight:'0px',
-      flexGrow:'1',
+      marginRight:'0px'
     }}
     titleStyle={{fill:'rbg(255,255,255)',}}
     showMenuIconButton={false} 
@@ -26,19 +25,6 @@ const Footer = (props) => {
        to={'/'}>
       <img src={'../public/assets/images/academy-logo-white.svg'} height="24px"/>
       </Link>}
-    iconElementRight={
-          <ul>
-            <li><Link
-            className="links"
-            to={'/careers'}>
-            CAREERS
-            </Link></li>
-            <li><Link
-            className="links"
-            to={'/ContactUs'}>
-            CONTACT US
-            </Link></li>
-        </ul>}
       >
       </AppBar>
   );

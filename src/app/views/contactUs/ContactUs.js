@@ -34,7 +34,7 @@ class ContactUs extends Component {
           'animatedViews': animated,
           'view-enter': viewEntersAnim
         })}>
-        <Row className="show-grid hero" style={{paddingBottom:'88px'}}>
+        <Row className="show-grid hero contact-us">
           <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={1}> 
             <h1>Contact</h1>
             <h2>Us</h2>
