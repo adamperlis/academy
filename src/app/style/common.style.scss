@@ -616,6 +616,7 @@ a:hover, a:focus, a:visited{
 .design-development{
 	padding-top:124px;
 	height: 667px;
+	overflow: hidden;
 
 	h3 {
 	font-family: "Playfair Display", serif;
@@ -842,15 +843,12 @@ a:hover, a:focus, a:visited{
 			}
 
 			img{
-			transform: translate3d(-30px, 192px, 0);
+			transform: translate3d(-50px, 223px, 0);
 			position: absolute;
 			width: 373px;
 			transform-origin: bottom;
 			}
 		}
-
-	
-
 }
 
 .innovation-services{
@@ -917,7 +915,7 @@ a:hover, a:focus, a:visited{
 
 	img{
     transform: scale(5);
-    right: -250px;
+    right: -200px;
     position: relative;
     bottom: -100px;
     mix-blend-mode: multiply;
