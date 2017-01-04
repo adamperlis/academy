@@ -70,7 +70,7 @@ class ProductDesign extends Component {
           <Col xs={6} sm={9} mdOffset={1} md={8} lgOffset={2} lg={6}></Col> 
         </Row>
 
-        <Row id="services" className="show-grid ignite-talk">
+        <Row id="services" className="show-grid product-des">
           <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={2}> 
 
           <h3>
