@@ -61,9 +61,11 @@ class DesignSprint extends Component {
         })}>
         <Row className="show-grid sprint-academy hero">
           <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={1}> 
+            <div className="block-reveal">
             <h1>Design</h1>
             <h1>Sprint</h1>
             <h2>Academy</h2>
+            </div>
             <ScrollLink
               className="btn"
               activeClass="active" to="curriculum" spy={true} smooth={true} offset={-90} duration={850}>

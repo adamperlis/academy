@@ -106,7 +106,34 @@ a:hover, a:focus, a:visited{
 .hero{
 	padding-bottom: 86px;
     background: white;
-    padding-top: 30px;
+    padding-top: 8%;
+    height: calc(100% - 678px);
+
+    @media only screen and (min-width: 1401px){
+	  
+		}
+
+		@media only screen and (max-width: 1400px) and (min-width: 769px){
+	   
+		}
+
+		@media only screen and (max-width: 1024px) and (min-width: 769px){
+		
+		}
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+		padding-bottom: 86px;
+	    background: white;
+	    padding-top: 30px;
+	    height: auto;
+		}
+
+	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+		padding-bottom: 86px;
+	    background: white;
+	    padding-top: 30px;
+	    height: auto;
+		}
 }
 
 .product-design-hero{
@@ -1783,3 +1810,72 @@ a:hover, a:focus, a:visited{
 	    
 }
 
+.gutter-l{
+	left: 0px;
+    z-index: -1;
+    background-color: #efefee;
+
+    @media only screen and (min-width: 1400px){
+    
+    position: fixed;
+    top: 0px;
+    display: block;
+    width: calc( (100% - 1200px)/2 );
+    height: 100%;
+	}
+
+	@media only screen and (max-width: 1400px) and (min-width: 769px){
+    position: fixed;
+    top: 0px;
+    display: block;
+    width: 25px;
+    height: 100%;
+	}
+
+	@media only screen and (max-width: 768px) and (min-width: 576px){
+    display: none;
+	}
+
+    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+    display: none;
+	}
+}
+
+.gutter-r{
+	right: 0px;
+    z-index: -1;
+    background-color: #efefee;
+  
+    @media only screen and (min-width: 1400px){
+    position: fixed;
+    top: 0px;
+    display: block;
+    width: calc( (100% - 1200px)/2 );
+    height: 100%;
+	}
+
+	@media only screen and (max-width: 1400px) and (min-width: 769px){
+    position: fixed;
+    top: 0px;
+    display: block;
+    width: 25px;
+   	height: 100%;
+	}
+
+	@media only screen and (max-width: 768px) and (min-width: 576px){
+    display: none;
+	}
+
+    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+    display: none;
+	}
+}
+
+.navLinks div span{
+	font-size: 10px !important;
+    font-family: "Montserrat", sans-serif !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    font-weight: 400 !important;
+    color:black !important;
+}

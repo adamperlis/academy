@@ -58,8 +58,10 @@ class ProductDesign extends Component {
         })}>
         <Row className="show-grid product-design hero">
           <Col xs={8} sm={4} smOffset={1} md={5} mdOffset={1} lg={5} lgOffset={1}> 
+            <div className="block-reveal">
             <h1>Product</h1>
             <h2>Design & Development</h2>
+            </div>
             
             <ScrollLink
               className="btn"
@@ -86,7 +88,9 @@ class ProductDesign extends Component {
           <ContactUs label="Design with Us" />
 
           </Col>
-          <Col xs={5}></Col>
+          <Col xs={5} xsOffset={1} sm={4} smOffset={3} md={4} mdOffset={4} lg={4} lgOffset={2}>
+            <img src={require('../../images/brush.svg')} height="100px" style={{marginTop:'50px'}}/>
+          </Col>
         </Row>
 
         <Row className="show-grid product-dev">

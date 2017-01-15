@@ -1,3 +1,17 @@
+.block-reveal {
+    height: auto;
+    width:100%;
+    position: relative;
+
+    .block{
+	   	background: white;
+	    height: 538px;
+	    width: 84%;
+	    position: absolute;
+	    z-index: 1111;
+	    transform: translateX(-100%);
+    }
+
 h1 {
 	font-family: "Playfair Display", serif;
     font-size: 50px;
@@ -8,9 +22,57 @@ h1 {
     margin-top: 0px;
     margin-bottom: 0px;
     font-style: italic;
-}
+    animation: move 1.8s cubic-bezier(0, .7, 0.1, 1);
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+    opacity:0;
 
-h2{
+    @media only screen and (min-width: 1401px){
+	   	font-family: "Playfair Display", serif;
+	    font-size: 80px;
+	    font-weight: 400;
+	    line-height:80px;
+	    letter-spacing: 1px;
+	    color: #000000; 
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	    font-style: italic;
+		}
+
+		@media only screen and (max-width: 1400px) and (min-width: 769px){
+	   	font-family: "Playfair Display", serif;
+	    font-size: 80px;
+	    font-weight: 400;
+	    line-height: 80px;
+	    letter-spacing: 1px;
+	    color: #000000; 
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	    font-style: italic;
+		}
+
+		@media only screen and (max-width: 1024px) and (min-width: 769px){
+		font-family: "Playfair Display", serif;
+	    font-size: 80px;
+	    font-weight: 400;
+	    line-height: 80px;
+	    letter-spacing: 1px;
+	    color: #000000; 
+	    margin-top: 0px;
+	    margin-bottom: 0px;
+	    font-style: italic;
+		}
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+		
+		}
+
+	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+		
+		}
+	}
+
+	h2{
 	font-family: 'Montsterrat', sans-serif;
 	font-size: 50.62px;
 	color: #000000;
@@ -19,13 +81,69 @@ h2{
 	line-height: 50px;
 	margin-top: 0px;
     margin-bottom: 0px;
+    animation: move 1.8s cubic-bezier(0, .7, 0.1, 1);
+    animation-fill-mode: forwards;
+    animation-delay: .4s;
+    opacity:0;
+
+    @media only screen and (min-width: 1401px){
+	   	font-family: 'Montsterrat', sans-serif;
+		font-size: 80.62px;
+		color: #000000;
+		font-weight: bold;
+		letter-spacing: -1.89px;
+		line-height: 80px;
+		margin-top: 0px;
+	    margin-bottom: 0px;
+		}
+
+		@media only screen and (max-width: 1400px) and (min-width: 769px){
+	   	font-family: 'Montsterrat', sans-serif;
+		font-size: 80.62px;
+		color: #000000;
+		font-weight: bold;
+		letter-spacing: -1.89px;
+		line-height: 80px;
+		margin-top: 0px;
+	    margin-bottom: 0px;
+		}
+
+		@media only screen and (max-width: 1024px) and (min-width: 769px){
+		font-family: 'Montsterrat', sans-serif;
+		font-size: 80.62px;
+		color: #000000;
+		font-weight: bold;
+		letter-spacing: -1.89px;
+		line-height: 80px;
+		margin-top: 0px;
+	    margin-bottom: 0px;
+		}
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+		
+		}
+
+	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+		
+		}
+}
+	
+	.main-subhead {
+		font-family: Raleway;
+		font-size: 16px;
+		line-height: 19px;
+		color: #000000;
+		margin-top:30px;
+		width:260px;
+		animation: move 1.8s cubic-bezier(0, .7, 0.1, 1);
+	    animation-fill-mode: forwards;
+	    animation-delay: .6s;
+	    opacity:0;
+	}
 }
 
-.main-subhead{
-	font-family: Raleway;
-	font-size: 16px;
-	line-height: 19px;
-	color: #000000;
-	margin-top:30px;
-	width:260px;
+
+@keyframes move {
+    0% {opacity:0;transform: translateY(-50%);} 
+    100% {transform: translateY(0%);opacity:1;}
 }

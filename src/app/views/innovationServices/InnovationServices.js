@@ -58,8 +58,10 @@ class InnovationServices extends Component {
         })}>
         <Row className="show-grid innovation hero">
           <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={1}> 
+            <div className="block-reveal">
             <h1>Innovation</h1>
             <h2>Services</h2>
+            </div>
             
             <ScrollLink
               className="btn"
@@ -86,11 +88,15 @@ class InnovationServices extends Component {
           <ContactUs label="Build with Us" />
 
           </Col>
-          <Col xs={5}></Col>
+          <Col xs={5} sm={4} smOffset={3} md={4} mdOffset={4} lg={4} lgOffset={2}>
+          <img src={require('../../images/prototype.svg')} height="320px" style={{marginTop:'50px'}}/>
+          </Col>
         </Row>
 
         <Row className="show-grid user-testing">
-          <Col xs={6} sm={7} md={7} lg={8}></Col> 
+          <Col xs={6} sm={7} smOffset={1} md={7} mdOffset={1} lg={6} lgOffset={2}>
+            <img src={require('../../images/user-testing.svg')} height="180px" style={{marginTop:'50px'}}/>
+          </Col> 
           <Col xs={6} sm={3} md={3} lg={2}> 
 
           <h3>

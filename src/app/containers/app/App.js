@@ -53,6 +53,8 @@ class App extends Component {
           scrollTo={'appContainer'}
         />
         <Footer />
+        <span className="gutter-l"></span>
+        <span className="gutter-r"></span>
       </div>
 
     );
