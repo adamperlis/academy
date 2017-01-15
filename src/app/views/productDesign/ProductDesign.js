@@ -89,12 +89,14 @@ class ProductDesign extends Component {
 
           </Col>
           <Col xs={5} xsOffset={1} sm={4} smOffset={3} md={4} mdOffset={4} lg={4} lgOffset={2}>
-            <img src={require('../../images/brush.svg')} height="100px" style={{marginTop:'50px'}}/>
+            <img src={require('../../images/sketch.svg')} height="150px" style={{marginTop:'50px', opacity:'.5'}}/>
           </Col>
         </Row>
 
         <Row className="show-grid product-dev">
-          <Col xs={5} sm={5} md={6} lg={6}></Col> 
+          <Col xs={5} sm={5} smOffset={1} md={6} mdOffset={1} lg={4} lgOffset={2}>
+            <img src={require('../../images/code.svg')} height="150px" style={{marginTop:'50px', opacity:'.5'}}/>
+          </Col> 
           <Col xs={7} sm={5} md={4} lg={4}> 
 
           <h3>
@@ -127,7 +129,9 @@ class ProductDesign extends Component {
            <ContactUs label="Manage with Us" />
 
           </Col>
-          <Col xs={6}></Col>
+          <Col xs={5} xsOffset={1} sm={4} smOffset={3} md={4} mdOffset={4} lg={4} lgOffset={2}>
+            <img src={require('../../images/project-management.svg')} height="150px" style={{marginTop:'50px', marginLeft:'-25px', opacity:'.5'}}/>
+          </Col>
         </Row>
       </div>
     );
