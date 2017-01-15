@@ -94,10 +94,10 @@ class InnovationServices extends Component {
         </Row>
 
         <Row className="show-grid user-testing">
-          <Col xs={6} sm={7} smOffset={1} md={7} mdOffset={1} lg={6} lgOffset={2}>
+          <Col xs={6} sm={7} smOffset={1} md={7} mdOffset={1} lg={4} lgOffset={2}>
             <img src={require('../../images/user-testing.svg')} height="180px" style={{marginTop:'50px', opacity:'.5'}}/>
           </Col> 
-          <Col xs={6} sm={3} md={3} lg={2}> 
+          <Col xs={6} sm={3} md={3} lg={4}> 
 
           <h3>
           User
