@@ -7,6 +7,9 @@ const InnovationServices = (props) => {
   return (
 
     <Row className="show-grid innovation-services">
+    <Col className="wrapper" xs={12} sm={12} md={12} lg={12}>
+    <div className="vertical-wrapper">
+        <div className="vertical-middle">
     <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={2}> 
 
     <h3>
@@ -30,9 +33,10 @@ const InnovationServices = (props) => {
     </Col>
     <Col xs={6} sm={3} mdOffset={1} md={3} lgOffset={2} lg={3}>
     <img src="./public/assets/images/productGraphic.svg" width="100%" className=""/>
+    </Col>
+    </div>
+    </div>
     </Col> 
-
-
     </Row>
 
     );

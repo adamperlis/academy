@@ -15,9 +15,6 @@ import {
   WizardMotion
 }                     from '../../components';
 
-
-
-
 class Home extends Component {
 
   state = {
@@ -34,7 +31,6 @@ class Home extends Component {
     return shallowCompare(this, nextProps, nextState);
   }
 
-
   render() {
     const { animated, viewEntersAnim } = this.state;
     return(
@@ -49,6 +45,8 @@ class Home extends Component {
           <DesignSprint />
           <DesignDevelopment />
           <InnovationServices />
+          <span className="gutter-l"></span>
+          <span className="gutter-r"></span>
       </div>
     );
   }

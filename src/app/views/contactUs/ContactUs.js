@@ -34,7 +34,10 @@ class ContactUs extends Component {
           'animatedViews': animated,
           'view-enter': viewEntersAnim
         })}>
+        <div className="block-reveal">
         <Row className="show-grid hero contact-us">
+        <div className="vertical-wrapper">
+            <div className="vertical-middle">
           <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={1}> 
             <h1>Contact</h1>
             <h2>Us</h2>
@@ -42,8 +45,11 @@ class ContactUs extends Component {
             <br></br>
             <p>You can reach us at <a className="link" href="mailto:hello@academybydesign.com?Subject=Hello" target="_blank">hello@academybydesign.com</a></p>
           </Col>
-          <Col xs={6}></Col> 
+          <Col xs={6}></Col>
+          </div>
+          </div> 
         </Row>
+        </div>
       </div>
     );
 }

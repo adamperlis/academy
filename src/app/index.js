@@ -19,9 +19,11 @@ const ELEMENT_TO_BOOTSTRAP  = 'root';
 const BootstrapedElement    = document.getElementById(ELEMENT_TO_BOOTSTRAP);
 
 const App = () => (
+  <div>
   <MuiThemeProvider>
   	<Routes />
   </MuiThemeProvider>
+  </div>
 );
 
 ReactDOM.render(<App />, BootstrapedElement);

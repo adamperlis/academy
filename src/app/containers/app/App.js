@@ -43,9 +43,9 @@ class App extends Component {
     }
     
     return (
-      <div id="appContainer">
+      <div id="appContainer" className="position--relative display--block">
         <TopBarNav />
-        <div className="container-fluid">
+        <div className="container-fluid position--relative display--block">
           {children}
         </div>
         <BackToTop
@@ -53,10 +53,7 @@ class App extends Component {
           scrollTo={'appContainer'}
         />
         <Footer />
-        <span className="gutter-l"></span>
-        <span className="gutter-r"></span>
       </div>
-
     );
   }
 

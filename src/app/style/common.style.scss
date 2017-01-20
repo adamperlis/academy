@@ -2,8 +2,7 @@
 @import "./fonts.style";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display::400,400i|Raleway:400,700');
 
-html, body, #appContainer, #root{
-	height: 100%;
+html, body, #appContainer, #root, section{
 	background:#efefee;
 	max-width: 100%;
     -webkit-overflow-scrolling: touch;
@@ -15,6 +14,22 @@ a:hover, a:focus, a:visited{
     	color:white;
     	text-decoration: none;
     	z-index: 100000;
+}
+
+.--white{
+	fill:white;
+}
+
+.--purple{
+	fill: #6D65CB;
+}
+
+.arrow-down-icon{
+	display: block;
+	margin: auto; 
+	position: absolute;
+	left: 50%; 
+	bottom: 41px;
 }
 
 .btn.focus, .btn:focus, .btn:hover {
@@ -59,13 +74,14 @@ a:hover, a:focus, a:visited{
 
 .view-enter {
    animation: slideInRight 1s both cubic-bezier(0.19, 1, 0.22, 1);
-   z-index: 9999;
  }
 
 
 .animatedViews {
   animation-duration: 0.5s;
   animation-fill-mode: both;
+  position: relative;
+  display: block;
 }
 
 .navbar{
@@ -106,8 +122,7 @@ a:hover, a:focus, a:visited{
 .hero{
 	padding-bottom: 86px;
     background: white;
-    padding-top: 8%;
-    height: calc(100% - 678px);
+    height: 714px;
 
     @media only screen and (min-width: 1401px){
 	  
@@ -372,12 +387,21 @@ a:hover, a:focus, a:visited{
 }
 
 .design-thinking{
-	padding-top:40px;
-	padding-bottom: 200px;
-	background:#FAFAFA;
+
+	position: relative;
+    display: block;
+    vertical-align: top;
+    box-sizing: border-box;
+	z-index: 10;
+	height: 617px;
+
+	.wrapper{
+		background:#FAFAFA;
+		height: 100%;
+	}
 
 	@media only screen and (min-width: 1401px){
-	    padding-bottom: 200px;
+	    padding-bottom: 40px;
 		}
 
 		@media only screen and (max-width: 1400px) and (min-width: 769px){
@@ -394,7 +418,7 @@ a:hover, a:focus, a:visited{
 		}
 
 	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
-		
+		height: 537px;
 		}
 
 	h3 {
@@ -491,7 +515,6 @@ a:hover, a:focus, a:visited{
 
 		@media only screen and (min-width: 1401px){
 	   	position: relative;
-	    top: 80px;
 	    left: 268px;
 	    transform: scale(1.5);
 	    transform-origin: center;
@@ -500,7 +523,6 @@ a:hover, a:focus, a:visited{
 
 		@media only screen and (max-width: 1400px) and (min-width: 1025px){
 	   	position: relative;
-	    top: 10px;
 	    left: 118px;
 	    transform: scale(1.2);
 	    transform-origin: center;
@@ -518,7 +540,7 @@ a:hover, a:focus, a:visited{
 
 		@media only screen and (max-width: 768px) and (min-width: 576px){
 	   	position: relative;
-	    top: 160px;
+	    top: 0px;
 	    left: 0px;
 	    transform: scale(1.2);
 	    transform-origin: center;
@@ -527,7 +549,7 @@ a:hover, a:focus, a:visited{
 
 	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
 	    position: relative;
-	    top: 220px;
+	    top: 160px;
 	    left: -60px;
 	    transform: scale(1.2);
 	    transform-origin: center;
@@ -537,50 +559,60 @@ a:hover, a:focus, a:visited{
 }
 
 .design-sprint{
-   	padding-top: 40px;
-    background: #6e66cb;
-    height: 477px;
-    margin-bottom: 150px;
 
-    @media only screen and (min-width: 1401px){
-	margin-bottom: 0;
-	}
+ //    @media only screen and (min-width: 1401px){
+	// margin-bottom: 0;
+	// }
 
-	@media only screen and (max-width: 1400px) and (min-width: 1025px){
-	margin-bottom: 0;
-	}
+	// @media only screen and (max-width: 1400px) and (min-width: 1025px){
+	// margin-bottom: 0;
+	// }
 
-	@media only screen and (max-width: 1024px) and (min-width: 769px){
-	margin-bottom: 0;
+	// @media only screen and (max-width: 1024px) and (min-width: 769px){
+	// margin-bottom: 0;
+	// }
+	position: relative;
+    display: block;
+    vertical-align: top;
+    box-sizing: border-box;
+	z-index: 10;
+	height: 617px;
+
+	.wrapper{
+		padding-top:40px;
+	    background: #6e66cb;
+	    height: 100%;
 	}
 
     img{
    	mix-blend-mode: hard-light;
-    padding-top: 40px;
     position: relative;
+    top:0;
+    left:0;
 
-    	@media only screen and (min-width: 1401px){
-		transform: translate3d(50px, -58px, 0);
-		}
+  //   	@media only screen and (min-width: 1401px){
+		// transform: translate3d(50px, -58px, 0);
+		// }
 
-		@media only screen and (max-width: 1400px) and (min-width: 1201px){
-	   	transform: translate3d(50px, -48px, 0);
-		}
+		// @media only screen and (max-width: 1400px) and (min-width: 1201px){
+	 //   	transform: translate3d(50px, -48px, 0);
+		// }
 
-		@media only screen and (max-width: 1200px) and (min-width: 1025px){
-	   	transform: translate3d(0px, -48px, 0);
-		}
+		// @media only screen and (max-width: 1200px) and (min-width: 1025px){
+	 //   	transform: translate3d(0px, -48px, 0);
+		// }
 
-		@media only screen and (max-width: 1024px) and (min-width: 769px){
-	    transform: translate3d(0px, 32px, 0);
-		}
+		// @media only screen and (max-width: 1024px) and (min-width: 769px){
+	 //    transform: translate3d(0px, 32px, 0);
+		// }
 
 		@media only screen and (max-width: 768px) and (min-width: 576px){
-
+			margin-top: 40px;
+			width: 420px;
 		}
 
 		@media only screen and (max-width: 575px) and (min-device-width: 350px){
-			
+			margin-top: 40px;
 		}
 
    
@@ -638,11 +670,24 @@ a:hover, a:focus, a:visited{
 	float:left !important;
 	border: 2px solid #FF0084;
 	}
+
+	@media only screen and (max-width: 768px) and (min-width: 576px){
+		height:437px;
+	}
+
+	@media only screen and (max-width: 575px) and (min-device-width: 350px){
+		height:437px;
+	}
 }
 
 .design-development{
-	padding-top:124px;
-	height: 667px;
+	position: relative;
+    display: block;
+    vertical-align: top;
+    box-sizing: border-box;
+	z-index: 10;
+	height: 657px;
+	overflow:hidden; 
 
 	h3 {
 	font-family: "Playfair Display", serif;
@@ -697,194 +742,49 @@ a:hover, a:focus, a:visited{
 	border: 2px solid #FF0084;
 	}
 
-	.triangle{
-	width: 490px;
-    height: 641px;
-    background: #E1E2E4;
-    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0%);
-    clip-path: polygon(0 0, 0% 100%, 100%);
-	}
-
-	.square-one{
-	width: 445px;
-    height: 641px;
-    background: #FFE2BA;
-	}
-
-	.square-two{
-	width: 445px;
-    height: 641px;
-    background: #293890;
-	}
 
 	img{
-    width: 373px;
+    width: 573px;
     transform-origin: bottom;
-	}
-
-		@media only screen and (min-width: 1401px){
-
-			.triangle{
-		    transform: translate3d(-40px, -48px, 0);
-			position: absolute;
-			width: 373px;
-			}
-
-			.square-one{
-		    transform: translate3d(6px, -58px, 0);
-		    position: absolute;
-		   	width: 513px;
-		    z-index: -1;
-		    height: 400px;
-			}
-
-			.square-two{
-			transform: translate3d(-20px, -48px, 0px);
-		    position: absolute;
-		    width: 630px;
-		    z-index: -1;
-			}
-
-			img{
-			transform: translate3d(410px, 232px, 0);
-			position: absolute;
-			width: 583px;
-			transform-origin: bottom;
-			}
-		}
-
-		@media only screen and (max-width: 1400px) and (min-width: 1025px){
-
-			.triangle{
-		    transform: translate3d(-40px, -48px, 0);
-			position: absolute;
-			width: 373px;
-			}
-
-			.square-one{
-		    transform: translate3d(6px, -58px, 0);
-		    position: absolute;
-		    width: 373px;
-		    z-index: -1;
-		    height: 400px;
-			}
-
-			.square-two{
-			transform: translate3d(-20px, -48px, 0px);
-		    position: absolute;
-		    width: 373px;
-		    z-index: -1;
-			}
-
-			img{
-			transform: translate3d(300px, 197px, 0);
-			position: absolute;
-			width: 373px;
-			transform-origin: bottom;
-			}
-		}
-
-		@media only screen and (max-width: 1024px) and (min-width: 769px){
-
-			.triangle{
-		    transform: translate3d(-40px, -48px, 0);
-			position: absolute;
-			width: 373px;
-			}
-
-			.square-one{
-		    transform: translate3d(6px, -58px, 0);
-		    position: absolute;
-		    width: 373px;
-		    z-index: -1;
-		    height: 400px;
-			}
-
-			.square-two{
-			transform: translate3d(-40px, -48px, 0px);
-		    position: absolute;
-		    width: 373px;
-		    z-index: -1;
-			}
-
-			img{
-			transform: translate3d(200px, 212px, 0);
-			position:absolute;
-			width: 373px;
-			transform-origin: bottom;
-			}
-		}
+    position: absolute;
+    left:0;
+    top:-100px;
 
 		@media only screen and (max-width: 768px) and (min-width: 576px){
 
-			.triangle{
-		    transform: translate3d(-40px, -48px, 0);
-			position: absolute;
-			width: 373px;
-			}
-
-			.square-one{
-		    transform: translate3d(6px, -58px, 0);
-		    position: absolute;
-		    width: 373px;
-		    z-index: -1;
-		    height: 400px;
-			}
-
-			.square-two{
-			transform: translate3d(-20px, -48px, 0px);
-		    position: absolute;
-		    width: 373px;
-		    z-index: -1;
-			}
-
-			img{
-			transform: translate3d(250px, 164px, 0);
-			position: absolute;
-			width: 373px;
-			transform-origin: bottom;
-			}
+			left: -20px;
+    		top: 250px;
+    		width: 452px;
 		}
 
 		@media only screen and (max-width: 575px) and (min-device-width: 350px){
-			.triangle{
-		    transform: translate3d(-20px, -48px, 0);
-			position: absolute;
-			width: 373px;
-			}
+			left: -20px;
+			top: 250px;
+    		width: 452px;
+		}
+	}
 
-			.square-one{
-		    transform: translate3d(6px, -58px, 0);
-		    position: absolute;
-		    width: 373px;
-		    z-index: -1;
-		    height: 400px;
-			}
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+		padding-top:200px;
+		}
 
-			.square-two{
-			transform: translate3d(6px, -48px, 0px);
-		    position: absolute;
-		    width: 373px;
-		    z-index: -1;
-			}
-
-			img{
-			transform: translate3d(-50px, 223px, 0);
-			position: absolute;
-			width: 373px;
-			transform-origin: bottom;
-			}
+		@media only screen and (max-width: 575px) and (min-device-width: 350px){
+		padding-top:100px;
 		}
 }
 
 .innovation-services{
 	padding-top:40px;
-	z-index: 3;
-    position: relative;
     background:url("../images/productDesignBG.svg");
     background-size: 641px;
     height: 641px;
     overflow: hidden;
+    position: relative;
+    display: block;
+    vertical-align: top;
+    box-sizing: border-box;
+	z-index: 10;
+	height: 617px;
 
 	h3 {
 	font-family: "Playfair Display", serif;
@@ -1811,21 +1711,20 @@ a:hover, a:focus, a:visited{
 }
 
 .gutter-l{
-	left: 0px;
-    z-index: -1;
+	left: -20px;
     background-color: #efefee;
 
     @media only screen and (min-width: 1400px){
     
-    position: fixed;
+    position: absolute;
     top: 0px;
     display: block;
-    width: calc( (100% - 1200px)/2 );
+    width: calc( (100% - 1325px)/2 );
     height: 100%;
 	}
 
 	@media only screen and (max-width: 1400px) and (min-width: 769px){
-    position: fixed;
+    position: absolute;
     top: 0px;
     display: block;
     width: 25px;
@@ -1842,20 +1741,19 @@ a:hover, a:focus, a:visited{
 }
 
 .gutter-r{
-	right: 0px;
-    z-index: -1;
+	right: -20px;
     background-color: #efefee;
   
     @media only screen and (min-width: 1400px){
-    position: fixed;
+    position: absolute;
     top: 0px;
     display: block;
-    width: calc( (100% - 1200px)/2 );
+    width: calc( (100% - 1325px)/2 );
     height: 100%;
 	}
 
 	@media only screen and (max-width: 1400px) and (min-width: 769px){
-    position: fixed;
+    position: absolute;
     top: 0px;
     display: block;
     width: 25px;
@@ -1879,3 +1777,14 @@ a:hover, a:focus, a:visited{
     font-weight: 400 !important;
     color:black !important;
 }
+
+/* .react-simple-parallax-bg is generate by the component */
+    section .react-simple-parallax-bg {
+        background-image: url('http://tinyurl.com/zaz7bp4');
+        height: 750px;
+    }
+    
+    section .parallax {
+        top: 200px;
+        margin: auto;
+    }

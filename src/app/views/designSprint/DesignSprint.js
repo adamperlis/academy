@@ -8,7 +8,8 @@ import {
   WizardMotion,
   ListCollapse,
   ListBenefits,
-  ContactUs
+  ContactUs,
+  ArrowDownIcon
 }                     from '../../components';
 import { Grid, Row, Col, Accordion, Panel, PanelGroup } from 'react-bootstrap';
 import { Link }       from 'react-router';
@@ -60,6 +61,8 @@ class DesignSprint extends Component {
           'view-enter': viewEntersAnim
         })}>
         <Row className="show-grid sprint-academy hero">
+        <div className="vertical-wrapper">
+            <div className="vertical-middle">
           <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={2} lgOffset={1}> 
             <div className="block-reveal">
             <h1>Design</h1>
@@ -72,13 +75,21 @@ class DesignSprint extends Component {
               SEE THE CURRICULUM
             </ScrollLink>
           </Col>
-          <Col xs={6} sm={9} mdOffset={1} md={8} lgOffset={2} lg={6} ></Col> 
+          <Col xs={6} sm={9} mdOffset={1} md={8} lgOffset={2} lg={6} ></Col>
+          </div>
+          </div> 
         </Row>
+
+        <Row className="show-grid arrow">
+          <Col xs={12} md={12} xsHidden={true} smHidden={true}> 
+            <ArrowDownIcon className="--white arrow-down-icon" />
+          </Col>
+        </Row> 
 
         <Row id="curriculum" className="show-grid sprint-academy what-is">
           <Col xs={6} sm={7} md={7} lg={8}></Col>
           <Col xs={6} sm={3} md={3} lg={2}>
-            <h3>What's a</h3>
+            <h3>What is a</h3>
             <h4>Design</h4>
             <h4>Sprint?</h4>
             <p className="subhead">

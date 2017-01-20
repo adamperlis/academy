@@ -135,7 +135,7 @@ export default class listCollapse extends React.Component {
                   nestedItems={[
                       <ListItem key={1} disabled={true} style={{fontFamily:'Raleway', fontSize: '13px', lineHeight: '15px', color: 'white', }} 
                     primaryText="
-                    Once your wireframes have been validated, your designers will work on making them look pretty while the product and development team work on the presentation.
+                    Once your wireframes have been validated, your designers will make them look more high fidelity while the product and development team work on the presentation.
                     Your presentation will include, an explanation of the problems identified, 'How might we...' questions, screenshots of your designs and potential questions to ask users."
                     />,
                   ]}

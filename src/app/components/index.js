@@ -1,7 +1,7 @@
 import MainContainer        from './mainContainer/MainContainer';
 import NavigationBar      	from './navigation/NavigationBar';
 import BackToTop          	from './backToTop/BackToTop';
-import ArrowDown          	from './arrowDown/ArrowDown';
+import ArrowDownIcon          	from './arrowDown/ArrowDownIcon';
 import WizardMotion       	from './wizardMotion/WizardMotion';
 import Hero  				        from './hero/Hero';
 import DesignThinking       from './designThinking/DesignThinking';
@@ -29,7 +29,7 @@ export {
   Hero,
   DesignThinking,
   ButtonSmall,
-  ArrowDown,
+  ArrowDownIcon,
   DesignSprint,
   InnovationServices,
   DesignDevelopment,
