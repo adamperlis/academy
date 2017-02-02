@@ -4,6 +4,8 @@ import ConnectedInnovationServices       	from './innovationServices/InnovationS
 import ConnectedProductDesign       	from './productDesign/ProductDesign';
 import ConnectedDesignSprint				from './designSprint/DesignSprint';
 import ConnectedContactUs				from './contactUs/ContactUs';
+import ConnectedWork				from './work/Work';
+import ConnectedTime				from './work/time/Time';
 
 export {
   App,
@@ -11,5 +13,7 @@ export {
   ConnectedDesignSprint,
   ConnectedInnovationServices,
   ConnectedProductDesign,
-  ConnectedContactUs
+  ConnectedContactUs,
+  ConnectedWork,
+  ConnectedTime,
 };

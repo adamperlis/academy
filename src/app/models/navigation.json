@@ -25,6 +25,18 @@
       "link":       "/ProductDesign",
       "view":       "ProductDesign",
       "isRouteBtn": true
+    },
+    {
+      "label":      "Work",
+      "link":       "/Work",
+      "view":       "Work",
+      "isRouteBtn": true
+    },
+    {
+      "label":      "Time",
+      "link":       "/Work/Time",
+      "view":       "Time",
+      "isRouteBtn": true
     }
   ]
 }

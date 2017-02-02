@@ -118,10 +118,19 @@ class TopBarNav extends Component {
                     <Link
                     onTouchTap={this.handleRouteActions.bind(this, 3)}
                     className="drawer"
+                    to={'/Work'}>
+                    Work
+                    </Link>
+                  </MenuItem>
+                  {/*<Divider style={{background:'rgb(126, 119, 204)',}}/>
+                  <MenuItem>
+                    <Link
+                    onTouchTap={this.handleRouteActions.bind(this, 3)}
+                    className="drawer"
                     to={'/InnovationServices'}>
                     Innovation Services
                     </Link>
-                  </MenuItem>
+                  </MenuItem>*/}
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
@@ -157,7 +166,7 @@ class TopBarNav extends Component {
                       <div>
                       <FlatButton className="navLinks hidden-xs hidden-sm" label="Sprint Academy" containerElement={<Link  to="/designSprint"/>} />
                       <FlatButton className="navLinks hidden-xs hidden-sm" label="Design & Development" containerElement={<Link  to="/ProductDesign"/>} />
-                      <FlatButton className="navLinks hidden-xs hidden-sm" label="Innovation Services" containerElement={<Link  to="/InnovationServices"/>} />
+                      <FlatButton className="navLinks hidden-xs hidden-sm" label="Work" containerElement={<Link  to="/Work"/>} />
                       </div>
                       }
                     iconStyleRight={{
@@ -170,7 +179,7 @@ class TopBarNav extends Component {
 
                     <Tab value={1} style={styles.headline} label="Sprint Academy" containerElement={<Link  to="/designSprint"/>} />
                     <Tab value={2} style={styles.headline} label="Design & Development" containerElement={<Link to="/ProductDesign"/>} />
-                    <Tab value={3} style={styles.headline} label="Innovation Services" containerElement={<Link to="/InnovationServices"/>} />
+                    <Tab value={3} style={styles.headline} label="Work" containerElement={<Link to="/Work"/>} />
                 
                   </Tabs>
                   </Sticky>

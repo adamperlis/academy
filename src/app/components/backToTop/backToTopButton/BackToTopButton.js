@@ -27,9 +27,7 @@ const BackToTopButton = ({onClick, position, children, motionStyle}) => {
   return (
       <button
         style={buttonStyle}
-        className={cx({
-          'btn': true
-        })}
+        className="top-btn"
         onClick={onClick}>
         {
           !children &&
