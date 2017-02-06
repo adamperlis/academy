@@ -16,6 +16,7 @@ import ListBenefits         from './listBenefits/listBenefits';
 import TopBarNav            from './topBarNav/topBarNav';
 import ContactUs            from './contactUs/ContactUs';
 import LoadingIcon             from './loading/loading';
+import Work             from './work/Work';
 
 
 
@@ -39,5 +40,6 @@ export {
   ListBenefits,
   TopBarNav,
   ContactUs,
-  LoadingIcon
+  LoadingIcon,
+  Work
 };

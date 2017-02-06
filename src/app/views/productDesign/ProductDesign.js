@@ -99,14 +99,14 @@ class ProductDesign extends Component {
           <ContactUs label="Design with Us" />
 
           </Col>
-          <Col xs={5} xsOffset={1} sm={4} smOffset={3} md={4} mdOffset={4} lg={4} lgOffset={2}>
-            <img src={require('../../images/sketch.svg')} height="150px" style={{marginTop:'50px', opacity:'.5'}}/>
+          <Col xs={12} xsOffset={1} sm={4} smOffset={4} md={4} mdOffset={4} lg={4} lgOffset={2} style={{paddingRight:'0'}}>
+            <img className="img-responsive" src={require('../../images/sketch@2x.png')} style={{marginTop:'50px'}}/>
           </Col>
         </Row>
 
         <Row className="show-grid product-dev">
-          <Col xs={5} sm={5} smOffset={1} md={6} mdOffset={1} lg={4} lgOffset={2}>
-            <img src={require('../../images/code.svg')} height="150px" style={{marginTop:'50px', opacity:'.5'}}/>
+          <Col xs={12} sm={5} smOffset={1} md={6} mdOffset={1} lg={6} style={{marginLeft:'0px', paddingLeft:'0',}}>
+            <img className="img-responsive" src={require('../../images/sublime@2x.png')} style={{marginTop:'50px'}}/>
           </Col> 
           <Col xs={7} sm={5} md={4} lg={4}> 
 
@@ -140,8 +140,8 @@ class ProductDesign extends Component {
            <ContactUs label="Manage with Us" />
 
           </Col>
-          <Col xs={5} xsOffset={1} sm={4} smOffset={3} md={4} mdOffset={4} lg={4} lgOffset={2}>
-            <img src={require('../../images/project-management.svg')} height="150px" style={{marginTop:'50px', marginLeft:'-25px', opacity:'.5'}}/>
+          <Col xs={12} xsOffset={1} sm={4} smOffset={4} md={4} mdOffset={4} lg={4} lgOffset={2} style={{paddingRight:'0'}}>
+            <img className="img-responsive" src={require('../../images/team-gant@2x.png')} style={{marginTop:'50px'}}/>
           </Col>
         </Row>
       </div>

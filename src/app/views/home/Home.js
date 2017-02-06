@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 import {Hero}    from '../../components';
 import {DesignThinking}    from '../../components';
 import {DesignSprint}    from '../../components';
-import {InnovationServices}    from '../../components';
+import {Work}    from '../../components';
 import {DesignDevelopment}    from '../../components';
 import {
   WizardMotion
@@ -44,7 +44,7 @@ class Home extends Component {
           <DesignThinking />
           <DesignSprint />
           <DesignDevelopment />
-          <InnovationServices />
+          <Work />
           <span className="gutter-l"></span>
           <span className="gutter-r"></span>
       </div>
