@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1009px" height="854px" viewBox="0 0 1009 854" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>timeinc-colors</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polygon id="path-3" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <polygon id="path-5" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="168.039448" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <polygon id="path-7" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <polygon id="path-9" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <polygon id="path-11" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <polygon id="path-13" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <polygon id="path-15" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+        <polygon id="path-17" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-17"></use>
+        </mask>
+        <polygon id="path-19" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-19"></use>
+        </mask>
+        <polygon id="path-21" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-21"></use>
+        </mask>
+        <polygon id="path-23" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-24" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-23"></use>
+        </mask>
+        <polygon id="path-25" points="0 0 232.670455 0 232.670455 258.522227 0 258.522227"></polygon>
+        <mask id="mask-26" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="232.670455" height="258.522227" fill="white">
+            <use xlink:href="#path-25"></use>
+        </mask>
+    </defs>
+    <g id="Case-Study" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="casestudy_timeinc_large_v2-copy" transform="translate(-124.000000, -10928.000000)">
+            <g id="Group-34" transform="translate(19.000000, 842.000000)">
+                <g id="timeinc-colors" transform="translate(105.397727, 10086.344137)">
+                    <g id="Group-9">
+                        <g id="Group-28">
+                            <g id="Swatch:-#000000">
+                                <use id="border" stroke="#DEDEDE" mask="url(#mask-2)" stroke-width="2.58522718" xlink:href="#path-1"></use>
+                                <polygon id="#000000" fill="#000000" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                <text id="TIME_black" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.511364" font-weight="bold" fill="#444444">
+                                    <tspan x="10.3409091" y="196.064991">TIME_black</tspan>
+                                </text>
+                                <text id="#000000" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="221.519487">#000000</tspan>
+                                </text>
+                                <text id="RGB-Value" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="246.377394">rgba(0, 0, 0, 1)</tspan>
+                                </text>
+                            </g>
+                            <g id="Swatch:-#FFFFFF" transform="translate(258.522727, 0.000000)">
+                                <use id="border" stroke="#DEDEDE" mask="url(#mask-4)" stroke-width="2.58522718" xlink:href="#path-3"></use>
+                                <use id="#FFFFFF" stroke="#DEDEDE" mask="url(#mask-6)" stroke-width="2.58522718" fill="#FFFFFF" xlink:href="#path-5"></use>
+                                <text id="TIME_white" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.511364" font-weight="bold" fill="#444444">
+                                    <tspan x="10.3409091" y="196.064991">TIME_white</tspan>
+                                </text>
+                                <text id="#FFFFFF" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="221.519487">#FFFFFF</tspan>
+                                </text>
+                                <text id="RGB-Value" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="246.377394">rgba(255, 255, 255, 1)</tspan>
+                                </text>
+                            </g>
+                            <g id="Swatch:-#E90606" transform="translate(517.045455, 0.000000)">
+                                <use id="border" stroke="#DEDEDE" mask="url(#mask-8)" stroke-width="2.58522718" xlink:href="#path-7"></use>
+                                <polygon id="#E90606" fill="#E90606" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                <text id="TIME_red" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.511364" font-weight="bold" fill="#444444">
+                                    <tspan x="10.3409091" y="196.064991">TIME_red</tspan>
+                                </text>
+                                <text id="#E90606" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="221.519487">#E90606</tspan>
+                                </text>
+                                <text id="RGB-Value" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="246.377394">rgba(233, 6, 6, 1)</tspan>
+                                </text>
+                            </g>
+                            <g id="Swatch:-#FAFAFA" transform="translate(775.568182, 0.000000)">
+                                <use id="border" stroke="#DEDEDE" mask="url(#mask-10)" stroke-width="2.58522718" xlink:href="#path-9"></use>
+                                <polygon id="#FAFAFA" fill="#FAFAFA" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                <text id="TIME_lightgray" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.511364" font-weight="bold" fill="#444444">
+                                    <tspan x="10.3409091" y="196.064991">TIME_lightgray</tspan>
+                                </text>
+                                <text id="#FAFAFA" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="221.519487">#FAFAFA</tspan>
+                                </text>
+                                <text id="RGB-Value" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="246.377394">rgba(250, 250, 250, 1)</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Group-30" transform="translate(0.000000, 296.306245)">
+                            <g id="Swatch:-#F7F7F7" transform="translate(775.568182, 0.000000)">
+                                <use id="border" stroke="#DEDEDE" mask="url(#mask-12)" stroke-width="2.58522741" xlink:href="#path-11"></use>
+                                <polygon id="#F7F7F7" fill="#F7F7F7" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                <text id="FORTUNE_lightgray" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.511364" font-weight="bold" fill="#444444">
+                                    <tspan x="10.3409091" y="192.087726">FORTUNE_lightgray</tspan>
+                                </text>
+                                <text id="#F7F7F7" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="220.525171">#F7F7F7</tspan>
+                                </text>
+                                <text id="RGB-Value" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="246.377394">rgba(247, 247, 247, 1)</tspan>
+                                </text>
+                            </g>
+                            <g id="Swatch:-#4099FF">
+                                <use id="border" stroke="#DEDEDE" mask="url(#mask-14)" stroke-width="2.58522741" xlink:href="#path-13"></use>
+                                <polygon id="#4099FF" fill="#000000" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                <text id="FORTUNE_black" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.511364" font-weight="bold" fill="#444444">
+                                    <tspan x="10.3409091" y="192.087726">FORTUNE_black</tspan>
+                                </text>
+                                <text id="#000000" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="220.525171">#000000</tspan>
+                                </text>
+                                <text id="rgba(0,-0,-0,-1)" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="246.377394">rgba(0, 0, 0, 1)</tspan>
+                                </text>
+                            </g>
+                            <g id="Swatch:-#3B5998" transform="translate(258.522727, 0.000000)">
+                                <use id="border" stroke="#DEDEDE" mask="url(#mask-16)" stroke-width="2.58522741" xlink:href="#path-15"></use>
+                                <polygon id="#3B5998" fill="#4099FF" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                <text id="FORTUNE_blue" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.511364" font-weight="bold" fill="#444444">
+                                    <tspan x="10.3409091" y="192.087726">FORTUNE_blue</tspan>
+                                </text>
+                                <text id="#4099FF" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="220.525171">#4099FF</tspan>
+                                </text>
+                                <text id="rgba(64,-153,-255,-1" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="246.377394">rgba(64, 153, 255, 1)</tspan>
+                                </text>
+                            </g>
+                            <g id="Swatch:-#979797" transform="translate(517.045455, 0.000000)">
+                                <use id="border" stroke="#DEDEDE" mask="url(#mask-18)" stroke-width="2.58522741" xlink:href="#path-17"></use>
+                                <polygon id="#979797" fill="#979797" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                <text id="FORTUNE_darkgray" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.511364" font-weight="bold" fill="#444444">
+                                    <tspan x="10.3409091" y="192.087726">FORTUNE_darkgray</tspan>
+                                </text>
+                                <text id="#979797" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="220.525171">#979797</tspan>
+                                </text>
+                                <text id="RGB-Value" font-family="HelveticaNeue, Helvetica Neue" font-size="15.511364" font-weight="normal" fill="#777777">
+                                    <tspan x="10.3409091" y="246.377394">rgba(151, 151, 151, 1)</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Group-40" transform="translate(0.000000, 594.601123)">
+                            <g id="Group-32">
+                                <g id="Swatch:-#1A1A1A">
+                                    <use id="border" stroke="#DEDEDE" mask="url(#mask-20)" stroke-width="2.58496889" xlink:href="#path-19"></use>
+                                    <polygon id="#1A1A1A" fill="#1A1A1A" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                    <text id="MONEY_black" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.5098129" font-weight="bold" fill="#444444">
+                                        <tspan x="10.3409091" y="196.064991">MONEY_black</tspan>
+                                    </text>
+                                    <text id="#1A1A1A" font-family="HelveticaNeue, Helvetica Neue" font-size="15.5098129" font-weight="normal" fill="#777777">
+                                        <tspan x="10.3409091" y="221.519487">#1A1A1A</tspan>
+                                    </text>
+                                    <text id="RGB-Value" font-family="HelveticaNeue, Helvetica Neue" font-size="15.5098129" font-weight="normal" fill="#777777">
+                                        <tspan x="10.3409091" y="246.377394">rgba(26, 26, 26, 1)</tspan>
+                                    </text>
+                                </g>
+                                <g id="Swatch:-#00659B" transform="translate(258.522727, 0.000000)">
+                                    <use id="border" stroke="#DEDEDE" mask="url(#mask-22)" stroke-width="2.58496889" xlink:href="#path-21"></use>
+                                    <polygon id="#00659B" fill="#00659B" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                    <text id="MONEY_blue" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.5098129" font-weight="bold" fill="#444444">
+                                        <tspan x="10.3409091" y="196.064991">MONEY_blue</tspan>
+                                    </text>
+                                    <text id="#00659B" font-family="HelveticaNeue, Helvetica Neue" font-size="15.5098129" font-weight="normal" fill="#777777">
+                                        <tspan x="10.3409091" y="221.519487">#00659B</tspan>
+                                    </text>
+                                    <text id="RGB-Value" font-family="PlayfairDisplay-Regular, Playfair Display" font-size="15.5098129" font-weight="normal" fill="#777777">
+                                        <tspan x="10.3409091" y="246.388761">rgba(0, 101, 155, 1)</tspan>
+                                    </text>
+                                </g>
+                                <g id="Swatch:-#AFAFAF" transform="translate(517.045455, 0.000000)">
+                                    <use id="border" stroke="#DEDEDE" mask="url(#mask-24)" stroke-width="2.58496889" xlink:href="#path-23"></use>
+                                    <polygon id="#AFAFAF" fill="#AFAFAF" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                    <text id="MONEY_darkgray" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.5098129" font-weight="bold" fill="#444444">
+                                        <tspan x="10.3409091" y="196.064991">MONEY_darkgray</tspan>
+                                    </text>
+                                    <text id="#AFAFAF" font-family="HelveticaNeue, Helvetica Neue" font-size="15.5098129" font-weight="normal" fill="#777777">
+                                        <tspan x="10.3409091" y="221.519487">#AFAFAF</tspan>
+                                    </text>
+                                    <text id="RGB-Value" font-family="HelveticaNeue, Helvetica Neue" font-size="15.5098129" font-weight="normal" fill="#777777">
+                                        <tspan x="10.3409091" y="246.377394">rgba(175, 175, 175, 1)</tspan>
+                                    </text>
+                                </g>
+                                <g id="Swatch:-#E6E6E6" transform="translate(775.568182, 0.000000)">
+                                    <use id="border" stroke="#DEDEDE" mask="url(#mask-26)" stroke-width="2.58496889" xlink:href="#path-25"></use>
+                                    <polygon id="#E6E6E6" fill="#E6E6E6" points="0 0 232.670455 0 232.670455 168.039448 0 168.039448"></polygon>
+                                    <text id="MONEY_lightgray" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15.5098129" font-weight="bold" fill="#444444">
+                                        <tspan x="10.3409091" y="196.064991">MONEY_lightgray</tspan>
+                                    </text>
+                                    <text id="#E6E6E6" font-family="HelveticaNeue, Helvetica Neue" font-size="15.5098129" font-weight="normal" fill="#777777">
+                                        <tspan x="10.3409091" y="221.519487">#E6E6E6</tspan>
+                                    </text>
+                                    <text id="RGB-Value" font-family="HelveticaNeue, Helvetica Neue" font-size="15.5098129" font-weight="normal" fill="#777777">
+                                        <tspan x="10.3409091" y="246.377394">rgba(230, 230, 230, 1)</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

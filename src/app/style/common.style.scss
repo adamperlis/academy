@@ -16,6 +16,16 @@ a:hover, a:focus, a:visited{
     	z-index: 100000;
 }
 
+p{
+	font-family: Raleway;
+	font-size: 13px;
+	line-height: 20px;
+    letter-spacing: .5px;
+	color: #000000;
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
 .--white{
 	fill:white;
 }
@@ -30,6 +40,37 @@ a:hover, a:focus, a:visited{
 	position: absolute;
 	left: 50%; 
 	bottom: 41px;
+}
+
+.btn {
+	background-color: #FF0084 !important;
+	border-radius:100px !important;
+	border:none !important;
+	font-family: "Montserrat", sans-serif !important;
+	font-weight: 800 !important;
+	font-size: 11px !important;
+	text-align: center !important;
+	text-align: center !important;
+	line-height: 16px !important;
+	color: #FFFFFF !important;
+	padding: 16px 30px;
+	margin-top: 30px !important;
+	text-transform: uppercase !important;
+	letter-spacing: 1px !important;
+	float:left !important;
+	border: 2px solid #FF0084 !important;
+	transition:2s all cubic-bezier(0.19, .8, 0.22, 1) !important;
+
+
+		&:hover{
+		outline: none !important;
+		text-decoration: none !important;
+		background-color: #BA0060 !important; 
+		border: 2px solid white !important;
+		box-shadow:rgba(0, 0, 0, .15) 7px 8px 0px, rgba(0, 0, 0, 0.15) 0px 6px 0px !important;
+		transform: scale(1.01) translate(0px, -10px) !important;
+		color:white !important;
+		}
 }
 
 .btn.focus, .btn:focus, .btn:hover {
@@ -107,18 +148,6 @@ a:hover, a:focus, a:visited{
 
 }
 
-.btn{
-	transition:.5s all;
-}
-
-.btn:hover{
-	outline: none;
-	text-decoration: none;
-	background-color: #BA0060 !important; 
-	border: 2px solid white !important;
-	box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white;
-}
-
 .hero{
 	padding-bottom: 86px;
     background: white;
@@ -193,22 +222,7 @@ a:hover, a:focus, a:visited{
     }
 
     .btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	margin-top: 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:left !important;
-	border: 2px solid #FF0084;
 	}
 }
 
@@ -244,7 +258,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+	line-height: 20px;
+    letter-spacing: .5px;
 	color: #000000;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -449,7 +464,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: #000000;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -457,21 +473,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:right !important;
-	border: 2px solid #FF0084;
 	}
 
 	#Group-16{
@@ -646,7 +648,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: #FFF;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -654,21 +657,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:left !important;
-	border: 2px solid #FF0084;
 	}
 
 	@media only screen and (max-width: 768px) and (min-width: 576px){
@@ -717,7 +706,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: #000000;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -725,21 +715,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:right !important;
-	border: 2px solid #FF0084;
 	}
 
 
@@ -814,7 +790,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: #FFF;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -822,21 +799,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:left !important;
-	border: 2px solid #FF0084;
 	}
 
 	img{
@@ -886,7 +849,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: black;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -894,21 +858,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:left !important;
-	border: 2px solid #FF0084;
 	}
 }
 
@@ -1026,7 +976,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: black;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -1034,21 +985,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:left !important;
-	border: 2px solid #FF0084;
 	}
 }
 
@@ -1085,7 +1022,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: #000000;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -1093,21 +1031,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:right !important;
-	border: 2px solid #FF0084;
 	}
 
 }
@@ -1144,7 +1068,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: #000000;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -1152,21 +1077,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:right !important;
-	border: 2px solid #FF0084;
 	}
 
 }
@@ -1204,7 +1115,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: #000000;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -1212,21 +1124,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:right !important;
-	border: 2px solid #FF0084;
 	}
 
 }
@@ -1271,7 +1169,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: black;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -1279,21 +1178,7 @@ a:hover, a:focus, a:visited{
 	}
 
 	.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:left !important;
-	border: 2px solid #FF0084;
 	}
 }
 
@@ -1334,22 +1219,7 @@ a:hover, a:focus, a:visited{
     }
 
     .btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 400;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	margin-top: 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:left !important;
-	border: 2px solid #FF0084;
 	}
 }
 
@@ -1385,7 +1255,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+		line-height: 20px;
+    letter-spacing: .5px;
 	color: #000000;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -1514,22 +1385,7 @@ a:hover, a:focus, a:visited{
     }
 
     .btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	margin-top: 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:left !important;
-	border: 2px solid #FF0084;
 	}
 }
 
@@ -1565,7 +1421,8 @@ a:hover, a:focus, a:visited{
 	.subhead {
 	font-family: Raleway;
 	font-size: 13px;
-	line-height: 15px;
+	line-height: 20px;
+    letter-spacing: .5px;
 	color: #000000;
 	margin-top:20px;
 	margin-bottom:30px;
@@ -1695,22 +1552,7 @@ a:hover, a:focus, a:visited{
     }
 
     .btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	margin-top: 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:left !important;
-	border: 2px solid #FF0084;
 	}
 }
 
@@ -1757,22 +1599,7 @@ a:hover, a:focus, a:visited{
     }
 
     .btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	margin-top: 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	float:left !important;
-	border: 2px solid #FF0084;
 	}
 }
 
@@ -1898,29 +1725,6 @@ a:hover, a:focus, a:visited{
     color:black !important;
 }
 
-.btn {
-	background-color: #FF0084;
-	border-radius:100px;
-	border:none;
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 11px;
-	text-align: center;
-	text-align: center;
-	line-height: 16px;
-	color: #FFFFFF;
-	padding: 16px 30px;
-	margin-top: 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	float:left !important;
-	border: 2px solid #FF0084;
-
-	&:hover{
-		color:white;
-	}
-}
-
 .secondary-title{
 	padding-top:20px;
 	padding-bottom:20px;
@@ -1989,6 +1793,15 @@ a:hover, a:focus, a:visited{
 
 	&:focus{
 		outline:none;
+	}
+}
+
+.time{
+	h6{
+	font-family: "Montserrat";
+	font-weight: 800;
+	font-size: 6em;
+	color: #E1E2E4;
 	}
 }
 

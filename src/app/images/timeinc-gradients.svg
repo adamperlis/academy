@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1404px" height="811px" viewBox="0 0 1404 811" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>timeinc-gradients</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 1404 0 1404 202.75 0 202.75"></polygon>
+        <polygon id="path-3" points="0 0 1404 0 1404 202.75 0 202.75"></polygon>
+    </defs>
+    <g id="Case-Study" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="casestudy_timeinc_large_v2" transform="translate(-19.000000, -11958.000000)">
+            <g id="Group-39" transform="translate(19.000000, 11862.000000)">
+                <g id="timeinc-gradients" transform="translate(0.000000, 96.000000)">
+                    <g id="Group-36">
+                        <g id="Group" fill="#E90606">
+                            <polygon id="#E90606-Copy" points="0 0 280.8 0 280.8 202.75 0 202.75"></polygon>
+                            <polygon id="#E90606-Copy-2" fill-opacity="0.799999952" points="280.8 0 561.6 0 561.6 202.75 280.8 202.75"></polygon>
+                            <polygon id="#E90606-Copy-3" fill-opacity="0.599999964" points="561.6 0 842.4 0 842.4 202.75 561.6 202.75"></polygon>
+                            <polygon id="#E90606-Copy-4" fill-opacity="0.400000006" points="842.4 0 1123.2 0 1123.2 202.75 842.4 202.75"></polygon>
+                            <polygon id="#E90606-Copy-5" fill-opacity="0.200000018" points="1123.2 0 1404 0 1404 202.75 1123.2 202.75"></polygon>
+                        </g>
+                        <g id="Group-Copy" transform="translate(0.000000, 202.750000)" fill="#000000">
+                            <polygon id="#E90606-Copy" points="0 0 280.8 0 280.8 202.75 0 202.75"></polygon>
+                            <polygon id="#E90606-Copy-2" fill-opacity="0.799999952" points="280.8 0 561.6 0 561.6 202.75 280.8 202.75"></polygon>
+                            <polygon id="#E90606-Copy-3" fill-opacity="0.599999964" points="561.6 0 842.4 0 842.4 202.75 561.6 202.75"></polygon>
+                            <polygon id="#E90606-Copy-4" fill-opacity="0.400000006" points="842.4 0 1123.2 0 1123.2 202.75 842.4 202.75"></polygon>
+                            <polygon id="#E90606-Copy-5" fill-opacity="0.200000018" points="1123.2 0 1404 0 1404 202.75 1123.2 202.75"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-41" transform="translate(0.000000, 405.500000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Duplicate-control"></g>
+                        <polygon id="#3B5998" fill="#4099FF" mask="url(#mask-2)" points="0 0 280.8 0 280.8 202.75 0 202.75"></polygon>
+                        <polygon id="#3B5998" fill-opacity="0.799999952" fill="#4099FF" mask="url(#mask-2)" points="280.8 0 561.6 0 561.6 202.75 280.8 202.75"></polygon>
+                        <polygon id="#3B5998" fill-opacity="0.599999964" fill="#4099FF" mask="url(#mask-2)" points="561.6 0 842.4 0 842.4 202.75 561.6 202.75"></polygon>
+                        <polygon id="#3B5998" fill-opacity="0.400000006" fill="#4099FF" mask="url(#mask-2)" points="842.4 0 1123.2 0 1123.2 202.75 842.4 202.75"></polygon>
+                        <polygon id="#3B5998" fill-opacity="0.200000018" fill="#4099FF" mask="url(#mask-2)" points="1123.2 0 1404 0 1404 202.75 1123.2 202.75"></polygon>
+                    </g>
+                    <g id="Group-42" transform="translate(0.000000, 608.250000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Duplicate-control"></g>
+                        <polygon id="#00659B" fill="#00659B" mask="url(#mask-4)" points="0 0 280.8 0 280.8 202.75 0 202.75"></polygon>
+                        <polygon id="#00659B" fill="#00659B" opacity="0.799999952" mask="url(#mask-4)" points="280.8 0 561.6 0 561.6 202.75 280.8 202.75"></polygon>
+                        <polygon id="#00659B" fill="#00659B" opacity="0.599999964" mask="url(#mask-4)" points="561.6 0 842.4 0 842.4 202.75 561.6 202.75"></polygon>
+                        <polygon id="#00659B" fill="#00659B" opacity="0.400000006" mask="url(#mask-4)" points="842.4 0 1123.2 0 1123.2 202.75 842.4 202.75"></polygon>
+                        <polygon id="#00659B" fill="#00659B" opacity="0.200000018" mask="url(#mask-4)" points="1123.2 0 1404 0 1404 202.75 1123.2 202.75"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

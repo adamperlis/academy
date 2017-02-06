@@ -87,11 +87,10 @@ class DesignSprint extends Component {
         </Row> 
 
         <Row id="curriculum" className="show-grid sprint-academy what-is">
-          <Col xs={6} sm={7} md={7} lg={8}></Col>
-          <Col xs={6} sm={3} md={3} lg={2}>
+          <Col xs={6} sm={7} md={7} lg={7}></Col>
+          <Col xs={6} sm={3} md={3} lg={3}>
             <h3>What is a</h3>
-            <h4>Design</h4>
-            <h4>Sprint?</h4>
+            <h4>Design Sprint?</h4>
             <p className="subhead">
             It’s a 6 step methodology for solving UX problems by building prototypes and testing them with real users.            </p>
           </Col> 
