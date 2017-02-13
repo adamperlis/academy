@@ -99,17 +99,17 @@ class DesignSprint extends Component {
         <Row className="show-grid sprint-academy what-is">
           <Col xs={12} smOffset={1} sm={4} mdOffset={1} md={4} lgOffset={1} lg={4}>
             <ul>
-              <li><img src={require('../../images/discovery.svg')} height="30px"/>
+              <li><img src="/public/assets/images/discovery.svg" height="30px"/>
               <p>1. Discovery</p></li>
-              <li><img src={require('../../images/sketch.svg')} height="30px"/>
+              <li><img src="/public/assets/images/sketch.svg" height="30px"/>
               <p>2. Sketch/Wireframe</p></li>
-              <li><img src={require('../../images/brush.svg')} height="30px"/>
+              <li><img src="/public/assets/images/brush.svg" height="30px"/>
               <p>3. Design</p></li>
-              <li><img src={require('../../images/prototype.svg')} height="30px"/>
+              <li><img src="/public/assets/images/prototype.svg" height="30px"/>
               <p>4. Prototype</p></li>
-              <li><img src={require('../../images/user-testing.svg')} height="30px"/>
+              <li><img src="/public/assets/images/user-testing.svg" height="30px"/>
               <p>5. User Testing</p></li>
-              <li><img src={require('../../images/learn.svg')} height="30px"/>
+              <li><img src="/public/assets/images/learn.svg" height="30px"/>
               <p>6. Learn & Repeat</p></li>
             </ul>
           </Col>

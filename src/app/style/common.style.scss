@@ -751,7 +751,7 @@ p{
 
 .innovation-services{
 	padding-top:40px;
-    background:url("../images/productDesignBG.svg");
+    background:url("/public/assets/images/productDesignBG.svg");
     background-size: 641px;
     height: 641px;
     overflow: hidden;
@@ -815,7 +815,7 @@ p{
 
 .our-work{
 	padding-top:40px;
-    background:url("../images/productDesignBG.svg");
+    background:url("/public/assets/images/productDesignBG.svg");
     background-size: 641px;
     height: 641px;
     overflow: hidden;
@@ -1629,25 +1629,25 @@ p{
     padding-bottom: 30px;
 
     @media only screen and (min-width: 1401px){
-    	background-image:url("../../../public/assets/images/timeinc-case-study-hero@2x.jpg");
+    	background-image:url("/public/assets/images/timeinc-case-study-hero@2x.jpg");
 	    padding-top: 80px;
     	padding-bottom: 80px;
 		}
 
 		@media only screen and (max-width: 1400px) and (min-width: 769px){
-    	background-image:url("../../../public/assets/images/timeinc-case-study-hero@2x.jpg");
+    	background-image:url("/public/assets/images/timeinc-case-study-hero@2x.jpg");
 	    padding-top: 80px;
     	padding-bottom: 80px;
 		}
 
 		@media only screen and (max-width: 1024px) and (min-width: 769px){
-    	background-image:url("../../../public/assets/images/timeinc-case-study-hero-no-devices@2x.jpg");
+    	background-image:url("/public/assets/images/timeinc-case-study-hero-no-devices@2x.jpg");
 		padding-top: 80px;
     	padding-bottom: 80px;
 		}
 
 		@media only screen and (max-width: 768px) and (min-width: 576px){
-    	background-image:url("../../../public/assets/images/timeinc-case-study-hero-no-devices@2x.jpg");
+    	background-image:url("/public/assets/images/timeinc-case-study-hero-no-devices@2x.jpg");
 		padding-top: 80px;
     	padding-bottom: 80px;
 		}
@@ -1655,7 +1655,7 @@ p{
 	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
 		padding-top: 80px;
     	padding-bottom: 80px;
-    	background-image:url("../../../public/assets/images/timeinc-case-study-hero-no-devices@2x.jpg");
+    	background-image:url("/public/assets/images/timeinc-case-study-hero-no-devices@2x.jpg");
 		}
 
     h1, h2 {

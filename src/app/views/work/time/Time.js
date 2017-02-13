@@ -70,7 +70,7 @@ class Time extends Component {
             <Link
               className="back-btn btn"
               to={'/Work'}>
-              <span><img src={require('../../../images/arrow-thin-left.svg')}/>
+              <span><img src="/public/assets/images/arrow-thin-left.svg"/>
               BACK</span>
             </Link>
           
@@ -89,7 +89,7 @@ class Time extends Component {
         <Row className="show-grid time">
           <Col xs={6} sm={6} md={6} lg={6}> 
 
-              <img className="brand-logos" src={require('../../../images/timeinc-logos.svg')}/>
+              <img className="brand-logos" src="/public/assets/images/timeinc-logos.svg"/>
               <div className="divider"></div>
               <h6>The Challenge</h6>
 
@@ -106,7 +106,7 @@ class Time extends Component {
             
           </Col>
           <Col xs={12} sm={6} md={6} lg={8}>
-           <img className="img-responsive" src={require('../../../images/timeinc-articles-group@2x.png')}/>
+           <img className="img-responsive" src="/public/assets/images/timeinc-articles-group@2x.png"/>
           </Col>
 
         </Row>
@@ -133,10 +133,10 @@ class Time extends Component {
           </Col>
           <Col xs={12} sm={12} md={12} lg={12}>
             <Col xs={12} sm={6} md={6} lg={6}>
-            <img className="img-responsive" src={require('../../../images/timeinc-article-before@2x.png')}/>
+            <img className="img-responsive" src="/public/assets/images/timeinc-article-before@2x.png"/>
             </Col>
             <Col xs={12} sm={6} md={6} lg={6}>
-              <img className="img-responsive" src={require('../../../images/timeinc-gallery-before@2x.png')}/>
+              <img className="img-responsive" src="/public/assets/images/timeinc-gallery-before@2x.png"/>
             </Col>
           </Col>
 
@@ -159,13 +159,13 @@ class Time extends Component {
             
           </Col>
           <Col xs={12} sm={6} md={6} lg={8}>
-           <img className="img-responsive" src={require('../../../images/design-sprint.svg')}/>
+           <img className="img-responsive" src="/public/assets/images/design-sprint.svg"/>
           </Col>
 
         </Row>
         <Row className="show-grid time">  
           <Col xs={12} sm={12} md={10} mdOffset={1} lg={10} lgOffset={1}>
-               <img className="img-responsive" src={require('../../../images/timeinc-sprint-pictures@2x.jpg')}/>
+               <img className="img-responsive" src="/public/assets/images/timeinc-sprint-pictures@2x.jpg"/>
           </Col>
         </Row>
 
@@ -201,13 +201,13 @@ class Time extends Component {
           </Col> 
 
           <Col xs={12} sm={8} md={8} lg={8}>
-               <img className="img-responsive" src={require('../../../images/time-article-desktop-mobile@2x.png')}/>
+               <img className="img-responsive" src="/public/assets/images/time-article-desktop-mobile@2x.png"/>
           </Col>
         </Row>
 
          <Row>
           <Col xs={12} sm={7} md={7} lg={7}>
-          <img className="img-responsive" src={require('../../../images/money-fortune-mobile-articles@2x.png')}/>
+          <img className="img-responsive" src="/public/assets/images/money-fortune-mobile-articles@2x.png"/>
           </Col> 
 
           <Col xs={12} sm={5} md={5} lg={5}>
@@ -216,7 +216,7 @@ class Time extends Component {
         </Row>
 
         <Row>
-          <img className="img-responsive" src={require('../../../images/time-mobile-features@3x.jpg')}/>
+          <img className="img-responsive" src="/public/assets/images/time-mobile-features@3x.jpg"/>
         </Row>
 
         <Row>
@@ -230,19 +230,19 @@ class Time extends Component {
           </Col> 
 
           <Col xs={12} sm={8} md={8} lg={8}>
-               <img className="img-responsive" src={require('../../../images/time-gallery-desktop-mobile@2x.png')}/>
+               <img className="img-responsive" src="/public/assets/images/time-gallery-desktop-mobile@2x.png"/>
           </Col>
         </Row>
 
          <Row className="show-grid time">  
           <Col xs={12} sm={12} md={8} mdOffset={2} lg={8} lgOffset={2}>
-               <img className="img-responsive" src={require('../../../images/time-gallery-desktop-features@2x.png')}/>
+               <img className="img-responsive" src="/public/assets/images/time-gallery-desktop-features@2x.png"/>
           </Col>
         </Row>
 
          <Row className="show-grid time">  
           <Col xs={12} sm={12} md={6} mdOffset={3} lg={6} lgOffset={3}>
-               <img className="img-responsive" src={require('../../../images/time-gallery-mobile-features@2x.png')}/>
+               <img className="img-responsive" src="/public/assets/images/time-gallery-mobile-features@2x.png"/>
           </Col>
         </Row>
 
@@ -260,7 +260,7 @@ class Time extends Component {
 
         <Row className="show-grid time">
           <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/timeinc-colors@2x.png')}/>            
+            <img className="img-responsive" src="/public/assets/images/timeinc-colors@2x.png"/>            
           </Col>
         </Row>
 
@@ -271,7 +271,7 @@ class Time extends Component {
         </Row>
 
          <Row className="show-grid time"> 
-            <img className="img-responsive" src={require('../../../images/timeinc-gradients.svg')}/>
+            <img className="img-responsive" src="/public/assets/images/timeinc-gradients.svg"/>
         </Row>
 
         <Row className="show-grid time">
@@ -282,55 +282,55 @@ class Time extends Component {
 
         <Row className="show-grid time">
           <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/Duplicate-Ionic.svg')}/>
+            <img className="img-responsive" src="/public/assets/images/Duplicate-Ionic.svg"/>
           </Col>
           <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/duplicate-examples.svg')}/>
-          </Col>
-        </Row>
-
-        <Row className="show-grid time">
-          <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/Franklin-Gothic.svg')}/>
-          </Col>
-          <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/franklin-gothic-examples.svg')}/>
+            <img className="img-responsive" src="/public/assets/images/duplicate-examples.svg"/>
           </Col>
         </Row>
 
         <Row className="show-grid time">
           <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/Helvetica-Neue.svg')}/>
+            <img className="img-responsive" src="/public/assets/images/Franklin-Gothic.svg"/>
           </Col>
           <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/helvetica-neue-examples.svg')}/>
-          </Col>
-        </Row>
-
-        <Row className="show-grid time">
-          <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/Solano-Gothic.svg')}/>
-          </Col>
-          <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/solano-gothic-examples.svg')}/>
+            <img className="img-responsive" src="/public/assets/images/franklin-gothic-examples.svg"/>
           </Col>
         </Row>
 
         <Row className="show-grid time">
           <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/Brandon-Grotesque.svg')}/>
+            <img className="img-responsive" src="/public/assets/images/Helvetica-Neue.svg"/>
           </Col>
           <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/brandon-grotesque-examples.svg')}/>
+            <img className="img-responsive" src="/public/assets/images/helvetica-neue-examples.svg"/>
           </Col>
         </Row>
 
         <Row className="show-grid time">
           <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/Karmina.svg')}/>
+            <img className="img-responsive" src="/public/assets/images/Solano-Gothic.svg"/>
           </Col>
           <Col xs={12} sm={6} md={6} lg={6}> 
-            <img className="img-responsive" src={require('../../../images/karmina-examples.svg')}/>
+            <img className="img-responsive" src="/public/assets/images/solano-gothic-examples.svg"/>
+          </Col>
+        </Row>
+
+        <Row className="show-grid time">
+          <Col xs={12} sm={6} md={6} lg={6}> 
+            <img className="img-responsive" src="/public/assets/images/Brandon-Grotesque.svg"/>
+          </Col>
+          <Col xs={12} sm={6} md={6} lg={6}> 
+            <img className="img-responsive" src="/public/assets/images/brandon-grotesque-examples.svg"/>
+          </Col>
+        </Row>
+
+        <Row className="show-grid time">
+          <Col xs={12} sm={6} md={6} lg={6}> 
+            <img className="img-responsive" src="/public/assets/images/Karmina.svg"/>
+          </Col>
+          <Col xs={12} sm={6} md={6} lg={6}> 
+            <img className="img-responsive" src="/public/assets/images/karmina-examples.svg"/>
           </Col>
         </Row>
       

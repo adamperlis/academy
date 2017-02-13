@@ -96,7 +96,7 @@ class Work extends Component {
             <Link
                 to={'/Work/Time'}>
                 
-                <img src={require('../../images/time-thumbnail@2x.jpg')}/>
+                <img src="/public/assets/images/time-thumbnail@2x.jpg"/>
                 <div className="project-title">Time, Inc</div>
                 <div className="project-description">UX, UI, Design Thinking</div>
             </Link>
@@ -109,7 +109,7 @@ class Work extends Component {
             <Link
                 to={'/Work/Time'}>
                 
-                <img src={require('../../images/time-thumbnail@2x.jpg')}/>
+                <img src="/public/assets/images/time-thumbnail@2x.jpg"/>
                 <div className="project-title">Time, Inc</div>
                 <div className="project-description">UX, UI, Design Thinking</div>
             </Link>

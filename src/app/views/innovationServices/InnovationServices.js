@@ -100,13 +100,13 @@ class InnovationServices extends Component {
 
           </Col>
           <Col xs={5} sm={4} smOffset={3} md={4} mdOffset={4} lg={4} lgOffset={2}>
-          <img src={require('../../images/prototype.svg')} height="200px" style={{marginTop:'50px', opacity:'.5'}}/>
+          <img src="/public/assets/images/prototype.svg" height="200px" style={{marginTop:'50px', opacity:'.5'}}/>
           </Col>
         </Row>
 
         <Row className="show-grid user-testing">
           <Col xs={6} sm={7} smOffset={1} md={7} mdOffset={1} lg={4} lgOffset={2}>
-            <img src={require('../../images/user-testing.svg')} height="180px" style={{marginTop:'50px', opacity:'.5'}}/>
+            <img src="/public/assets/images/user-testing.svg" height="180px" style={{marginTop:'50px', opacity:'.5'}}/>
           </Col> 
           <Col xs={6} sm={3} md={3} lg={4}> 
 
@@ -142,7 +142,7 @@ class InnovationServices extends Component {
 
           </Col>
           <Col xs={5} sm={4} smOffset={3} md={4} mdOffset={4} lg={4} lgOffset={2}>
-            <img src={require('../../images/launch.svg')} height="300px" style={{marginTop:'50px', opacity:'.5'}}/>
+            <img src="/public/assets/images/launch.svg" height="300px" style={{marginTop:'50px', opacity:'.5'}}/>
           </Col>
         </Row>
       </div>

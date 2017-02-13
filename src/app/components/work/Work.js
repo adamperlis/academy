@@ -32,7 +32,7 @@ const Work = (props) => {
 
     </Col>
     <Col xs={6} sm={3} mdOffset={1} md={3} lgOffset={2} lg={3}>
-    <img src="./public/assets/images/productGraphic.svg" width="100%" className=""/>
+    <img src="/public/assets/images/productGraphic.svg" width="100%" className=""/>
     </Col>
     </div>
     </div>

@@ -23,7 +23,7 @@ const Footer = (props) => {
       <Link
       className="nav-logo"
        to={'/'}>
-      <img src={'../public/assets/images/academy-logo-white.svg'} height="24px"/>
+      <img src='/public/assets/images/academy-logo-white.svg' height="24px"/>
       </Link>}
       >
       </AppBar>

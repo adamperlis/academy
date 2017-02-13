@@ -158,7 +158,7 @@ class TopBarNav extends Component {
                       className="nav-logo"
                       onTouchTap={this.handleTopNavActiveClass.bind(this)}
                        to={'/'}>
-                      <img src={'./public/assets/images/academy-logo-black.svg'} height="24px"/>
+                      <img src='/public/assets/images/academy-logo-black.svg' height="24px"/>
                       </Link>
                     }
                     onLeftIconButtonTouchTap={this.handleToggle.bind(this)}

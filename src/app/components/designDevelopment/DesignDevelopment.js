@@ -10,7 +10,7 @@ const DesignDevelopment = (props) => {
     <div className="vertical-wrapper">
         <div className="vertical-middle">
             <Col xs={4} sm={7} md={7} lgOffset={2} lg={6}>
-                <img src={require('../../images/InnovationServicesGraphic.svg')} width="100%" className=""/> 
+                <img src="/public/assets/images/InnovationServicesGraphic.svg" width="100%" className=""/> 
             </Col> 
             <Col xs={8} sm={3} md={3} lg={2}> 
 
