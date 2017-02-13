@@ -85,7 +85,7 @@ export default class ContactUs extends React.Component {
           }}
           
         >
-          You can reach us at <a className="link" href="mailto:hello@academybydesign.com?Subject=Hello" target="_blank">hello@academybydesign.com</a>
+          You can reach us at <a className="link" href="mailto:hello@academy-ny.com?Subject=Hello" target="_blank">hello@academy-ny.com</a>
           
         </Dialog>
       </div>

@@ -43,7 +43,7 @@ class ContactUs extends Component {
             <h2>Us</h2>
 
             <br></br>
-            <p>You can reach us at <a className="link" href="mailto:hello@academybydesign.com?Subject=Hello" target="_blank">hello@academybydesign.com</a></p>
+            <p>You can reach us at <a className="link" href="mailto:hello@academy-ny.com?Subject=Hello" target="_blank">hello@academy-ny.com</a></p>
           </Col>
           <Col xs={6}></Col>
           </div>
