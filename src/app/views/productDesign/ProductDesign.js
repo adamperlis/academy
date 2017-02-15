@@ -84,7 +84,7 @@ class ProductDesign extends Component {
         </Row> 
 
         <Row id="services" className="show-grid product-des">
-          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={2}> 
+          <Col xs={10} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={1}> 
 
           <h3>
           Product
@@ -99,16 +99,16 @@ class ProductDesign extends Component {
           <ContactUs label="Design with Us" />
 
           </Col>
-          <Col xs={12} xsOffset={1} sm={4} smOffset={4} md={4} mdOffset={4} lg={4} lgOffset={2} style={{paddingRight:'0'}}>
+          <Col xs={12} xsOffset={1} sm={6} smOffset={2} md={6} mdOffset={2} lg={6} lgOffset={1} style={{paddingRight:'0'}}>
             <img className="img-responsive" src="/public/assets/images/sketch@2x.png" style={{marginTop:'50px'}}/>
           </Col>
         </Row>
 
         <Row className="show-grid product-dev">
-          <Col xs={12} sm={5} smOffset={1} md={6} mdOffset={1} lg={6} style={{marginLeft:'0px', paddingLeft:'0',}}>
+          <Col xsHidden={true} sm={5} smOffset={1} md={6} mdOffset={1} lg={6} style={{marginLeft:'0px', paddingLeft:'0',}}>
             <img className="img-responsive" src="/public/assets/images/sublime@2x.png" style={{marginTop:'50px'}}/>
           </Col> 
-          <Col xs={7} sm={5} md={4} lg={4}> 
+          <Col xsHidden={true} sm={5} md={4} lg={4} lgOffset={1}> 
 
           <h3>
           Product
@@ -124,8 +124,27 @@ class ProductDesign extends Component {
           </Col>
         </Row>
 
+        <Row className="show-grid product-dev">
+          <Col xs={10} smHidden={true} mdHidden={true} lgHidden={true}>
+          <h3 style={{textAlign:'left'}}>
+          Product
+          </h3>
+          <h4 style={{textAlign:'left'}}>
+          Development
+          </h4>
+
+          <p className="subhead" style={{textAlign:'left'}}>
+          Agile development means we are constantly building, testing and evolving your product. Our team of experienced devlopers will work with you to build quality, maintainable and future proof products that fit your business needs.
+          </p>
+          <ContactUs label="Develop with Us" />
+          </Col> 
+          <Col xs={12} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true}> 
+            <img className="img-responsive" src="/public/assets/images/sublime@2x.png" style={{marginTop:'50px'}}/>
+          </Col>
+        </Row>
+
         <Row className="show-grid bootcamp">
-          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={2}> 
+          <Col xs={10} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={1}> 
 
           <h3>
           Product
@@ -140,7 +159,7 @@ class ProductDesign extends Component {
            <ContactUs label="Manage with Us" />
 
           </Col>
-          <Col xs={12} xsOffset={1} sm={4} smOffset={4} md={4} mdOffset={4} lg={4} lgOffset={2} style={{paddingRight:'0'}}>
+          <Col xs={12} xsOffset={1} sm={6} smOffset={2} md={6} mdOffset={2} lg={6} lgOffset={1} style={{paddingRight:'0'}}>
             <img className="img-responsive" src="/public/assets/images/team-gant@2x.png" style={{marginTop:'50px'}}/>
           </Col>
         </Row>

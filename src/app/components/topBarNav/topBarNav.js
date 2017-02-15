@@ -92,7 +92,7 @@ class TopBarNav extends Component {
                     onTouchTap={this.handleTopNavActiveClass.bind(this)}
                     className="drawer"
                     to={'#'}>
-                    What's Design Thinking?
+                    What is Design Thinking?
                     </Link>
                   </MenuItem>
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>

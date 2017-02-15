@@ -140,7 +140,7 @@ class DesignSprint extends Component {
 
 
         <Row id="workshop" className="show-grid workshop">
-          <Col xs={7} xsOffset={5} smOffset={0} smPush={7}  sm={4} mdOffset={1} mdPush={6} md={4} lgOffset={1} lg={4}> 
+          <Col xs={7} xsOffset={5} smOffset={0} smPush={7}  sm={4} mdOffset={1} mdPush={6} md={4} lgOffset={1} lg={4} style={{paddingBottom: '60px'}}> 
 
           <h3>
           2 Day

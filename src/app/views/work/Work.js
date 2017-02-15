@@ -103,7 +103,7 @@ class Work extends Component {
             </div>
           </Col>
 
-          <Col xs={6} sm={6} md={5} lg={5}>
+          {/*<Col xs={6} sm={6} md={5} lg={5}>
 
             <div className="project">
             <Link
@@ -114,7 +114,7 @@ class Work extends Component {
                 <div className="project-description">UX, UI, Design Thinking</div>
             </Link>
             </div>
-          </Col>
+          </Col>*/}
           </Row>
       </div>
     );

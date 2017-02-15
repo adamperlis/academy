@@ -224,6 +224,7 @@ p{
     .btn {
 	float:left !important;
 	}
+
 }
 
 .sprint-academy.what-is{
@@ -296,7 +297,7 @@ p{
 
 	li{
 
-		padding-bottom:20px;
+		padding-bottom: 0px;
 
 		img{
 			float: left;
@@ -562,17 +563,6 @@ p{
 
 .design-sprint{
 
- //    @media only screen and (min-width: 1401px){
-	// margin-bottom: 0;
-	// }
-
-	// @media only screen and (max-width: 1400px) and (min-width: 1025px){
-	// margin-bottom: 0;
-	// }
-
-	// @media only screen and (max-width: 1024px) and (min-width: 769px){
-	// margin-bottom: 0;
-	// }
 	position: relative;
     display: block;
     vertical-align: top;
@@ -581,9 +571,25 @@ p{
 	height: 617px;
 
 	.wrapper{
-		padding-top:40px;
-	    background: #6e66cb;
+	    background: url("/public/assets/images/sprinter.png");
+	    background-size: cover;
+	    background-position: 0 -80px;
 	    height: 100%;
+    	background-repeat: no-repeat;
+
+    	@media only screen and (max-width: 1024px) and (min-width: 769px){
+	   	 	background-position: -130px 0;
+		}
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+			background-position: 0 0;
+		}
+
+		@media only screen and (max-width: 575px) and (min-device-width: 350px){
+			 background-position: -478px 0;
+		}
+
+
 	}
 
     img{
@@ -591,32 +597,6 @@ p{
     position: relative;
     top:0;
     left:0;
-
-  //   	@media only screen and (min-width: 1401px){
-		// transform: translate3d(50px, -58px, 0);
-		// }
-
-		// @media only screen and (max-width: 1400px) and (min-width: 1201px){
-	 //   	transform: translate3d(50px, -48px, 0);
-		// }
-
-		// @media only screen and (max-width: 1200px) and (min-width: 1025px){
-	 //   	transform: translate3d(0px, -48px, 0);
-		// }
-
-		// @media only screen and (max-width: 1024px) and (min-width: 769px){
-	 //    transform: translate3d(0px, 32px, 0);
-		// }
-
-		@media only screen and (max-width: 768px) and (min-width: 576px){
-			margin-top: 40px;
-			width: 420px;
-		}
-
-		@media only screen and (max-width: 575px) and (min-device-width: 350px){
-			margin-top: 40px;
-		}
-
    
     }
 
@@ -661,11 +641,11 @@ p{
 	}
 
 	@media only screen and (max-width: 768px) and (min-width: 576px){
-		height:437px;
+		height:547px;
 	}
 
 	@media only screen and (max-width: 575px) and (min-device-width: 350px){
-		height:437px;
+		height:547px;
 	}
 }
 
@@ -741,11 +721,11 @@ p{
 	}
 
 		@media only screen and (max-width: 768px) and (min-width: 576px){
-		padding-top:200px;
+		
 		}
 
 		@media only screen and (max-width: 575px) and (min-device-width: 350px){
-		padding-top:100px;
+		    height: 547px;
 		}
 }
 
@@ -878,10 +858,10 @@ p{
 }
 
 .ignite-talk{
-	padding-top:40px;
+	padding-top:60px;
 	z-index: 3;
     position: relative;
-    height: 381px;
+    height: 567px;
     overflow: hidden;
     background: #fafafa;
 
@@ -923,86 +903,6 @@ p{
 
 	.btn {
 	float:left !important;
-	}
-}
-
-.big-arrow{
-	height:0;
-
-	img{
-	position: absolute;
-    z-index: 3;
-
-		@media only screen and (min-width: 1401px){
-		width: 28%;
-    	top: -102px;
-    	left: 430px;
-		}
-
-		@media only screen and (max-width: 1400px) and (min-width: 1025px){
-	    width: 26%;
-    	top: -10px;
-    	left: 400px;
-		}
-
-		@media only screen and (max-width: 1024px) and (min-width: 769px){
-	   	width: 35%;
-    	top: -40px;
-    	left: 154px;
-		}
-
-		@media only screen and (max-width: 768px) and (min-width: 576px){
-		width: 50%;
-    	top: -80px;
-    	left: 90px;	
-		}
-
-		@media only screen and (max-width: 575px) and (min-device-width: 350px){
-		width: 50%;
-    	top: -30px;
-    	left: 90px;
-		}
-
-	}
-}
-
-.big-arrow-reverse{
-	height:0;
-
-	img{
-	position: absolute;
-    z-index: 4;
-
-		@media only screen and (min-width: 1401px){
-		width: 28%;
-    	top: -102px;
-    	left: 430px;
-		}
-
-		@media only screen and (max-width: 1400px) and (min-width: 1025px){
-	    width: 26%;
-    	top: 0px;
-    	left: 400px;
-		}
-
-		@media only screen and (max-width: 1024px) and (min-width: 769px){
-	   	width: 30%;
-    	top: 0px;
-    	left: 354px;
-		}
-
-		@media only screen and (max-width: 768px) and (min-width: 576px){
-		width: 30%;
-    	top: 0px;
-    	left:200px;	
-		}
-
-		@media only screen and (max-width: 575px) and (min-device-width: 350px){
-		width: 40%;
-    	top: 0px;
-    	left: 90px;
-		}
-
 	}
 }
 
@@ -1054,8 +954,8 @@ p{
 }
 
 .product-dev{
-	padding-top: 60px;
 	padding-bottom: 60px;
+	padding-top:60px;
     background: white;
 
 	h3 {
@@ -1097,6 +997,10 @@ p{
 	.btn {
 	float:right !important;
 	}
+	@media only screen and (max-width: 575px) and (min-device-width: 350px){
+		  padding-top: 0px;
+	}
+
 
 }
 
@@ -1199,7 +1103,7 @@ p{
 
 .bootcamp{
 	padding-top: 60px;
-    padding-bottom: 180px;
+    padding-bottom: 60px;
     z-index: 3;
     position: relative;
     height: 100%;
@@ -1861,12 +1765,31 @@ p{
 }
 
 .time{
+	padding-top:60px;
+
 	h6{
 	font-family: "Montserrat";
 	font-weight: 800;
 	font-size: 6em;
 	color: #E1E2E4;
+
+		@media only screen and (max-width: 768px) and (min-width: 576px){
+	    font-size: 6em;
+		}
+
+	    @media only screen and (max-width: 575px) and (min-device-width: 350px){
+	    font-size: 4em;
+		}
 	}
+
+
+}
+
+.divider{
+	border-bottom: 1px solid #E1E2E4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 52%;
 }
 
 /* .react-simple-parallax-bg is generate by the component */

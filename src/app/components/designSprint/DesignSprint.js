@@ -31,9 +31,6 @@ const DesignSprint = (props) => {
             </Link>
 
             </Col>
-            <Col xs={12} sm={8} mdOffset={1} md={7} lgOffset={2} lg={6}>
-                    <img src="/public/assets/images/sprinter.png" width="100%" className="img-responsive"/>
-            </Col>
         </div>
         </div>
     </Col> 
