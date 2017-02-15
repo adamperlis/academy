@@ -87,8 +87,8 @@ class DesignSprint extends Component {
         </Row> 
 
         <Row id="curriculum" className="show-grid sprint-academy what-is">
-          <Col xs={6} sm={7} md={7} lg={7}></Col>
-          <Col xs={6} sm={3} md={3} lg={3}>
+          <Col xs={4} sm={7} md={7} lg={7}></Col>
+          <Col xs={8} sm={3} md={3} lg={3}>
             <h3>What is a</h3>
             <h4>Design Sprint?</h4>
             <p className="subhead">
@@ -120,7 +120,7 @@ class DesignSprint extends Component {
         </Row>
 
         <Row className="show-grid ignite-talk">
-          <Col xs={6} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={2}> 
+          <Col xs={8} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={2}> 
 
           <h3>
           Ignite
@@ -135,12 +135,12 @@ class DesignSprint extends Component {
            <ContactUs label="Schedule a Talk" />
 
           </Col>
-          <Col xs={6}></Col>
+          <Col xs={4}></Col>
         </Row>
 
 
         <Row id="workshop" className="show-grid workshop">
-          <Col xs={7} xsOffset={5} smOffset={0} smPush={7}  sm={4} mdOffset={1} mdPush={6} md={4} lgOffset={1} lg={4} style={{paddingBottom: '60px'}}> 
+          <Col xs={8} xsOffset={4} smOffset={0} smPush={7}  sm={4} mdOffset={1} mdPush={6} md={4} lgOffset={1} lg={4} style={{paddingBottom: '60px'}}> 
 
           <h3>
           2 Day
@@ -156,11 +156,12 @@ class DesignSprint extends Component {
           <ContactUs label="Plan a Workshop" />
 
           </Col>
+          <Col xs={4}></Col>
           <Col xs={12} sm={4} smPull={3} mdOffset={1} md={4} mdPull={5} lgOffset={1} lg={4} style={{padding:'0', zIndex: '4'}}><ListCollapse /></Col> 
         </Row>
 
         <Row className="show-grid bootcamp">
-          <Col xs={7} sm={4} smOffset={1} md={5} mdOffset={1} lg={4} lgOffset={2}> 
+          <Col xs={8} sm={4} smOffset={1} md={5} mdOffset={1} lg={4} lgOffset={2}> 
 
           <h3>
           2 Week
@@ -176,7 +177,7 @@ class DesignSprint extends Component {
           <ContactUs label="Setup Training" />
 
           </Col>
-          <Col xs={6}></Col>
+          <Col xs={4}></Col>
         </Row>
       </div>
     );
