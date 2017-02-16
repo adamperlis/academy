@@ -37,11 +37,15 @@ function logPageView() {
   ReactGA.pageview(window.location.pathname);
 }
 
+function updateRouteFn() {
+  window.scrollTo(0, 0);
+  logPageView()
+}
 export const Routes = () => {
   return (
     <Provider store={store}>
       <div>
-        <Router onUpdate={() => window.scrollTo(0, 0), logPageView} history={syncedHistory}>
+        <Router onUpdate={() => updateRouteFn() } history={syncedHistory}>
           <Route path="/" component={App} >
             <IndexRoute component={ConnectedHome} />
             <Route path="/designSprint" component={ConnectedDesignSprint} />
