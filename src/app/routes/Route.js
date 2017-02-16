@@ -41,7 +41,7 @@ export const Routes = () => {
   return (
     <Provider store={store}>
       <div>
-        <Router onUpdate={() => window.scrollTo(0, 0),logPageView} history={syncedHistory}>
+        <Router onUpdate={() => window.scrollTo(0, 0), logPageView} history={syncedHistory}>
           <Route path="/" component={App} >
             <IndexRoute component={ConnectedHome} />
             <Route path="/designSprint" component={ConnectedDesignSprint} />

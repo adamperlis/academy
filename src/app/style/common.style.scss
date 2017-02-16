@@ -594,11 +594,18 @@ p{
 
     img{
    	mix-blend-mode: hard-light;
+   	animation-name: fadeInImg;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
     position: relative;
     top:0;
     left:0;
-   
     }
+
+    @keyframes fadeInImg {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+	}
 
 	h3 {
 	font-family: "Playfair Display", serif;
@@ -1568,6 +1575,17 @@ p{
 
     .btn {
 	float:left !important;
+	}
+
+	img{
+	animation-name: fadeInImg;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+	}
+
+	@keyframes fadeInImg {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
 	}
 }
 

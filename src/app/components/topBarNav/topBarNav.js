@@ -58,7 +58,7 @@ class TopBarNav extends Component {
 
   handleToggle() {
     this.setState({open: !this.state.open});
-
+    console.log("open");
   }
 
   handleRouteActions = (value) => {
@@ -67,7 +67,7 @@ class TopBarNav extends Component {
     this.state.open !== false ? this.handleClose() : false;
   }
 
-  handleClose() { this.setState({open: false}); }
+  handleClose() { this.setState({open: false}); console.log("closed"); }
         render() {           
             return (
                 <div>
