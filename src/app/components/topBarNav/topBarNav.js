@@ -41,38 +41,28 @@ class TopBarNav extends Component {
   constructor(props){
     super(props);
     this.state = {open:false};
-    this.state = {
-      value: '/',
-    };
-  }
-
-  componentWillReceiveProps(nextProps) {
-      this.handleRouteActions(nextProps.currentView.views.viewIndex);
    }
 
  // This removes the inkBar from the tab and closes the drawer. 
   handleTopNavActiveClass = () => {
-    this.setState({currentView: -1});
     this.state.open !== false ? this.handleClose() : false;
    };
 
   handleToggle() {
     this.setState({open: !this.state.open});
-    console.log("open");
   }
 
   handleRouteActions = (value) => {
-
-    this.setState({currentView: value});
     this.state.open !== false ? this.handleClose() : false;
-  }
+ }
 
   handleClose() { this.setState({open: false}); console.log("closed"); }
-        render() {           
+
+        render() {     
             return (
                 <div>
                 <Drawer
-                  containerStyle={{background: '#6d65cb',}}
+                  containerStyle={{background: '#6d65cb'}}
                   docked={false}
                   openSecondary={false}
                   open={this.state.open}
@@ -86,7 +76,7 @@ class TopBarNav extends Component {
                     Home
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'rgb(126, 119, 204)',}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)'}}/>
                   <MenuItem>
                     <Link
                     onTouchTap={this.handleTopNavActiveClass.bind(this)}
@@ -95,10 +85,10 @@ class TopBarNav extends Component {
                     What is Design Thinking?
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'rgb(126, 119, 204)',}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)'}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleRouteActions.bind(this, 1)} 
+                    onTouchTap={this.handleRouteActions.bind(this, 'designSprint')} 
                     className="drawer"
                     to={'/designSprint'}>
                     Sprint Academy
@@ -107,7 +97,7 @@ class TopBarNav extends Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleRouteActions.bind(this, 2)}
+                    onTouchTap={this.handleRouteActions.bind(this, 'ProductDesign')}
                     className="drawer"
                     to={'/ProductDesign'}>
                     Design & Development
@@ -116,7 +106,7 @@ class TopBarNav extends Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleRouteActions.bind(this, 3)}
+                    onTouchTap={this.handleRouteActions.bind(this, 'Work')}
                     className="drawer"
                     to={'/Work'}>
                     Work
@@ -152,7 +142,6 @@ class TopBarNav extends Component {
                       borderBottom:'1px solid #6D65CB',
                     }} 
                     titleStyle={{fill:'rgb(0, 0, 0)',}}
-                    showMenuIconButton={true} 
                     title={
                       <Link
                       className="nav-logo"
@@ -161,7 +150,7 @@ class TopBarNav extends Component {
                       <img src='/public/assets/images/academy-logo-black.svg' height="24px"/>
                       </Link>
                     }
-                    onLeftIconButtonTouchTap={this.handleToggle.bind(this)}
+                    onTouchTap={this.handleToggle.bind(this)}
                     iconElementRight={
                       <div>
                       <FlatButton className="navLinks hidden-xs hidden-sm" label="Sprint Academy" containerElement={<Link  to="/designSprint"/>} />
@@ -175,11 +164,11 @@ class TopBarNav extends Component {
                     />
 
                   
-                  <Tabs value={this.state.currentView || -1}  onChange={this.handleRouteActions} className="small-nav hidden-md hidden-lg">
+                  <Tabs value={this.props.currentView.views.currentView}  onChange={this.handleRouteActions} className="small-nav hidden-md hidden-lg">
 
-                    <Tab value={1} style={styles.headline} label="Sprint Academy" containerElement={<Link  to="/designSprint"/>} />
-                    <Tab value={2} style={styles.headline} label="Design & Development" containerElement={<Link to="/ProductDesign"/>} />
-                    <Tab value={3} style={styles.headline} label="Work" containerElement={<Link to="/Work"/>} />
+                    <Tab value={'designSprint'} style={styles.headline} label="Sprint Academy" containerElement={<Link to="/designSprint"/>} />
+                    <Tab value={'ProductDesign'} style={styles.headline} label="Design & Development" containerElement={<Link to="/ProductDesign"/>} />
+                    <Tab value={'Work'} style={styles.headline} label="Work" containerElement={<Link to="/Work"/>} />
                 
                   </Tabs>
                   </Sticky>

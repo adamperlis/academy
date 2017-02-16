@@ -20,8 +20,7 @@ const ENTER_TIME_VIEW = 'ENTER_TIME_VIEW';
 const initialState = {
   currentView:  'not set',
   enterTime:    null,
-  leaveTime:    null,
-  viewIndex:    -1
+  leaveTime:    null
 };
 
 export default function (state = initialState, action) {
@@ -40,8 +39,7 @@ export default function (state = initialState, action) {
         ...state,
         currentView:  action.currentView,
         enterTime:    action.enterTime,
-        leaveTime:    action.leaveTime,
-        viewIndex:    action.viewIndex
+        leaveTime:    action.leaveTime
       };
     }
     return state;
@@ -59,8 +57,7 @@ export function enterHome(time = moment().format(dateFormat)) {
     type:         ENTER_HOME_VIEW,
     currentView:  'home',
     enterTime:    time,
-    leaveTime:    null,
-    viewIndex:    -1
+    leaveTime:    null
   };
 }
 
@@ -70,9 +67,8 @@ export function enterDesignSprint(time = moment().format(dateFormat)) {
     type:         ENTER_DESIGNSPRINT_VIEW,
     currentView:  'designSprint',
     enterTime:    time,
-    leaveTime:    null,
-    viewIndex:    1
-      };
+    leaveTime:    null
+  };
 }
 
 
@@ -81,8 +77,8 @@ export function enterInnovationServices(time = moment().format(dateFormat)) {
     type:         ENTER_INNOVATIONSERVICES_VIEW,
     currentView:  'innovationServices',
     enterTime:    time,
-    leaveTime:    null,
-    viewIndex:    3  };
+    leaveTime:    null
+  };
 }
 
 export function enterProductDesign(time = moment().format(dateFormat)) {
@@ -90,8 +86,7 @@ export function enterProductDesign(time = moment().format(dateFormat)) {
     type:         ENTER_PRODUCTDESIGN_VIEW,
     currentView:  'ProductDesign',
     enterTime:    time,
-    leaveTime:    null,
-    viewIndex:    2
+    leaveTime:    null
   };
 }
 

@@ -45,7 +45,7 @@ class ProductDesign extends Component {
   }
 
   componentWillUnmount() {
-          Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
   }
 
@@ -154,7 +154,7 @@ class ProductDesign extends Component {
           </h4>
 
           <p className="subhead">
-          Our team capitans, will help steer your products in the right direction. Managing timelines, communicating between designers and developers, overseeing usability tests and communicating with you all the way through. Rest assured that this group will get your product off the ground safely.          
+          Our team captains, will help steer your products in the right direction. Managing timelines, communicating between designers and developers, overseeing usability tests and communicating with you all the way through. Rest assured that this group will get your product off the ground safely.          
           </p>
            <ContactUs label="Manage with Us" />
 

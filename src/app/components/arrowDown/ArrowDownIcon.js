@@ -11,7 +11,7 @@ var ArrowDownIcon = React.createClass({
 
 ArrowDownIcon.propTypes = {
   style : React.PropTypes.object,
-  className: React.PropTypes.object
+  className: React.PropTypes.string
 };
 
 export default ArrowDownIcon;
