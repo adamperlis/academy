@@ -60,7 +60,7 @@ class ProductDesign extends Component {
         <Row className="show-grid product-design hero">
         <div className="vertical-wrapper">
             <div className="vertical-middle">
-          <Col xs={8} sm={4} smOffset={1} md={5} mdOffset={1} lg={5} lgOffset={1}> 
+          <Col xs={8} sm={4} md={5} lg={5}> 
             <div className="block-reveal">
             <h1>Product</h1>
             <h2>Design & Development</h2>
@@ -72,7 +72,7 @@ class ProductDesign extends Component {
               SEE OUR SERVICES
             </ScrollLink>
           </Col>
-          <Col xs={6} sm={9} mdOffset={1} md={8} lgOffset={2} lg={6}></Col> 
+          <Col xs={6} sm={9} md={8} lg={6}></Col> 
           </div>
           </div>
         </Row>
@@ -84,7 +84,7 @@ class ProductDesign extends Component {
         </Row> 
 
         <Row id="services" className="show-grid product-des">
-          <Col xs={10} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={1}> 
+          <Col xs={10} sm={3} md={3} lg={4}> 
 
           <h3>
           Product
@@ -99,16 +99,16 @@ class ProductDesign extends Component {
           <ContactUs label="Design with Us" />
 
           </Col>
-          <Col xs={12} xsOffset={1} sm={6} smOffset={2} md={6} mdOffset={2} lg={6} lgOffset={1} style={{paddingRight:'0'}}>
+          <Col xs={12} sm={6} md={6} lg={6} style={{paddingRight:'0'}}>
             <img className="img-responsive" src="/public/assets/images/sketch@2x.png" style={{marginTop:'50px'}}/>
           </Col>
         </Row>
 
         <Row className="show-grid product-dev">
-          <Col xsHidden={true} sm={5} smOffset={1} md={6} mdOffset={1} lg={6} style={{marginLeft:'0px', paddingLeft:'0',}}>
+          <Col xsHidden={true} sm={5} md={6} lg={6} style={{marginLeft:'0', paddingLeft:'0'}}>
             <img className="img-responsive" src="/public/assets/images/sublime@2x.png" style={{marginTop:'50px'}}/>
           </Col> 
-          <Col xsHidden={true} sm={5} md={4} lg={4} lgOffset={1}> 
+          <Col xsHidden={true} sm={5} md={4} lg={4}> 
 
           <h3>
           Product
@@ -138,13 +138,13 @@ class ProductDesign extends Component {
           </p>
           <ContactUs label="Develop with Us" />
           </Col> 
-          <Col xs={12} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true}> 
+          <Col xs={12} smHidden={true} mdHidden={true} lgHidden={true}> 
             <img className="img-responsive" src="/public/assets/images/sublime@2x.png" style={{marginTop:'50px'}}/>
           </Col>
         </Row>
 
         <Row className="show-grid bootcamp">
-          <Col xs={10} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={1}> 
+          <Col xs={10} sm={3} md={3} lg={4}> 
 
           <h3>
           Product
@@ -159,7 +159,7 @@ class ProductDesign extends Component {
            <ContactUs label="Manage with Us" />
 
           </Col>
-          <Col xs={12} xsOffset={1} sm={6} smOffset={2} md={6} mdOffset={2} lg={6} lgOffset={1} style={{paddingRight:'0'}}>
+          <Col xs={12} sm={6} md={6} lg={6} style={{paddingRight:'0'}}>
             <img className="img-responsive" src="/public/assets/images/team-gant@2x.png" style={{marginTop:'50px'}}/>
           </Col>
         </Row>
@@ -169,8 +169,8 @@ class ProductDesign extends Component {
 }
 
 ProductDesign.propTypes= {
-  currentView:  PropTypes.string.isRequired,
-  enterProductDesign:   PropTypes.func.isRequired
+  currentView: PropTypes.string.isRequired,
+  enterProductDesign: PropTypes.func.isRequired
 };
 
 export default ProductDesign;

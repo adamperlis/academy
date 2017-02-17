@@ -41,28 +41,38 @@ class TopBarNav extends Component {
   constructor(props){
     super(props);
     this.state = {open:false};
+    this.state = {
+      value: '/',
+    };
+  }
+
+  componentWillReceiveProps(nextProps) {
+      this.handleRouteActions(nextProps.currentView.views.viewIndex);
    }
 
  // This removes the inkBar from the tab and closes the drawer. 
   handleTopNavActiveClass = () => {
+    this.setState({currentView: -1});
     this.state.open !== false ? this.handleClose() : false;
    };
 
   handleToggle() {
     this.setState({open: !this.state.open});
+
   }
 
   handleRouteActions = (value) => {
+
+    this.setState({currentView: value});
     this.state.open !== false ? this.handleClose() : false;
- }
+  }
 
-  handleClose() { this.setState({open: false}); console.log("closed"); }
-
-        render() {     
+  handleClose() { this.setState({open: false}); }
+        render() {           
             return (
                 <div>
                 <Drawer
-                  containerStyle={{background: '#6d65cb'}}
+                  containerStyle={{background: '#6d65cb',}}
                   docked={false}
                   openSecondary={false}
                   open={this.state.open}
@@ -76,19 +86,19 @@ class TopBarNav extends Component {
                     Home
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'rgb(126, 119, 204)'}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
                     onTouchTap={this.handleTopNavActiveClass.bind(this)}
                     className="drawer"
                     to={'#'}>
-                    What is Design Thinking?
+                    What's Design Thinking?
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'rgb(126, 119, 204)'}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleRouteActions.bind(this, 'designSprint')} 
+                    onTouchTap={this.handleRouteActions.bind(this, 1)} 
                     className="drawer"
                     to={'/designSprint'}>
                     Sprint Academy
@@ -97,7 +107,7 @@ class TopBarNav extends Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleRouteActions.bind(this, 'ProductDesign')}
+                    onTouchTap={this.handleRouteActions.bind(this, 2)}
                     className="drawer"
                     to={'/ProductDesign'}>
                     Design & Development
@@ -106,21 +116,12 @@ class TopBarNav extends Component {
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
-                    onTouchTap={this.handleRouteActions.bind(this, 'Work')}
-                    className="drawer"
-                    to={'/Work'}>
-                    Work
-                    </Link>
-                  </MenuItem>
-                  {/*<Divider style={{background:'rgb(126, 119, 204)',}}/>
-                  <MenuItem>
-                    <Link
                     onTouchTap={this.handleRouteActions.bind(this, 3)}
                     className="drawer"
                     to={'/InnovationServices'}>
                     Innovation Services
                     </Link>
-                  </MenuItem>*/}
+                  </MenuItem>
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
                   <MenuItem>
                     <Link
@@ -142,20 +143,22 @@ class TopBarNav extends Component {
                       borderBottom:'1px solid #6D65CB',
                     }} 
                     titleStyle={{fill:'rgb(0, 0, 0)',}}
+                    showMenuIconButton={true} 
+                    onTitleTouchTap={this.handleToggle.bind(this)}
                     title={
                       <Link
                       className="nav-logo"
                       onTouchTap={this.handleTopNavActiveClass.bind(this)}
                        to={'/'}>
-                      <img src='/public/assets/images/academy-logo-black.svg' height="24px"/>
+                      <img src={'./public/assets/images/academy-logo-black.svg'} height="24px"/>
                       </Link>
-                    }
+                      }
                     onTouchTap={this.handleToggle.bind(this)}
                     iconElementRight={
                       <div>
                       <FlatButton className="navLinks hidden-xs hidden-sm" label="Sprint Academy" containerElement={<Link  to="/designSprint"/>} />
                       <FlatButton className="navLinks hidden-xs hidden-sm" label="Design & Development" containerElement={<Link  to="/ProductDesign"/>} />
-                      <FlatButton className="navLinks hidden-xs hidden-sm" label="Work" containerElement={<Link  to="/Work"/>} />
+                      <FlatButton className="navLinks hidden-xs hidden-sm" label="Innovation Services" containerElement={<Link  to="/InnovationServices"/>} />
                       </div>
                       }
                     iconStyleRight={{
@@ -164,11 +167,11 @@ class TopBarNav extends Component {
                     />
 
                   
-                  <Tabs value={this.props.currentView.views.currentView}  onChange={this.handleRouteActions} className="small-nav hidden-md hidden-lg">
+                  <Tabs value={this.state.currentView || -1}  onChange={this.handleRouteActions} className="small-nav hidden-md hidden-lg">
 
-                    <Tab value={'designSprint'} style={styles.headline} label="Sprint Academy" containerElement={<Link to="/designSprint"/>} />
-                    <Tab value={'ProductDesign'} style={styles.headline} label="Design & Development" containerElement={<Link to="/ProductDesign"/>} />
-                    <Tab value={'Work'} style={styles.headline} label="Work" containerElement={<Link to="/Work"/>} />
+                    <Tab value={1} style={styles.headline} label="Sprint Academy" containerElement={<Link  to="/designSprint"/>} />
+                    <Tab value={2} style={styles.headline} label="Design & Development" containerElement={<Link to="/ProductDesign"/>} />
+                    <Tab value={3} style={styles.headline} label="Innovation Services" containerElement={<Link to="/InnovationServices"/>} />
                 
                   </Tabs>
                   </Sticky>
