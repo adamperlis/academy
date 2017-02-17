@@ -150,7 +150,7 @@ class TopBarNav extends Component {
                       <img src='/public/assets/images/academy-logo-black.svg' height="24px"/>
                       </Link>
                     }
-                    onTouchTap={this.handleToggle.bind(this)}
+                    onLeftIconButtonTouchTap={this.handleToggle.bind(this)}
                     iconElementRight={
                       <div>
                       <FlatButton className="navLinks hidden-xs hidden-sm" label="Sprint Academy" containerElement={<Link  to="/designSprint"/>} />

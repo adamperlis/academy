@@ -57,34 +57,34 @@ class ProductDesign extends Component {
           'animatedViews': animated,
           'view-enter': viewEntersAnim
         })}>
-        <Row className="show-grid product-design hero">
-        <div className="vertical-wrapper">
-            <div className="vertical-middle">
-          <Col xs={8} sm={4} smOffset={1} md={5} mdOffset={1} lg={5} lgOffset={1}> 
-            <div className="block-reveal">
-            <h1>Product</h1>
-            <h2>Design & Development</h2>
+        <div className="show-grid row product-design hero">
+          <div className="vertical-wrapper">
+              <div className="vertical-middle">
+            <div className="col-xs-8 col-sm-4 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1"> 
+              <div className="block-reveal">
+              <h1>Product</h1>
+              <h2>Design & Development</h2>
+              </div>
+              
+              <ScrollLink
+                className="btn"
+                activeClass="active" to="services" spy={true} smooth={true} offset={-90} duration={850}>
+                SEE OUR SERVICES
+              </ScrollLink>
             </div>
-            
-            <ScrollLink
-              className="btn"
-              activeClass="active" to="services" spy={true} smooth={true} offset={-90} duration={850}>
-              SEE OUR SERVICES
-            </ScrollLink>
-          </Col>
-          <Col xs={6} sm={9} mdOffset={1} md={8} lgOffset={2} lg={6}></Col> 
-          </div>
-          </div>
-        </Row>
+            <div className="col-xs-6 col-sm-9 col-md-8 col-md-offset-1 col-lg-6 col-lg-offset-2"></div> 
+            </div>
+            </div>
+        </div>
 
-        <Row className="show-grid arrow">
-          <Col xs={12} md={12} xsHidden={true} smHidden={true}> 
+        <div className="show-grid row arrow">
+          <div className="col-xs-12 col-md-12 hidden-xs hidden-sm"> 
             <ArrowDownIcon className="--purple arrow-down-icon" />
-          </Col>
-        </Row> 
+          </div>
+        </div>
 
-        <Row id="services" className="show-grid product-des">
-          <Col xs={10} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={1}> 
+        <div id="services" className="show-grid row product-des">
+          <div className="col-xs-10 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-4 col-lg-offset-1"> 
 
           <h3>
           Product
@@ -98,17 +98,17 @@ class ProductDesign extends Component {
           </p> 
           <ContactUs label="Design with Us" />
 
-          </Col>
-          <Col xs={12} xsOffset={1} sm={6} smOffset={2} md={6} mdOffset={2} lg={6} lgOffset={1} style={{paddingRight:'0'}}>
+          </div>
+          <div className="col-xs-12 col-sm-6 col-sm-offset-2 col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-1" style={{paddingRight:'0'}}>
             <img className="img-responsive" src="/public/assets/images/sketch@2x.png" style={{marginTop:'50px'}}/>
-          </Col>
-        </Row>
+          </div>
+        </div>
 
-        <Row className="show-grid product-dev">
-          <Col xsHidden={true} sm={5} smOffset={1} md={6} mdOffset={1} lg={6} style={{marginLeft:'0px', paddingLeft:'0',}}>
+        <div className="show-grid row product-dev">
+          <div className="hidden-xs col-sm-5 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-6" style={{marginLeft:'0px', paddingLeft:'0'}}>
             <img className="img-responsive" src="/public/assets/images/sublime@2x.png" style={{marginTop:'50px'}}/>
-          </Col> 
-          <Col xsHidden={true} sm={5} md={4} lg={4} lgOffset={1}> 
+          </div> 
+          <div className="hidden-xs col-sm-5 col-md-4 col-lg-4 col-lg-offset-1"> 
 
           <h3>
           Product
@@ -121,11 +121,11 @@ class ProductDesign extends Component {
           Agile development means we are constantly building, testing and evolving your product. Our team of experienced devlopers will work with you to build quality, maintainable and future proof products that fit your business needs.
           </p>
           <ContactUs label="Develop with Us" />
-          </Col>
-        </Row>
+          </div>
+        </div>
 
-        <Row className="show-grid product-dev">
-          <Col xs={10} smHidden={true} mdHidden={true} lgHidden={true}>
+        <div className="show-grid row product-dev">
+          <div className="col-xs-10 hidden-sm hidden-md hidden-lg">
           <h3 style={{textAlign:'left'}}>
           Product
           </h3>
@@ -137,14 +137,14 @@ class ProductDesign extends Component {
           Agile development means we are constantly building, testing and evolving your product. Our team of experienced devlopers will work with you to build quality, maintainable and future proof products that fit your business needs.
           </p>
           <ContactUs label="Develop with Us" />
-          </Col> 
-          <Col xs={12} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true}> 
+          </div> 
+          <div className="col-xs-12 hidden-sm hidden-md hidden-lg"> 
             <img className="img-responsive" src="/public/assets/images/sublime@2x.png" style={{marginTop:'50px'}}/>
-          </Col>
-        </Row>
+          </div>
+        </div>
 
-        <Row className="show-grid bootcamp">
-          <Col xs={10} sm={3} smOffset={1} md={3} mdOffset={1} lg={4} lgOffset={1}> 
+        <div className="show-grid row bootcamp">
+          <div className="col-xs-10 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 col-lg-4 col-lg-offset-1"> 
 
           <h3>
           Product
@@ -158,11 +158,11 @@ class ProductDesign extends Component {
           </p>
            <ContactUs label="Manage with Us" />
 
-          </Col>
-          <Col xs={12} xsOffset={1} sm={6} smOffset={2} md={6} mdOffset={2} lg={6} lgOffset={1} style={{paddingRight:'0'}}>
+          </div>
+          <div className="col-xs-12 col-sm-6 col-sm-offset-2 col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-1" style={{paddingRight:'0'}}>
             <img className="img-responsive" src="/public/assets/images/team-gant@2x.png" style={{marginTop:'50px'}}/>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
     );
   }
