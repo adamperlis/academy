@@ -94,7 +94,7 @@ class Work extends Component {
                         
             <div className="project">
             <Link
-                to={'/Work/Time'}>
+                to={'/Time'}>
                 
                 <img src="/public/assets/images/time-thumbnail@2x.jpg"/>
                 <div className="project-title">Time, Inc</div>

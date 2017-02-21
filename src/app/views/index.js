@@ -6,7 +6,7 @@ import InnovationServices     	from './innovationServices/InnovationServices';
 import ProductDesign        	from './productDesign/ProductDesign';
 import ContactUs        		from './contactUs/ContactUs';
 import Work        				from './work/Work';
-import Time        				from './work/time/Time';
+import Time        				from './time/Time';
 
 export {
   Home,

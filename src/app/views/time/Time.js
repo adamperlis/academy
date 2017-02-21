@@ -10,7 +10,7 @@ import {
   WizardMotion,
   ContactUs,
   ArrowDownIcon
-}                     from '../../../components';
+}                     from '../../components';
 import  Scroll   from 'react-scroll';
 
 var ScrollLink       = Scroll.Link;
