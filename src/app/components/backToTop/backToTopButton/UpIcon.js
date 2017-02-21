@@ -3,7 +3,7 @@ import React, {PropTypes} from 'react';
 const UpIcon = ({color}) => {
   return (
     <svg
-      width="14px"
+      width="100%"
       height="14px"
       viewBox="0 0 512 512"
       fill={`${color}`} >

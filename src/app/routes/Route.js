@@ -50,7 +50,7 @@ export const Routes = () => {
             <IndexRoute component={ConnectedHome} />
             <Route path="/designSprint" component={ConnectedDesignSprint} />
             <Route path="/Work" component={ConnectedWork} />
-            <Route path="/Time" component={ConnectedTime} />
+            <Route path="/Work/Time" component={ConnectedTime} />
             {/*<Route path="/InnovationServices" component={ConnectedInnovationServices} />*/}
             <Route path="/ProductDesign" component={ConnectedProductDesign} />
             <Route path="/ContactUs" component={ConnectedContactUs} />

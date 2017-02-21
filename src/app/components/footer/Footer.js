@@ -15,8 +15,11 @@ const Footer = (props) => {
     }} 
     iconStyleRight={{
       marginTop:'20px',
-      marginRight:'0px'
+      marginRight:'0px',
+      left: '170px',
+      position: 'absolute'
     }}
+    iconElementRight={<div style={{fontFamily:'raleway',fontWeight:'400', fontSize:'13px', letterSpacing:'.5px', color:'#999'}}>UX &<br></br>Design Thinking<br></br>Consultancy</div>}
     titleStyle={{fill:'rbg(255,255,255)',}}
     showMenuIconButton={false} 
     title={
@@ -26,7 +29,7 @@ const Footer = (props) => {
       <img src='/public/assets/images/academy-logo-white.svg' height="24px"/>
       </Link>}
       >
-      </AppBar>
+    </AppBar>
   );
 };
 
