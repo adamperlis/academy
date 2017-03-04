@@ -77,7 +77,7 @@ class TopBarNav extends Component {
                     </Link>
                   </MenuItem>
                   <Divider style={{background:'rgb(126, 119, 204)'}}/>
-                  <MenuItem>
+                  {/*<MenuItem>
                     <Link
                     onTouchTap={this.handleTopNavActiveClass.bind(this)}
                     className="drawer"
@@ -85,7 +85,7 @@ class TopBarNav extends Component {
                     What is Design Thinking?
                     </Link>
                   </MenuItem>
-                  <Divider style={{background:'rgb(126, 119, 204)'}}/>
+                  <Divider style={{background:'rgb(126, 119, 204)'}}/>*/}
                   <MenuItem>
                     <Link
                     onTouchTap={this.handleRouteActions.bind(this, 'designSprint')} 
@@ -131,6 +131,14 @@ class TopBarNav extends Component {
                     </Link>
                   </MenuItem>
                   <Divider style={{background:'rgb(126, 119, 204)',}}/>
+                  <MenuItem>
+                    <Link
+                    onTouchTap={this.handleTopNavActiveClass.bind(this)}
+                    className="drawer"
+                    to={'/About'}>
+                    About
+                    </Link>
+                  </MenuItem>
                 </Drawer>
 
                 <Sticky enabled={true} top={0} innerZ={3}>

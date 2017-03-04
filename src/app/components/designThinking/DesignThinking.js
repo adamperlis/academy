@@ -11,7 +11,7 @@ const DesignThinking = (props) => {
     <div className="vertical-wrapper">
         <div className="vertical-middle">
             <Col xs={5} sm={7} md={7} lg={8}><DesignThinkingGraphic /></Col> 
-            <Col xs={7} sm={3} md={3} lg={2}> 
+            <Col xs={7} sm={3} md={3} lg={3}> 
 
             <h3>
             What is

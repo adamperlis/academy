@@ -41,7 +41,7 @@ class Home extends Component {
           'view-enter': viewEntersAnim
         })}>
           <Hero />
-          <DesignThinking />
+          {/*<DesignThinking />*/}
           <DesignSprint />
           <DesignDevelopment />
           <Work />

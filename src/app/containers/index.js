@@ -6,6 +6,7 @@ import ConnectedDesignSprint				from './designSprint/DesignSprint';
 import ConnectedContactUs				from './contactUs/ContactUs';
 import ConnectedWork				from './work/Work';
 import ConnectedTime				from './time/Time';
+import ConnectedAbout				from './about/About';
 
 export {
   App,
@@ -16,4 +17,5 @@ export {
   ConnectedContactUs,
   ConnectedWork,
   ConnectedTime,
+  ConnectedAbout,
 };

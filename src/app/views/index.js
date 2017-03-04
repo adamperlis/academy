@@ -7,6 +7,7 @@ import ProductDesign        	from './productDesign/ProductDesign';
 import ContactUs        		from './contactUs/ContactUs';
 import Work        				from './work/Work';
 import Time        				from './time/Time';
+import About        			from './about/About';
 
 export {
   Home,
@@ -16,5 +17,6 @@ export {
   ProductDesign,
   ContactUs,
   Work,
-  Time
+  Time,
+  About
 };

@@ -103,18 +103,17 @@ class Work extends Component {
             </div>
           </Col>
 
-          {/*<Col xs={6} sm={6} md={5} lg={5}>
+          <Col xs={6} sm={6} md={5} lg={5}>
 
             <div className="project">
-            <Link
-                to={'/Work/Time'}>
+            
                 
-                <img src="/public/assets/images/time-thumbnail@2x.jpg"/>
-                <div className="project-title">Time, Inc</div>
-                <div className="project-description">UX, UI, Design Thinking</div>
-            </Link>
+            <img src="/public/assets/images/datingapp.png"/>
+            <div className="project-title">Coming Soon: Top 3 Dating App</div>
+            <div className="project-description">UX, UI, Design Thinking</div>
+  
             </div>
-          </Col>*/}
+          </Col>
           </Row>
       </div>
     );

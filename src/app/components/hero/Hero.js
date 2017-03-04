@@ -25,7 +25,7 @@ const Hero = (props) => {
           </div>
           <div className="block-reveal">
         	<p className="main-subhead">
-        	We bring UX & Design Thinking into organizations, teaching and empowering leaders to implement them into their products & services.
+        	We bring UX & Design Thinking into organizations, teaching and empowering leaders to implement them into their products, services and strategies.
         	</p>
           </div>
 

@@ -130,7 +130,7 @@ class DesignSprint extends Component {
           </h4>
 
           <p className="subhead">
-          In this talk you will hear from leading UX expert Adam Perlis. He will walk you through the in’s and out’s of Design Sprints and how to build products better, faster and cheaper products in just 5 days.           </p>
+          In this talk you will hear from leading UX expert Adam Perlis. He will walk you through the ins and outs of Design Sprints and how to build products better, faster and cheaper in just 5 days.</p>
 
            <ContactUs label="Schedule a Talk" />
 

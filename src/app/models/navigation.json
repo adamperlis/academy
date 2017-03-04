@@ -34,8 +34,14 @@
     },
     {
       "label":      "Time",
-      "link":       "/Work/Time",
+      "link":       "/Time",
       "view":       "Time",
+      "isRouteBtn": true
+    },
+    {
+      "label":      "About",
+      "link":       "/About",
+      "view":       "About",
       "isRouteBtn": true
     }
   ]

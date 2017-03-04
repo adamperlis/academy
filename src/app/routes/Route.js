@@ -18,7 +18,8 @@ import {
   ConnectedDesignSprint,
   ConnectedContactUs,
   ConnectedWork,
-  ConnectedTime
+  ConnectedTime,
+  ConnectedAbout
 }                               from '../containers';
 import {
   PageNotFound
@@ -54,6 +55,7 @@ export const Routes = () => {
             {/*<Route path="/InnovationServices" component={ConnectedInnovationServices} />*/}
             <Route path="/ProductDesign" component={ConnectedProductDesign} />
             <Route path="/ContactUs" component={ConnectedContactUs} />
+            <Route path="/About" component={ConnectedAbout} />
             <Route path="*" component={PageNotFound} />
           </Route>
         </Router>
