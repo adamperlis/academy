@@ -48,7 +48,7 @@ class About extends Component {
   Awwwards, The FWA, and TechCrunch. Working as both a designer and developer his diverse skill set
   includes UX/UI design, front-end and back-end development, 2D &amp; 3D motion graphics, and video
   production. He was a Speaker at Web Summit '16 and Tech Open Air '16. His upcoming speakerships
-  include SXSW 17', Collision Conf ‘17 and Web Summit 17'. He also serves as a guest
+  include SXSW 17' and Fifteen Second Festival. He also serves as a guest
   lecturer/instructor at General Assembly, where he is a Design Thinking evangelist. 
   </p>
   </Col>
