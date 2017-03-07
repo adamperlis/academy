@@ -20,7 +20,7 @@ const Work = (props) => {
     </h4>
 
     <p className="subhead">
-        Our team has worked with some of the most recongizable brands in the world to design and develop best in class products and services. Take a look to see how we do it.
+        Our team has worked with some of the most recognizable brands in the world to design and develop best in class products and services. Take a look to see how we do it.
     </p>    
  {props.children}
 
