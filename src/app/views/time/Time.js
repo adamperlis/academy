@@ -247,7 +247,7 @@ class Time extends Component {
             <div className="vertical-middle">
               <Col xs={12} sm={10} smOffset={1} md={5} mdOffset={1} lg={3} lgOffset={1}>
                 <div className="secondary-title"><div className="small-line"></div><h5>Gallery</h5></div>
-                <p>After running tests with users we found that app like functionality was something they desired. We introuduced the concept of a modal and vertical scroll which gave our design team more real estate to work with. This gave our images an opportunity to breath and let vertical images shine. 
+                <p>After running tests with users we found that app like functionality was something they desired. We introduced the concept of a modal and vertical scroll which gave our design team more real estate to work with. This gave our images an opportunity to breath and let vertical images shine. 
                   <br></br><br></br>
                   Additionally, we were able to intergrate captions and incorporated a super easy way to navigate from image 1 to 100 using a grid option.
                   <br></br><br></br>
