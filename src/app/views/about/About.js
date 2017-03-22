@@ -28,7 +28,7 @@ class About extends Component {
   <h1>About</h1>
   <h2>Us</h2> 
   <p style={{width:'100%'}}>
-  Academy was founded on the principle that everyone can be creative we just need to be taught how. According to a 2015 study, over the past 10 years design led companies have outperformed the S&P 500 by an extraordinary 211%. This struck a chord with Academy and our mission became clear that we needed to consult and train organizations on how to apply Design Thinking principles to help transform their products, services and strategies for the better. We do so by implementing modern Design Thinking tools like Design Sprints, which provide a framework for teams to design, prototype and test their ideas in 5 days. We leave teams with the tools they need to carry on this type of work even when we are not around.
+  Academy was founded on the principle that bringing UX & Design Thinking into organizations can transform their products, services and strategies and can build a better world around us. We have a strong belief that everyone can be creative we just need to be taught how. According to a 2015 study, over the past 10 years design led companies have outperformed the S&P 500 by an extraordinary 211%. This struck a chord with Academy and our mission became clear that we needed to consult and train organizations on how to apply Design Thinking principles to help transform their products, services and strategies for the better. We do so by implementing modern Design Thinking tools like Design Sprints, which provide a framework for teams to design, prototype and test their ideas in 5 days. We leave teams with the tools they need to carry on this type of work even when we are not around.
   </p>
   </Col>       
   <Col xs={6}></Col>       

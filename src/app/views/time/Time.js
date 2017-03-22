@@ -56,7 +56,7 @@ class Time extends Component {
         className={cx({
           'animatedViews': animated,
           'view-enter': viewEntersAnim
-        })}>
+        })} style={{display:'none'}}>
         <Row className="show-grid time hero">
         <div className="vertical-wrapper">
             <div className="vertical-middle">

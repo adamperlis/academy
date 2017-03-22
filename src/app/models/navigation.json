@@ -34,7 +34,7 @@
     },
     {
       "label":      "Time",
-      "link":       "/Time",
+      "link":       "/TimeInc",
       "view":       "Time",
       "isRouteBtn": true
     },

@@ -93,13 +93,14 @@ class Work extends Component {
           <Col xs={6} sm={6} md={5} mdOffset={1} lg={5} lgOffset={1}> 
                         
             <div className="project">
-            <Link
-                to={'/Time'}>
+            {/*<Link
+                to={'/TimeInc'}>*/}
                 
-                <img src="/public/assets/images/time-thumbnail@2x.jpg"/>
-                <div className="project-title">Time, Inc</div>
+                {/*<img src="/public/assets/images/time-thumbnail@2x.jpg"/>*/}
+                <img src="/public/assets/images/topnewsmedia@2x.png"/>
+                <div className="project-title">Coming Soon: Top 3 News Media Company</div>
                 <div className="project-description">UX, UI, Design Thinking</div>
-            </Link>
+           {/* </Link>*/}
             </div>
           </Col>
 
