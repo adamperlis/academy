@@ -6,6 +6,10 @@ import cx             from 'classnames';
 import shallowCompare from 'react-addons-shallow-compare';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { Link }       from 'react-router';
+import Dialog from 'material-ui/Dialog';
+import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
+import TextField from 'material-ui/TextField';
 import {
   WizardMotion,
   ContactUs,
@@ -23,9 +27,18 @@ class Time extends Component {
 
   state = {
     animated: true,
-    viewEntersAnim: true
+    viewEntersAnim: true,
+    open: true,
   };
 
+  handleOpen = () => {
+    this.setState({open: true});
+  };
+
+  handleClose = () => {
+    this.setState({open: false});
+  };
+  
   componentDidMount() {
     const { enterTime } = this.props;
     enterTime();
@@ -51,12 +64,51 @@ class Time extends Component {
 
   render() {
     const { animated, viewEntersAnim } = this.state;
+
+    const actions = [
+      <FlatButton
+        label="Confirm"
+        primary={true}
+        onTouchTap={this.handleClose}
+        style={{
+          backgroundColor: '#FF0084',
+          borderRadius:'100px',
+          border: '1px solid #FF0084',
+          lineHeight: '20px',
+          height: '48px',
+          margin: '10px'
+        }}
+        labelStyle={{
+          fontFamily: '"Montserrat", sans-serif',
+          fontWeight: '800',
+          fontSize: '11px',
+          textAlign: 'center',
+          lineHeight: '20px',
+          color: '#FFFFFF',
+          textTransform: 'uppercase',
+          letterSpacing: '1px',
+        }}
+      />
+    ];
+
     return(
       <div
         className={cx({
           'animatedViews': animated,
           'view-enter': viewEntersAnim
-        })} style={{display:'none'}}>
+        })}>
+        <Dialog
+          actions={actions}
+          modal={false}
+          open={this.state.open}
+          onRequestClose={this.handleClose}
+          className={'disclaimer'}
+        >
+          <h4>Disclaimer:</h4><p>The following case study is a description of the work done by Adam Perlis 
+          as a Design/UX Director at Time, Inc. This work is not affiliated with Adam Perlis' company, 
+          Akademy LLC a.k.a. "Academy". The purpose of this case study is to demonstrate the abilities of Adam Perlis and
+          not those of Academy.</p>
+        </Dialog>
         <Row className="show-grid time hero">
         <div className="vertical-wrapper">
             <div className="vertical-middle">
@@ -111,15 +163,15 @@ class Time extends Component {
 
         </Row>
 
-         <Row className="show-grid time">
+     <Row className="show-grid time">
           <Col xs={12} sm={3} smOffset={1} md={3} mdOffset={1} lg={3} lgOffset={1}> 
 
-          <div className="secondary-title"><div className="small-line"></div><h5>The Problem</h5></div>             
+          <div className="secondary-title"><div className="small-line"></div><h5>UX analysis</h5></div>             
             
           </Col>
           <Col xs={12} sm={6} md={6} lg={6}>
 
-            <p>Anecodotal information from user studies told the team that there was too much clutter on the page and distracted users from their desired goals. Additionally, the data showed that Avg page view/visit were low, as well as avg. video views/visit and time spent. To users the page style felt old and antiquated. These stories were true of all three brands. Additionally, galleries are one of TIME’s most coveted  features and though it was performing well, it lacked some basic features that our editors and users wanted. Including proper social sharing on a per image basis, photos not getting cropped by the viewport, a way to treat vertical images and a way to handle captions better.</p>
+            <p>Anecodotal information from user studies told the Time, Inc team that there was too much clutter on the page and distracted users from their desired goals. Additionally, the data showed that Avg page view/visit were low, as well as avg. video views/visit and time spent. To users the page style felt old and antiquated. These stories were true of all three brands. Additionally, galleries are one of TIME’s most coveted features and though it was performing well, it lacked some basic features that our editors and users wanted. Including proper social sharing on a per image basis, photos not getting cropped by the viewport, a way to treat vertical images and a way to handle captions better.</p>
 
           </Col>
 
@@ -155,7 +207,7 @@ class Time extends Component {
         <Row className="show-grid time" style={{paddingTop:'0'}}>
           <Col xs={12} sm={5} smOffset={1} md={5} mdOffset={1} lg={4} lgOffset={1}> 
 
-              <p>Our team set out to tackle each issue using Design Thinking. We broke it down into two Design Sprints to cover all the problems facing articles and galleries. A team of 8-12 people was assembled from various disciplines including Design, Development, Product, Editorial, Photography and Research.</p>
+              <p>The Time, Inc team set out to tackle each issue using Design Thinking. We broke it down into two Design Sprints to cover all the problems facing articles and galleries. A team of 8-12 people was assembled from various disciplines including Design, Development, Product, Editorial, Photography and Research.</p>
              
             
           </Col>
